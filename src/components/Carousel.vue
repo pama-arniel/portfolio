@@ -2,24 +2,22 @@
 <div>
     <!-- Slideshow container -->
     <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="https://dummyimage.com/720x600" style="width:100%">
-            <div class="text">Caption Text</div>
+      <div v-if="refString == 'projects'">
+        <div
+          v-for="i in 3"
+          :key="'projects-' + i"
+          :class="classSlidesValue">
+            <ProjectsCards/>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://dummyimage.com/720x600" style="width:100%">
-            <div class="text">Caption Two</div>
+      </div>
+      <div v-if="refString == 'articles'">
+        <div
+          v-for="i in 3"
+          :key="'projects-' + i"
+          :class="classSlidesValue">
+            <ArticlesCards/>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="https://dummyimage.com/720x600" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
+      </div>
 
         <!-- Next and previous buttons -->
         <a class="prev" @click="plusSlides(-1)">&#10094;</a>
@@ -29,20 +27,45 @@
 
     <!-- The dots/circles -->
     <div style="text-align:center">
-        <span class="dot" @click="currentSlide(1)"></span>
-        <span class="dot" @click="currentSlide(2)"></span>
-        <span class="dot" @click="currentSlide(3)"></span>
+        <span
+          v-for="i in 3"
+          :key="i"
+          :class="classDotValue"
+          @click="currentSlide(i)"
+        ></span>
     </div>
 </div>
 </template>
 
 <script>
+import ProjectsCards from './ProjectsCards.vue'
+import ArticlesCards from './ArticlesCards.vue'
+
 export default {
   name: 'Carousel',
+  props: {
+    // added to class names to distinguish the carousel section
+    refString: {
+      type: String,
+      required: true
+    },
+  },
+  components: {
+    ProjectsCards,
+    ArticlesCards
+  },
   data() {
     return {
       slideIndex : 1,
     };
+  },
+  computed: {
+    classSlidesValue() {
+      return `${this.refString}-mySlides mySlides fade`;
+    },
+    classDotValue() {
+      return `${this.refString}-dot dot`;
+    },
   },
   mounted() {
       this.showSlides(this.slideIndex);
@@ -62,8 +85,8 @@ export default {
 
     showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
+        let slides = document.getElementsByClassName(this.classSlidesValue);
+        let dots = document.getElementsByClassName(this.classDotValue);
         
         if (n > slides.length) {
             this.slideIndex = 1;
@@ -93,7 +116,6 @@ export default {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -110,19 +132,20 @@ export default {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 10px 17px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.1);
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 50%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
