@@ -1,6 +1,6 @@
 <template>
 <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-10 items-center justify-center flex-col">
+  <div class="container mx-auto flex pt-12 pb-5 items-center justify-center flex-col">
     <img alt="Jose Arniel Pama - Graduation Photo" src="@/assets/profile.jpg"
       class="mb-10 object-cover rounded-full h-32 w-32"/>
     
@@ -37,7 +37,7 @@ export default {
   font-family: 'IBM Plex Sans';
   font-weight: bold;
   color: #8A00FF;
-  text-shadow: 1px 3px 12px #8A00FF42;
+  text-shadow: 1px 3px 12px #ffffff42;
 }
 .description {
   font-family: 'Inter';

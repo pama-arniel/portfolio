@@ -85,6 +85,7 @@ export default {
 a.selectedSection {
     color: #8A00FF;
     text-decoration: none;
+    padding-bottom: 12px;
     border-bottom: #fff 3px solid;
 }
 </style>
