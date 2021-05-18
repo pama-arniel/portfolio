@@ -8,17 +8,13 @@
                     </a>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                Home
-                            </a>
-                            <a class="text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                Gallery
-                            </a>
-                            <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                Content
-                            </a>
-                            <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                Contact
+                            <a 
+                                v-for="label in labels"
+                                :key="label"
+                                :class="getClass(label)"
+                                @click="selectedSection = label;"
+                            >
+                                {{label}}
                             </a>
                         </div>
                     </div>
@@ -39,17 +35,13 @@
         </div>
         <div class="md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Home
-                </a>
-                <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Gallery
-                </a>
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Content
-                </a>
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Contact
+                <a 
+                    v-for="label in labels"
+                    :key="label"
+                    :class="getClass(label)"
+                    @click="selectedSection = label;"
+                >
+                    {{label}}
                 </a>
             </div>
         </div>
@@ -58,6 +50,41 @@
 
 <script>
 export default {
-  name: 'Nav'
+  name: 'Nav',
+  data() {
+    return {
+        labels: [
+            'Introduction',
+            'About Me',
+            'Projects',
+            'Articles',
+            'Involvements',
+            'Contact Me'
+        ],
+        selectedSection: 'Introduction'
+    };
+  },
+  methods: {
+      getClass(label){
+          let defaultClass = 'block px-3 py-2 text-sm font-bold text-white nav-label';
+          if(label == this.selectedSection){
+              return defaultClass + ' selectedSection';
+          }
+          return defaultClass;
+      }
+  }
 }
 </script>
+
+<style scoped>
+.nav-label:hover {
+    color: #8A00FF;
+    text-shadow: 1px 3px 12px #8a00ff42;
+}
+
+a.selectedSection {
+    color: #8A00FF;
+    text-decoration: none;
+    border-bottom: #fff 3px solid;
+}
+</style>
