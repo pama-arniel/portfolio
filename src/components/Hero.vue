@@ -1,13 +1,20 @@
 <template>
 <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/400x200">
-    <div class="text-center lg:w-2/3 w-full">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed vexillologist</h1>
-      <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+  <div class="container mx-auto flex px-5 items-center justify-center flex-col">
+    <img alt="Jose Arniel Pama - Graduation Photo" src="@/assets/profile.jpg"
+      class="mb-10 object-cover rounded-full h-32 w-32"/>
+    
+    <div class="text-center lg:w-9/12 w-full">
+      <h2 class="text-base title-font tracking-widest mb-2 hello-portion">Hello, I'm</h2>
+      <h1 class="title-font sm:text-5xl text-3xl mb-8 my-name">Arniel Pama</h1>
+      <h1 class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description">I am a Mobile Developer, Web Developer, AI Developer, and UI/UX Developer.</h1>
       <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        <div class="inline-flex py-2 px-2">
+          <Button :text="'Hire Me'"/>
+        </div>
+        <div class="ml-4 inline-flex py-2 px-2">
+          <Button :text="'See My Works'"/>
+        </div>
       </div>
     </div>
   </div>
@@ -15,7 +22,30 @@
 </template>
 
 <script>
+import Button from './Button.vue'
+
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  components: {
+    Button
+  }
 }
 </script>
+
+<style scoped>
+.my-name {
+  font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  color: #8A00FF;
+  text-shadow: 1px 3px 12px #8A00FF42;
+}
+.description {
+  font-family: 'Inter';
+  color: rgba(255, 255, 255, 0.8);
+}
+.hello-portion {
+  font-family: 'IBM Plex Sans';
+  color: #FFFFFF;
+  text-shadow: 1px 3px 12px #ffffff42;
+}
+</style>
