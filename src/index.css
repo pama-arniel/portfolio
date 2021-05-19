@@ -7,3 +7,10 @@
 h1 {
     font-family: 'IBM Plex Sans';
 }
+
+.purple-header {
+    font-family: 'IBM Plex Sans';
+    font-weight: bold;
+    color: #8A00FF;
+    text-shadow: 1px 2px 12px #ffffff42;
+}
