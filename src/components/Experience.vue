@@ -1,5 +1,5 @@
 <template>
-<div class="container text-white px-10 pt-10 pb-24 mx-auto">
+<div class="container text-white font-inter px-10 pt-10 pb-24 mx-auto">
    <div class="flex flex-wrap -mx-4 -my-8">
       <div 
          v-for="(experience, index) in experiences"
@@ -7,14 +7,14 @@
          class="py-8 px-4 lg:w-1/3"
          >
          <div class="h-full flex items-start">
-            <div class="w-14 flex-shrink-0 flex flex-col text-left leading-none">
+            <div class="w-15 flex-shrink-0 flex flex-col text-left leading-none">
                <span class="pb-2 mb-2 border-b-2 border-gray-200">{{experience.startDate}}</span>
                <span class="title-font leading-none">{{experience.endDate}}</span>
             </div>
             <div class="flex-grow pl-6">
-               <h1 class="title-font text-3xl font-medium mb-2">{{experience.position}}</h1>
-               <h2 class="tracking-widest font-medium">{{experience.company}}</h2>
-               <p class="leading-relaxed mb-5">
+               <h1 class="title-font text-3xl mb-2 purple-header">{{experience.position}}</h1>
+               <h2 class="tracking-widest font-bold">{{experience.company}}</h2>
+               <p class="leading-relaxed mb-5 text-gray-500">
                   {{experience.description}}
                </p>
                <div
@@ -23,7 +23,7 @@
                   class="leading-relaxed mb-6 content-start"
                   >
                   <div class="float-left">
-                     <span class="text-2xl">👷🏽 </span>
+                     <span class="text-2xl">🛠️ </span>
                   </div>
                   <div>
                      <span class="text-white my-6 pl-2 align-middle flex">
@@ -67,7 +67,7 @@ export default {
                 startDate: '07/2019',
                 endDate: '08/2020',
                 position: 'Web Developer',
-                company: 'BPOSEATS / CHANNEL INFO TECH',
+                company: 'BPOSeats.com / Channel Info Tech',
                 description: 'BPOSeats.com aims to establish a platform where talents and clients connect effortlessly.',
                 tasks: [
                     'Back-end development, front-end development, implementation of HRIS-related features',
@@ -80,7 +80,7 @@ export default {
                 startDate: '06/2018',
                 endDate: '08/2018',
                 position: 'Web Developer Intern',
-                company: 'BPOSEATS / CHANNEL INFO TECH',
+                company: 'BPOSeats.com / Channel Info Tech',
                 description: 'The goal is to master the basics of web development and  produce a gamified web app capstone project.',
                 tasks: [
                     'Developed "GuessWhut!?", an online video platform for playing charades with friends',
