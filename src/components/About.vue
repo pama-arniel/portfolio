@@ -20,11 +20,9 @@
                   </span>
                </div>
             </div>
-            <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex mt-4 items-center pb-5 border-b-2 border-gray-100 mb-5">
                <div class="flex">
-                  <span class="mr-3">
-                  <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-                  </span>
+                  <Button :text="'Hire Me'"/>
                </div>
             </div>
          </div>
@@ -38,11 +36,13 @@
 
 <script>
 import Experience from './Experience.vue'
+import Button from './Button.vue'
 
 export default {
   name: 'About',
   components: {
-    Experience
+    Experience,
+    Button
   },
   data() {
     return {
