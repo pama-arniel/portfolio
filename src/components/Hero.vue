@@ -8,6 +8,15 @@
       <h2 class="text-base title-font tracking-widest mb-2 hello-portion">Hello, I'm</h2>
       <h1 class="title-font sm:text-5xl text-3xl mb-8 my-name">Jose Arniel Pama</h1>
       <h1 class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description">I am a Mobile Developer, Web Developer, AI Developer, and UI/UX Developer.</h1>
+
+      <span
+        v-for="bullet in bullets"
+        :key="bullet"
+        class="font-bold text-white my-6 mx-6 text-center align-middle"
+      >
+         <span class="text-2xl align-middle">⚙️ </span>{{bullet}}
+      </span>
+
       <div class="flex justify-center">
         <div class="inline-flex py-2 px-2">
           <Button :text="'Hire Me'"/>
@@ -28,6 +37,15 @@ export default {
   name: 'Hero',
   components: {
     Button
+  },
+  data() {
+    return {
+        bullets: [
+            'Passionate',
+            'Curious',
+            'Driven',
+        ]
+    };
   }
 }
 </script>
