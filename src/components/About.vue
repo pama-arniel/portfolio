@@ -15,7 +15,7 @@
                   <span class="text-2xl">⚙️ </span>
                </div>
                <div>
-                  <span class="font-bold text-white my-6 ml-2 align-middle">
+                  <span class="font-bold text-white my-6 pl-2 align-middle flex">
                   {{ description }}
                   </span>
                </div>

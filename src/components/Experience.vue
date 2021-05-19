@@ -8,11 +8,11 @@
          >
          <div class="h-full flex items-start">
             <div class="w-15 flex-shrink-0 flex flex-col text-left leading-none">
-               <span class="pb-2 mb-2 border-b-2 border-gray-200">{{experience.startDate}}</span>
-               <span class="title-font leading-none">{{experience.endDate}}</span>
+               <span class="pb-2 mb-2 border-b-2 border-gray-500">{{experience.endDate}}</span>
+               <span class="title-font leading-none">{{experience.startDate}}</span>
             </div>
             <div class="flex-grow pl-6">
-               <h1 class="title-font text-3xl mb-2 purple-header">{{experience.position}}</h1>
+               <h1 class="title-font text-3xl mb-2 purple-header align-top">{{experience.position}}</h1>
                <h2 class="tracking-widest font-bold">{{experience.company}}</h2>
                <p class="leading-relaxed mb-5 text-gray-500">
                   {{experience.description}}
@@ -84,8 +84,8 @@ export default {
                 description: 'The goal is to master the basics of web development and  produce a gamified web app capstone project.',
                 tasks: [
                     'Developed "GuessWhut!?", an online video platform for playing charades with friends',
-                    'Used Django as web framework; CSS, HTML, and Vue.js for the UI/UX; MongoDB for the database; OpenTok library for video communication',
-                    'Awarded as the TOP APP among the 5 other competitors in our internship'
+                    'Awarded as the TOP APP among the 5 other competitors in our internship',
+                    'Used Django as web framework; CSS, HTML, and Vue.js for the UI/UX; MongoDB for the database; OpenTok library for video communication'
                 ]
             },
         ]
