@@ -15,7 +15,7 @@
         :key="bullet"
         class="font-bold text-white my-6 mx-6 text-center align-middle"
       >
-         <span class="text-2xl align-middle">⚙️ </span>{{bullet}}
+         <span class="text-2xl align-middle">⚙️</span>{{bullet}}
       </span>
 
       <div class="flex justify-center">

@@ -6,7 +6,7 @@
          :key="'experience-' + index"
          class="py-8 px-4 lg:w-1/3"
          >
-         <div class="h-full flex items-start">
+         <div class="h-full flex items-start section-background">
             <div class="w-15 flex-shrink-0 flex flex-col text-left leading-none">
                <span class="pb-2 mb-2 border-b-2 border-gray-500">{{experience.endDate}}</span>
                <span class="title-font leading-none">{{experience.startDate}}</span>
@@ -23,7 +23,7 @@
                   class="leading-relaxed mb-6 content-start"
                   >
                   <div class="float-left">
-                     <span class="text-2xl">🛠️ </span>
+                     <span class="text-2xl">⚙️</span>
                   </div>
                   <div>
                      <span class="text-white my-6 pl-2 align-middle flex">
@@ -93,3 +93,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.section-background {
+    background: rgba(1, 2, 10, 0.5);
+}
+</style>
