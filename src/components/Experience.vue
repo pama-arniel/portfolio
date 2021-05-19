@@ -1,0 +1,95 @@
+<template>
+<div class="container text-white px-10 pt-10 pb-24 mx-auto">
+   <div class="flex flex-wrap -mx-4 -my-8">
+      <div 
+         v-for="(experience, index) in experiences"
+         :key="'experience-' + index"
+         class="py-8 px-4 lg:w-1/3"
+         >
+         <div class="h-full flex items-start">
+            <div class="w-14 flex-shrink-0 flex flex-col text-left leading-none">
+               <span class="pb-2 mb-2 border-b-2 border-gray-200">{{experience.startDate}}</span>
+               <span class="title-font leading-none">{{experience.endDate}}</span>
+            </div>
+            <div class="flex-grow pl-6">
+               <h1 class="title-font text-3xl font-medium mb-2">{{experience.position}}</h1>
+               <h2 class="tracking-widest font-medium">{{experience.company}}</h2>
+               <p class="leading-relaxed mb-5">
+                  {{experience.description}}
+               </p>
+               <div
+                  v-for="(task, index) in experience.tasks"
+                  :key="'task-' + index"
+                  class="leading-relaxed mb-6 content-start"
+                  >
+                  <div class="float-left">
+                     <span class="text-2xl">👷🏽 </span>
+                  </div>
+                  <div>
+                     <span class="text-white my-6 pl-2 align-middle flex">
+                        {{task}}
+                     </span>
+                  </div>
+               </div>
+               <a class="inline-flex items-center">
+               <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+               <span class="flex-grow flex flex-col pl-3">
+               <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+               </span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</template>
+
+<script>
+export default {
+  name: 'Experience',
+  data() {
+    return {
+        experiences: [
+            {
+                startDate: '10/2020',
+                endDate: 'Present',
+                position: 'Software Engineer',
+                company: 'NUVENSIS / BEAPTECH Inc.',
+                description: 'Nuvensis aims to make reliable software solutions that are built within record time.',
+                tasks: [
+                    'Develop mobile apps using Flutter,  BLoC pattern (store management), Hive (for storage), and PostgreSQL and GraphQL (for backend)',
+                    'Develop web apps using Vue.js, Quasar, Tailwind CSS, Node.js, and PostgreSQL and GraphQL',
+                    'Design UI using Figma and Dribbble',
+                    'Implement code and logic for frontend'
+                ]
+            },
+            {
+                startDate: '07/2019',
+                endDate: '08/2020',
+                position: 'Web Developer',
+                company: 'BPOSEATS / CHANNEL INFO TECH',
+                description: 'BPOSeats.com aims to establish a platform where talents and clients connect effortlessly.',
+                tasks: [
+                    'Back-end development, front-end development, implementation of HRIS-related features',
+                    'Managing some small teams, code reviews, some research-related tasks, Agile Development, Scrum',
+                    'Bug fixing, operational feedback, email and SMS notifications, release notes',
+                    'Unit testing, code rehauls, back-end schema, implement celery tasks',
+                ]
+            },
+            {
+                startDate: '06/2018',
+                endDate: '08/2018',
+                position: 'Web Developer Intern',
+                company: 'BPOSEATS / CHANNEL INFO TECH',
+                description: 'The goal is to master the basics of web development and  produce a gamified web app capstone project.',
+                tasks: [
+                    'Developed "GuessWhut!?", an online video platform for playing charades with friends',
+                    'Used Django as web framework; CSS, HTML, and Vue.js for the UI/UX; MongoDB for the database; OpenTok library for video communication',
+                    'Awarded as the TOP APP among the 5 other competitors in our internship'
+                ]
+            },
+        ]
+    };
+  }
+}
+</script>
