@@ -79,7 +79,7 @@ export default {
 <style scoped>
 .nav-label:hover {
     color: #8A00FF;
-    text-shadow: 1px 3px 12px #8a00ff42;
+    text-shadow: 3px 4px 16px #8a00ff42;
 }
 
 a.selectedSection {
