@@ -1,13 +1,14 @@
 <template>
 <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex pt-12 pb-5 items-center justify-center flex-col">
+  <div class="container mx-auto flex pt-12 pb-24 items-center justify-center flex-col">
     <img alt="Jose Arniel Pama - Graduation Photo" src="@/assets/profile.jpg"
       class="mb-10 object-cover rounded-full h-32 w-32"/>
     
     <div class="text-center lg:w-9/12 w-full">
       <h2 class="text-base title-font tracking-widest mb-2 hello-portion">Hello, I'm</h2>
       <h1 class="title-font sm:text-5xl text-3xl mb-8 my-name">Jose Arniel Pama</h1>
-      <h1 class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description">I am a Mobile Developer, Web Developer, AI Developer, and UI/UX Developer.</h1>
+      <h1 class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description">
+        I am a Mobile Developer, Web Developer, AI Developer, and UI/UX Developer.</h1>
 
       <span
         v-for="bullet in bullets"
