@@ -1,5 +1,5 @@
 <template>
-    <nav class="shadow">
+    <nav id="navbar" class="sticky">
         <div class="mx-auto px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="w-full justify-between flex items-center">
@@ -87,5 +87,14 @@ a.selectedSection {
     text-decoration: none;
     padding-bottom: 12px;
     border-bottom: #fff 3px solid;
+}
+
+.sticky {
+    background: rgba(1, 2, 10, 0.3);
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
 }
 </style>
