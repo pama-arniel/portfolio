@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <Particles
+      id="tsparticles"
+      :particlesInit="particlesInit"
+      :particlesLoaded="particlesLoaded"
+      url="@/assets/particles_config.json"
+    />
     <Nav class="mb-6" />
     <Hero />
     <About/>
