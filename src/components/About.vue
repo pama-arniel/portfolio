@@ -1,13 +1,27 @@
 <template>
-<section class="text-gray-600 body-font overflow-hidden">
-  <div class="container px-5 py-24 mx-auto">
+<section id="about-section" class="body-font overflow-hidden">
+  <div class="container px-5 py-10 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
-      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://preview.uideck.com/items/slick/business/img/business/business-img.png">
+      <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center" src="@/assets/about_hero.png">
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-        <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
-        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">ABOUT ME</h2>
+        <h1 class="sm:text-4xl text-2xl title-font mb-8 programmer-heading">I am a proficient programmer who</h1>
         
-        <p class="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+        <div
+          v-for="description in descriptions"
+          :key="description"
+          class="leading-relaxed mb-6 content-start"
+        >
+          <div class="float-left">
+            <span class="text-2xl">⚙️ </span>
+          </div>
+          <div>
+            <span class="font-medium text-white my-6 ml-2 align-middle">
+              {{ description }}
+            </span>
+          </div>
+        </div>
+
         <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div class="flex">
             <span class="mr-3">
@@ -87,6 +101,25 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  data() {
+    return {
+        descriptions: [
+            'Posseses a strong knowledge of web development, software engineering, and the fundamentals of programming.',
+            'Can quickly master new software packages and hardware technologies.',
+            'Can work well under pressure and meet targets while delivering high quality work.',
+            'Loves to learn new skills and explore something new.'
+        ]
+    };
+  }
 }
 </script>
+
+<style scoped>
+.programmer-heading {
+  font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  color: #8A00FF;
+  text-shadow: 1px 2px 12px #ffffff42;
+}
+</style>
