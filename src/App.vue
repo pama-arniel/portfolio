@@ -1,19 +1,20 @@
 <template>
-  <div id="app">
+  <div>
     <Particles
       id="tsparticles"
-      :particlesInit="particlesInit"
-      :particlesLoaded="particlesLoaded"
-      url="@/assets/particles_config.json"
+      :options="configData"
     />
-    <Nav class="mb-6" />
-    <Hero />
-    <About/>
-    <Projects/>
-    <Articles/>
-    <Organizations/>
-    <Contact/>
-    <Footer/>
+    
+    <div id="app">
+      <Nav class="mb-6" />
+      <Hero />
+      <About/>
+      <Projects/>
+      <Articles/>
+      <Organizations/>
+      <Contact/>
+      <Footer/>
+    </div>
   </div>
 </template>   
 
@@ -27,6 +28,8 @@ import Contact from './components/Contact.vue'
 import Organizations from './components/Organizations.vue'
 import Footer from './components/Footer.vue'
 
+import particlesConfig from './assets/particles_config.json'
+
 export default {
   name: 'App',
   components: {
@@ -38,12 +41,32 @@ export default {
     Contact,
     Organizations,
     Footer
-  }
+  },
+  data() {
+    return {
+        configData: particlesConfig
+    };
+  },
 }
 </script>
 
 <style scoped>
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- tsparticles container ---- */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 #app {
-  background: #01020A;;
+  background: transparent;
+  position: relative;
+  top: 0;
+  right: 0;
 }
 </style>
