@@ -22,7 +22,7 @@
             </div>
             <div class="flex mt-4 items-center pb-5 border-b-2 border-gray-100 mb-5">
                <div class="flex">
-                  <Button :text="'Hire Me'"/>
+                  <Button :text="'See Skills'"/>
                </div>
             </div>
          </div>
