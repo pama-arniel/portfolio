@@ -1,9 +1,8 @@
 <template>
-<section class="text-gray-600 body-font">
+<section class="text-white body-font">
   <div class="container px-10 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-14">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      <h1 class="text-4xl title-font purple-header">Here Are Some of My Projects</h1>
     </div>
     <Carousel :refString="'projects'"/>
   </div>
