@@ -93,9 +93,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.section-background {
-   background: rgba(1, 2, 10, 0.3);
-}
-</style>

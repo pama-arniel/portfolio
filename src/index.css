@@ -18,3 +18,7 @@ h1 {
 .body-font {
     font-family: 'Inter';
 }
+
+.section-background {
+    background: rgba(1, 2, 10, 0.3);
+}
