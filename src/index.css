@@ -14,3 +14,7 @@ h1 {
     color: #8A00FF;
     text-shadow: 1px 3px 12px #ffffff42;
 }
+
+.body-font {
+    font-family: 'Inter';
+}
