@@ -65,7 +65,7 @@ export default {
             'Contact Me'
         ],
         selectedSection: 'Introduction',
-        hamburgerOpen: true,
+        hamburgerOpen: false,
     };
   },
   methods: {
