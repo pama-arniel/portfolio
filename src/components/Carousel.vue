@@ -133,12 +133,13 @@ export default {
   width: auto;
   margin-top: -22px;
   padding: 10px 17px;
-  color: white;
+  color: #8A00FF;
+  text-shadow: 1px 3px 12px #ffffff42;
+  box-shadow: -1px -3px 6px #bf00ff32, 1px 3px 6px #8a00ff32;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.1);
   user-select: none;
 }
 
@@ -186,7 +187,7 @@ export default {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: rgb(138, 0, 255, 1);
 }
 
 /* Fading animation */
