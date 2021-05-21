@@ -25,7 +25,7 @@
             <textarea id="message" name="message" class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
           </div>
         </div>
-        <div class="p-2 w-full flex">
+        <div class="p-2 w-full flex justify-center">
           <Button :text="'Send'"/>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">

@@ -1,5 +1,5 @@
 <template>
-    <button class="call-to-action">{{ text }}</button>
+    <button class="call-to-action px-9 py-5 font-bold">{{ text }}</button>
 </template>
 
 <script>
@@ -16,9 +16,6 @@ export default {
 
 <style scoped>
 .call-to-action {
-    margin: 32px auto 0;
-    padding: 16px 42px;
-    font-weight: bold;
     font-family: 'Inter';
     color: #fff;
     border: none;

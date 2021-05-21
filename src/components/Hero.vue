@@ -18,7 +18,7 @@
          <span class="sm:text-2xl text-sm align-middle">⚙️</span>{{bullet}}
       </span>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center mt-16">
         <div class="inline-flex py-2 px-2">
           <Button :text="'Hire Me'"/>
         </div>
