@@ -9,12 +9,13 @@
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
                             <a 
-                                v-for="label in labels"
-                                :key="label"
-                                :class="getClass(label)"
-                                @click="selectedSection = label;"
+                                v-for="(label, index) in labels"
+                                :key="'label-' + index"
+                                :href="'#' + label.scroll_to"
+                                :class="getClass(label.name)"
+                                @click="selectedSection = label.name;"
                             >
-                                {{label}}
+                                {{label.name}}
                             </a>
                         </div>
                     </div>
@@ -39,12 +40,13 @@
         <div :class="getMobileNavbarClass()">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a 
-                    v-for="label in labels"
-                    :key="label"
-                    :class="getClass(label)"
-                    @click="switchToSection(label)"
+                    v-for="(label, index) in labels"
+                    :key="'label-' + index"
+                    :href="'#' + label.scroll_to"
+                    :class="getClass(label.name)"
+                    @click="switchToSection(label.name)"
                 >
-                    {{label}}
+                    {{label.name}}
                 </a>
             </div>
         </div>
@@ -57,27 +59,45 @@ export default {
   data() {
     return {
         labels: [
-            'Introduction',
-            'About Me',
-            'Projects',
-            'Articles',
-            'Involvements',
-            'Contact Me'
+            {
+                'name': 'Introduction',
+                'scroll_to': 'hero-section'
+            },
+            {
+                'name': 'About Me',
+                'scroll_to': 'about-section'
+            },
+            {
+                'name': 'Projects',
+                'scroll_to': 'projects-section'
+            },
+            {
+                'name': 'Articles',
+                'scroll_to': 'articles-section'
+            },
+            {
+                'name': 'Involvements',
+                'scroll_to': 'organizations-section'
+            },
+            {
+                'name': 'Contact Me',
+                'scroll_to': 'contact-section'
+            }
         ],
         selectedSection: 'Introduction',
         hamburgerOpen: false,
     };
   },
   methods: {
-      getClass(label){
+      getClass(labelName){
           let defaultClass = 'block px-3 py-2 text-sm font-bold text-white nav-label';
-          if(label == this.selectedSection){
+          if(labelName == this.selectedSection){
               return defaultClass + ' selectedSection';
           }
           return defaultClass;
       },
-      switchToSection(label){
-          this.selectedSection = label;
+      switchToSection(labelName){
+          this.selectedSection = labelName;
           this.hamburgerOpen = false;
       },
       toggleHamburgerButton(){
@@ -107,7 +127,7 @@ a.selectedSection {
     background: rgba(1, 2, 10, 0.3);
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
     position: fixed;
-    z-index: 1;
+    z-index: 40;
     top: 0;
     width: 100%;
 }

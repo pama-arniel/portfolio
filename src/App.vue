@@ -7,7 +7,7 @@
     
     <div id="app">
       <Nav class="mb-6" />
-      <Hero />
+      <Hero/>
       <About/>
       <Projects/>
       <Articles/>

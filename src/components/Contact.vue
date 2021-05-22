@@ -1,5 +1,5 @@
 <template>
-<section class="text-white body-font relative">
+<section id="contact-section" class="text-white body-font relative">
   <div class="container px-5 py-24 mx-auto section-background">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="text-4xl title-font purple-header mb-4">Send Me A Message</h1>
