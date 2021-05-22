@@ -68,10 +68,9 @@ export default {
             {
                 'name': 'Industry Knowledge',
                 'list': [
-                    'Software Development', 'Object-Oriented Programming (OOP)', 'Data Structures',
-                    'Software Development Life Cycle (SDLC)', 'Front-end Development',
+                    'Software Development', 'Software Development Life Cycle (SDLC)', 'Front-end Development',
                     'User Interface Design', 'Agile Methodologies', 'Scrum', 'Debugging', 'Code Review',
-                    'Design', 'Back-end Development'
+                    'Design', 'Back-end Development', 'Object-Oriented Programming (OOP)', 'Data Structures',
                 ],
             },
             {
@@ -92,8 +91,8 @@ export default {
             {
                 'name': 'Other Skills',
                 'list': [
-                    'Natural Language Processing (NLP)', 'Data Science',
-                    'Artificial Intelligence (AI)', 'Machine Learning',
+                    'Natural Language Processing (NLP)', 'Artificial Intelligence (AI)',
+                    'Machine Learning (ML)', 'Data Science',
                     'Technical Writing', 'Writing'
                 ]
             }
