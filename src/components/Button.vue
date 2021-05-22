@@ -1,5 +1,9 @@
 <template>
-    <button class="call-to-action px-9 py-5 font-bold">{{ text }}</button>
+    <button
+      class="call-to-action px-9 py-5 font-bold"
+      @click="$emit('button-clicked')">
+      {{ text }}
+    </button>
 </template>
 
 <script>
