@@ -31,11 +31,11 @@
                      </span>
                   </div>
                </div>
-               <a class="inline-flex items-center">
-               <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
-               <span class="flex-grow flex flex-col pl-3">
-               <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-               </span>
+               <a :href="experience.website" target="_blank" class="inline-flex items-center">
+                  <img alt="blog" :src="getPic(experience.logo)" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center company-logo">
+                  <span class="flex-grow flex flex-col pl-3">
+                     <span class="title-font text-indigo-500">{{ experience.website }}</span>
+                  </span>
                </a>
             </div>
          </div>
@@ -61,7 +61,9 @@ export default {
                     'Develop web apps using Vue.js, Quasar, Tailwind CSS, Node.js, and PostgreSQL and GraphQL',
                     'Design UI using Figma and Dribbble',
                     'Implement code and logic for frontend'
-                ]
+                ],
+                logo: 'nuvensis.png',
+                website: 'http://nuvensis.ch/'
             },
             {
                 startDate: '07/2019',
@@ -74,7 +76,9 @@ export default {
                     'Managing some small teams, code reviews, some research-related tasks, Agile Development, Scrum',
                     'Bug fixing, operational feedback, email and SMS notifications, release notes',
                     'Unit testing, code rehauls, back-end schema, implement celery tasks',
-                ]
+                ],
+                logo: 'bposeats.png',
+                website: 'https://bposeats.com/'
             },
             {
                 startDate: '06/2018',
@@ -86,10 +90,25 @@ export default {
                     'Developed "GuessWhut!?", an online video platform for playing charades with friends',
                     'Awarded as the TOP APP among the 5 other competitors in our internship',
                     'Used Django as web framework; CSS, HTML, and Vue.js for the UI/UX; MongoDB for the database; OpenTok library for video communication'
-                ]
+                ],
+                logo: 'bposeats.png',
+                website: 'https://bposeats.com/'
             },
         ]
     };
+  },
+  methods: {
+      getPic(logoFile) {
+         var images = require.context('../assets/', false, /\.png$/);
+         return images('./' + logoFile);
+      }
   }
 }
 </script>
+
+<style scoped>
+.company-logo {
+  box-shadow: 0px 0px 5px #FFFFFF;
+  padding:7px;
+}
+</style>
