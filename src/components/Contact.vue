@@ -7,27 +7,44 @@
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">
-        <div class="p-2 w-1/2">
-          <div class="relative">
-            <label for="name" class="leading-7 text-sm">Name</label>
-            <input type="text" id="name" name="name" class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+
+        <!-- contact form -->
+        <form class="flex flex-wrap -m-2" @submit.prevent="sendEmail">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm">Name</label>
+              <input
+                v-model.trim="name"
+                type="text" id="name" name="from_name" required
+                class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              >
+            </div>
           </div>
-        </div>
-        <div class="p-2 w-1/2">
-          <div class="relative">
-            <label for="email" class="leading-7 text-sm">Email</label>
-            <input type="email" id="email" name="email" class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm">Email</label>
+              <input
+                v-model.trim="email"
+                type="email" id="email" name="reply_to" required
+                class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              >
+            </div>
           </div>
-        </div>
-        <div class="p-2 w-full">
-          <div class="relative">
-            <label for="message" class="leading-7 text-sm">Message</label>
-            <textarea id="message" name="message" class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm">Message</label>
+              <textarea
+                v-model="message"
+                id="message" name="message" required
+                class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
           </div>
-        </div>
-        <div class="p-2 w-full flex justify-center">
-          <Button :text="'Send'"/>
-        </div>
+          <div class="p-2 w-full flex justify-center">
+            <Button :text="'Send'"/>
+          </div>
+        </form>
+
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
           <a class="text-indigo-500">pamajosearniel@gmail.com</a>
           <p class="leading-normal my-5">
@@ -65,10 +82,36 @@
 
 <script>
 import Button from './Button.vue'
+
+import emailjs from 'emailjs-com';
+import EmailConfig from '../assets/email_config.js'
+
 export default {
   name: 'Contact',
   components: {
     Button
   },
+  data() {
+    return {
+        name: '',
+        email: '',
+        message: '',
+    };
+  },
+  methods: {
+    sendEmail(e) {
+      emailjs.sendForm(EmailConfig.SERVICE_ID, EmailConfig.TEMPLATE_ID, e.target, EmailConfig.USER_ID,
+      {
+        from_name: this.name,
+        reply_to: this.email,
+        message: this.message
+      })
+        .then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+    }
+  }
 }
 </script>
