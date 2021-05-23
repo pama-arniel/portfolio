@@ -23,7 +23,7 @@
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
-                <label for="email" class="leading-7 text-sm">Email</label>
+                <label for="email" class="leading-7 text-sm">Your Email</label>
                 <input
                   v-model.trim="email"
                   type="email" id="email" name="reply_to" required
