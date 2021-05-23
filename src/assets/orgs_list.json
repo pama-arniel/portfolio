@@ -1,0 +1,52 @@
+{
+    "list": [
+        {
+            "title": "Cum Laude",
+            "subtitle": "University of the Philippines (UP) Cebu",
+            "description": "Top 3 among the 6 honor students from Class 2019, Department of Computer Science (DCS)",
+            "picture": "inv_uplogo.jpg"
+        },
+        {
+            "title": "Scholar",
+            "subtitle": "Department of Science and Technology (DOST)",
+            "description": "A grantee of the Junior Level Science Scholarship (JLSS) Program from 2017-2019",
+            "picture": "inv_dostlogo.jpeg"
+        },
+        {
+            "title": "Scholar",
+            "subtitle": "Commission on Higher Education (CHED)",
+            "description": "A grantee of the CHED Full Merit Scholarship Program from 2015-2018 for Region VIII",
+            "picture": "inv_chedlogo.jpg"
+        },
+        {
+            "title": "Delegate",
+            "subtitle": "Accenture - Student Leadership Conference (SLC)",
+            "description": "Participated in the Accenture Student Leadership Conference (SLC) 2019 held in Manila",
+            "picture": "inv_accenture_slc.jpg"
+        },
+        {
+            "title": "Treasurer",
+            "subtitle": "DOST Scholars Assocation (DOST SA UP)",
+            "description": "An active officer of the DOST SA UP. Spearheaded several activities and organized events",
+            "picture": "inv_dostsaup.jpg"
+        },
+        {
+            "title": "Programmer",
+            "subtitle": "Accenture - Program the Future (PTF) 2018",
+            "description": "Participated in programming events and contests such as the PTF 2018 and Google Games 2018",
+            "picture": "inv_accenture_ptf.jpg"
+        },
+        {
+            "title": "Representative",
+            "subtitle": "UP Computer Science Guild (UPCSG)",
+            "description": "Hosted events like the Computer Science Week, programming tournaments, company tours, etc.",
+            "picture": "inv_upcsg.jpg"
+        },
+        {
+            "title": "Writer",
+            "subtitle": "The Periscope Paper (2012-2015)",
+            "description": "A journalist who focused on writing feature stories, sports news, and local school news",
+            "picture": "inv_journalism.jpg"
+        }
+    ]
+}
