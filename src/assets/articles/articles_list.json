@@ -1,13 +1,18 @@
 {
     "list": [
         {
+            "title": "The Lehman Brothers’ Case",
+            "desc": "Discusses the importance of using automated processes and establishing coding standards to maintain the future scalability and maintainability of large projects with big teams",
+            "href": "https://bit.ly/3hIykPM"
+        },
+        {
             "title": "Initiating Projects or Businesses (Integration Management)",
             "desc": "Layouts plans for the HRIS, creates job descriptions for people needed in the project, establishes a project charter, and do financial analysis (payback and ROI)",
             "href": "https://bit.ly/2T4pp0C"
         },
         {
             "title": "Basics of Project Management (PM)",
-            "desc": "Analyzes 3 important PM case studies and discusses the role that PM plays in the success or failure of each project; provides solutions or suggestions to improve the current state of the project",
+            "desc": "Analyzes three important PM case studies and discusses the role that PM plays in the success or failure of each project; provides solutions or suggestions to improve the current state of the project",
             "href": "https://bit.ly/3ytrnIp"
         },
         {
@@ -16,9 +21,74 @@
             "href": "https://bit.ly/3uedFFR"
         },
         {
-            "title": "AarsonSide Goes to Teams",
+            "title": "Relay-Race Approach vs Cross-Functional Teams",
             "desc": "Discusses the pros and cons of the relay-race approach and the cross-functional team approach towards the development and productivity of projects",
             "href": "https://bit.ly/3bO9YA9"
+        },
+        {
+            "title": "The Neverending Scope Creep",
+            "desc": "Analyzes the current project status of a project nearing bankruptcy; discusses the pitfalls which come from scope creep and the lack of sound project management practices; provide possible actions steps to the project manager",
+            "href": "https://bit.ly/3fHlcHU"
+        },
+        {
+            "title": "Work Breakdown Structure (WBS)",
+            "desc": "Discusses the process of making a Work Breakdown Structure (WBS) for a project and how helpful it is in managing expectations and product requirements",
+            "href": "https://bit.ly/3u9zWV7"
+        },
+        {
+            "title": "Project Planning: Cost Analysis",
+            "desc": "Aims to create and monitor the project budget of a sample company; identifies resource needs for each task in the project; estimates planned values (PV) and records actual values (AC) for money and time spent",
+            "href": "https://bit.ly/3fK51tD"
+        },
+        {
+            "title": "Fault Tree Analysis (FTA) for Hazard Prevention",
+            "desc": "Discusses the application of FTA for an Airport Ground Control System (AGCS). It identifies the undesired top events or accidents which could happen in the system, estimate their likelihood of happening, and come up with preventive measures",
+            "href": "https://bit.ly/3yxtSJr"
+        },
+        {
+            "title": "Comparing Programming Languages",
+            "desc": "Compares C, C++, Java, and Python in terms of simplicity, writability, readability, programming paradigms, and methods of implementations (e.g. compilation, virtual machines, interpretation, etc.)",
+            "href": "https://bit.ly/34bthze"
+        },
+        {
+            "title": "Programming Language Grammars",
+            "desc": "Discusses the difference between ambiguous and unambiguous languages, derives expressions using a set of Backus-Naur Form (BNF) grammar rules, writes a simple BNF grammar, and proves the ambiguity of a language using a derivation tree",
+            "href": "https://bit.ly/3wkO2Vk"
+        },
+        {
+            "title": "Adaptive N-Version Programming",
+            "desc": "Discusses a new and improved version of N-Version programming (a fault tolerance technique which is used for maintaining high reliability of software systems)",
+            "href": "https://bit.ly/3fHm7bk"
+        },
+        {
+            "title": "Lexical Analysis and Parsing",
+            "desc": "Discusses concepts like the approaches to building a lexical analyzer, the complexity of parsing algorithms, the left recursion and the problem of infinite loops, and static type vs dynamic type bindings",
+            "href": "https://bit.ly/2T96bHf"
+        },
+        {
+            "title": "Programming Language (PL) Paradigms",
+            "desc": "Discusses important topics like the difference between declarative and imperative languages, the trade-offs between writability and readability of PLs, compilation vs interpretation of code, code blocks, and delimiters, etc.",
+            "href": "https://bit.ly/3ffNJpb"
+        },
+        {
+            "title": "Memory Allocation",
+            "desc": "Discusses concepts like internal and external fragmentations, allocation algorithms (first-fit, best-fit, and worst-fit algorithms), compaction, and swapping for memory allocation",
+            "href": "https://bit.ly/3oJisOq"
+        },
+        {
+            "title": "Scheduling Algorithms",
+            "desc": "Discusses the difference between preemptive scheduling and non-preemptive schedule; evaluates different scheduling algorithms (first-come-first-serve, shortest job first, shortest remaining processing time)",
+            "href": "https://bit.ly/2RICvR1"
+        },
+        {
+            "title": "Basic Operating Systems (OS) Concepts",
+            "desc": "Discusses topics like time-sharing, system calls, single or double buffering, system interrupts (how they are useful and how it happens), and privileged kernel instructions",
+            "href": "https://bit.ly/348jgmz"
+        },
+        {
+            "title": "Multiprogramming Concepts",
+            "desc": "Discusses topics like CPU efficiency, the process of staging, time slicing, the different types of operating systems, and job sequencing",
+            "href": "https://bit.ly/3hKgcFf"
         }
     ]
 }
