@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getPic(fileName) {
-      let images = require.context('../assets/', false, /\.(png|jpe?g|svg)$/);
+      let images = require.context('../assets/orgs/', false, /\.(png|jpe?g|svg)$/);
       return images('./' + fileName);
     }
   }
