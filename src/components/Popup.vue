@@ -79,7 +79,8 @@ export default {
                     'Flutter', 'Vue.js', 'Python', 'Django', 'REST API', 'Javascript',
                     'HTML', 'CSS', 'jQuery', 'C, C++', 'Java', 'Perl', 'Arduino',
                     'Android', 'Assembly x86', 'MIPS', 'SQL', 'SQLite', 'MongoDB',
-                    'PostgreSQL', 'Confluence', 'JIRA', 'Figma', 'Git', 'Linux'
+                    'PostgreSQL', 'Confluence', 'JIRA', 'Figma', 'Git', 'Linux',
+                    'Slack'
                 ]
             },
             {
