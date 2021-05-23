@@ -1,5 +1,6 @@
 <template>
     <button
+      type="submit"
       class="call-to-action px-9 py-5 font-bold"
       @click="$emit('button-clicked')">
       {{ text }}
