@@ -5,7 +5,7 @@
    <section id="about-section" class="body-font overflow-hidden">
       <div class="font-inter container px-5 py-10 mx-auto">
          <div class="lg:w-4/5 mx-auto flex flex-wrap">
-            <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center" src="@/assets/about_hero.png">
+            <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center" src="@/assets/about/about_hero.png">
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                <h2 class="text-sm title-font text-gray-500 tracking-widest">ABOUT ME</h2>
                <h1 class="text-4xl title-font mb-8 purple-header">I am a proficient programmer who</h1>

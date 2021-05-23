@@ -39,13 +39,13 @@
         {
             "title": "Representative",
             "subtitle": "UP Computer Science Guild (UPCSG)",
-            "description": "Hosted events like the Computer Science Week, programming tournaments, company tours, etc.",
+            "description": "Hosted events like the Computer Science Week, programming tournaments, company tours, etc",
             "picture": "inv_upcsg.jpg"
         },
         {
             "title": "Writer",
             "subtitle": "The Periscope Paper (2012-2015)",
-            "description": "A journalist who focused on writing feature stories, sports news, and local school news",
+            "description": "A journalist who wrote feature stories, sports news, and local school news",
             "picture": "inv_journalism.jpg"
         }
     ]

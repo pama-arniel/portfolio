@@ -99,7 +99,7 @@ export default {
   },
   methods: {
       getPic(logoFile) {
-         let images = require.context('../assets/', false, /\.png$/);
+         let images = require.context('../assets/experience/', false, /\.png$/);
          return images('./' + logoFile);
       }
   }

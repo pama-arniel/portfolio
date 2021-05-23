@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import orgsJSON from '../assets/orgs_list.json'
+import orgsJSON from '../assets/orgs/orgs_list.json'
 
 export default {
   name: 'Organizations',
