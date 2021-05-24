@@ -3,7 +3,7 @@
   <div class="container py-5 px-1.5 mx-auto">
     <div class="flex flex-wrap">
       <div
-        v-for="(article, index) in articlesList"
+        v-for="(article, index) in articles"
         :key="'article-card' + index"
         class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 section-background"
       >
@@ -21,13 +21,17 @@
 </template>
 
 <script>
-import articlesJSON from '../assets/articles/articles_list.json'
-
 export default {
   name: 'ArticlesCards',
+  props: {
+    articles: {
+        type: Array,
+        required: true,
+    },
+  },
   data() {
     return {
-        articlesList: articlesJSON.list
+        // 
     };
   },
 }

@@ -4,7 +4,7 @@
     <div class="slideshow-container">
       <div v-if="refString == 'projects'">
         <div
-          v-for="i in 3"
+          v-for="i in currNumOfGroups"
           :key="'projects-' + i"
           :class="classSlidesValue">
             <ProjectsCards/>
@@ -12,10 +12,10 @@
       </div>
       <div v-if="refString == 'articles'">
         <div
-          v-for="i in 3"
-          :key="'projects-' + i"
+          v-for="i in numOfArticlesGroups"
+          :key="'article-group-' + i"
           :class="classSlidesValue">
-            <ArticlesCards/>
+            <ArticlesCards :articles="articlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"/>
         </div>
       </div>
 
@@ -28,7 +28,7 @@
     <!-- The dots/circles -->
     <div style="text-align:center">
         <span
-          v-for="i in 3"
+          v-for="i in currNumOfGroups"
           :key="i"
           :class="classDotValue"
           @click="currentSlide(i)"
@@ -40,6 +40,7 @@
 <script>
 import ProjectsCards from './ProjectsCards.vue'
 import ArticlesCards from './ArticlesCards.vue'
+import articlesJSON from '../assets/articles/articles_list.json'
 
 export default {
   name: 'Carousel',
@@ -57,6 +58,8 @@ export default {
   data() {
     return {
       slideIndex : 1,
+      articlesList: articlesJSON.list,
+      ARTICLES_PER_GROUP: 4,
     };
   },
   computed: {
@@ -66,6 +69,19 @@ export default {
     classDotValue() {
       return `${this.refString}-dot dot`;
     },
+    currNumOfGroups() {
+      if(this.refString == 'articles') {
+        return this.numOfArticlesGroups;
+      }
+
+      return this.numOfProjectsGroups;
+    },
+    numOfProjectsGroups() {
+      return 3;
+    },
+    numOfArticlesGroups() {
+      return Math.ceil(this.articlesList.length / this.ARTICLES_PER_GROUP);
+    }
   },
   mounted() {
       this.showSlides(this.slideIndex);
