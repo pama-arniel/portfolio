@@ -1,0 +1,225 @@
+{
+    "list": [
+        {
+            "title": "Booqista - Consumer Web App",
+            "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://market.booqista.com/",
+            "technologies": [
+                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
+            ],
+            "features": [
+                "Search and discover a wide range of services and offers from merchants",
+                "Book services and schedule appointments with merchants",
+                "View merchant profiles, listings, services, prices",
+                "Review and rate services"
+            ],
+            "key_contributions": [
+                "Implement profile information and account settings",
+                "Implement managing of bookings and appointments",
+                "Implement authentication related features (sign up, log in, forgot password, etc.)",
+                "Implement E2E testing using Testcafe.io",
+                "Test app and add bug fixes"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-web-app"
+        },
+        {
+            "title": "Booqista - Merchant Web App",
+            "desc": "A business platform that allows businesses and merchants to keep their services up and running in the CWA marketplace; it is packed with tools that they can use to manage their business",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://seller.booqista.com/",
+            "technologies": [
+                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
+            ],
+            "features": [
+                "Setup and manage business account",
+                "Post and manage listings and services",
+                "Manage the appointments and bookings from consumers",
+                "View reviews and ratings from consumers"
+            ],
+            "key_contributions": [
+                "Implement features", "Test app", "Review code changes", "Add bug fixes"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/booqista/merchant-web-app"
+        },
+        {
+            "title": "ApplyBPO",
+            "desc": "An online platform which connects users and job applicants with potential employers and job postings; it also allows managing of employees thru team and departments; track team productivity through time-tracking and other HRIS features",
+            "owner": "Channel Info Technology",
+            "company_link": "https://bposeats.com/",
+            "website": "https://applybpo.com",
+            "technologies": [
+                "Vue.js", "Django", "Python", "REST API", "jQuery", "HTML", "CSS", "SQL", "PostgreSQL", "Confluence", "JIRA", "Git", "Scrum", "Agile", "AWS"
+            ],
+            "features": [
+                "Manage and setup accounts",
+                "Upload an interview video and find potential jobs",
+                "See job postings",
+                "Manage teams and departments",
+                "Track time and productivity of employees",
+                "Issue contracts, disclipinary forms, etc.",
+                "Connect with businesses to help them manage international offices"
+            ],
+            "key_contributions": [
+                "Code and implement APIs in the backend",
+                "Code and implement frontend logic and features",
+                "Code scheduled tasks",
+                "Implement unit tests",
+                "Implement code rehauls and refactors",
+                "Implement manual tests",
+                "Design backend object models and schema",
+                "Send email and SMS notifications",
+                "Bug fixing",
+                "Manage small teams",
+                "Do code reviews",
+                "Do research-related tasks",
+                "Employ Agile methodologies and Scrum"
+            ],
+            "project_repo": "N/A"
+        },
+        {
+            "title": "BPOSeats",
+            "desc": "An online platform which allows businesses to manage their teams and to set up offices and infrastructures (even from other countries)",
+            "owner": "Channel Info Technology",
+            "company_link": "N/A",
+            "website": "https://bposeats.com/",
+            "technologies": [
+                "Vue.js", "Django", "Python", "REST API", "jQuery", "HTML", "CSS", "SQL", "PostgreSQL", "Confluence", "JIRA", "Git", "Scrum", "Agile", "AWS"
+            ],
+            "features": [
+                "Manage and setup business accounts",
+                "Book offices",
+                "Manage amenities, locations, and offices",
+                "Manage teams, departments, and HRs",
+                "Add job postings",
+                "Hire and manage employees",
+                "Track office and team productivity through time-tracking and other HRIS features"
+            ],
+            "key_contributions": [
+                "Code and implement APIs in the backend",
+                "Code and implement frontend logic and features",
+                "Code scheduled tasks",
+                "Implement unit tests",
+                "Implement code rehauls and refactors",
+                "Implement manual tests",
+                "Design backend object models and schema",
+                "Send email and SMS notifications",
+                "Bug fixing",
+                "Manage small teams",
+                "Do code reviews",
+                "Do research-related tasks",
+                "Employ Agile methodologies and Scrum"
+            ],
+            "project_repo": "N/A"
+        },
+        {
+            "title": "Booqista - Consumer Mobile App",
+            "desc": "A mobile platform that connects consumers to the best service providers or merchants",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://play.google.com/store/apps/details?id=com.booqista.consumer",
+            "technologies": [
+                "Flutter", "Fluttter BLoC (store management)", "Hive (local storage)", "Figma", "Dribbble", "GraphQL", "PostgreSQL",
+                "Axios REST API", "Firebase", "JIRA", "Confluence", "Slack", "Git"
+            ],
+            "features": [
+                "Search and discover a wide range of services and offers from merchants",
+                "Book services and schedule appointments with merchants",
+                "View merchant profiles, listings, services, prices",
+                "Review and rate services",
+                "Setup and manage consumer account"
+            ],
+            "key_contributions": [
+                "Design UI/UX elements and code the interface and templates",
+                "Add logic and implement features",
+                "Implement listing details and services",
+                "Implement the booking process",
+                "Implement the appointment details",
+                "Review codes and merge requests",
+                "Test and find bugs",
+                "Fix bugs"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-mobile-app"
+        },
+        {
+            "title": "Up On Time (UOT)",
+            "desc": "A sample app built in Flutter; the goal is to manage alarms and sync calendar events and notify the user",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://nuvensis.atlassian.net/secure/RapidBoard.jspa?rapidView=22&view=planning&selectedIssue=UOT-6&issueLimit=100",
+            "technologies": [
+                "Flutter", "Fluttter BLoC (state management)", "Hive (local storage)", "Figma", "Slack", "Git"
+            ],
+            "features": [
+                "Manage alarm settings (sync window, sync time, etc.)",
+                "Sync calendar events to app",
+                "Send a push notification to the user about the next alarm"
+            ],
+            "key_contributions": [
+                "Explore the ins and outs of Flutter",
+                "Explore Flutter BLoC and Hive",
+                "Learn the basic of design, layouting, and UI principles in Flutter",
+                "Work with libraries in Flutter",
+                "Code features and logic"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/up-on-time/mobile-app"
+        },
+        {
+            "title": "GuessWhut!?",
+            "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship",
+            "owner": "Channel Info Tech Internship",
+            "company_link": "N/A",
+            "website": "N/A",
+            "technologies": [
+                "Vue.js", "Django", "CSS", "HTML", "MongoDB", "OpenTok.js", "Python Anywhere", "Agile and Scrum", "Git"
+            ],
+            "features": [
+                "Generate a game session online",
+                "Invite friends to the game session",
+                "Play with friends remotely  via video communication",
+                "Draw in the screen to help in guessing",
+                "Chat with other users thru the chat feature",
+                "Track high scores",
+                "Display in-game ads for revenue generation"
+            ],
+            "key_contributions": [
+                "Implement the main game screen",
+                "Implement the video communication feature through OpenTok",
+                "Implement the on-screen sketching feature",
+                "Tests, code reviews, and bug fixes",
+                "Deploy using Python Anywhere",
+                "Do daily stand-ups"
+            ],
+            "project_repo": "https://gitlab.com/guesswhut/guesswhut"
+        },
+        {
+            "title": "Building a Sign Language Gesture Classifier Using LSTM",
+            "desc": "The general objective of this study is to develop a machine learning model based on the Long Short-Term Memory (LSTM) model",
+            "owner": "Thesis Paper for BS in Computer Science",
+            "company_link": "https://www.upcebu.edu.ph/",
+            "website": "https://bit.ly/2Xr3kXv",
+            "technologies": [
+                "Kinect 360 (Model 1414)", "Kinect SDK 1.8", "KinectStreamSaver", "Python"," OpenCV", "Hyperas", "Apple 21.5 iMac for training"
+            ],
+            "features": [
+                "Generate a machine learning model based on the LSTM model to classify 100 sign language gesture videos which correspond to common action words used in grocery stores",
+                "Gather and extract dataset using Kinect sensor and a mobile camera",
+                "Preprocess the dataset and extract the important features (Skeleton data, Depth data, Hand Pose data)",
+                "Train the model",
+                "The goal is to focus only on the important aspects of building a machine learning model: data acquisition, preprocessing, feature extraction and training and does not provide an final app with a GUI"
+            ],
+            "key_contributions": [
+                "Generate a marchine learning model based on the LSTM to classify a gesture video with a corresonding meaning or text",
+                "Acquire dataset using Kinect sensor and a camera",
+                "Preprocess dataset (deletion or unimportant frames, cleaning of data)",
+                "Extract features (e.g. the shape of hands and body postures)",
+                "Consider the joint orientation, joint position, hand pose key points and skeleton, body pose key points and skeleton, and depth data",
+                "Use Hyperas to find the best combination of hyperparameters (batch size, number of epochs, and learning rate) for the LSTM model",
+                "Use OpenCV (computer vision library in python and supports model execution for ML)"
+            ],
+            "project_repo": "https://bit.ly/2Xr3kXv"
+        }
+    ]
+}
