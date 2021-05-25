@@ -33,8 +33,8 @@
                         v-for="skill in skillGroup.list"
                         :key="skill"
                         class="px-2 py-1 m-1 inline-block rounded text-white bg-purple-600"
-                        >
-                     {{ skill }}
+                     >
+                        {{ skill }}
                      </span>
                   </div>
                </div>
