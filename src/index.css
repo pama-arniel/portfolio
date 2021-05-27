@@ -22,3 +22,10 @@ h1 {
 .section-background {
     background: rgba(1, 2, 10, 0.3);
 }
+
+.scale-on-hover:hover
+{
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
