@@ -46,7 +46,7 @@
         },
         {
             "title": "ApplyBPO.com",
-            "desc": "An online platform which connects users and job applicants with potential employers and job postings; it also allows managing of employees thru team and departments; track team productivity through time-tracking and other HRIS features",
+            "desc": "An online platform for hiring and managing applicants. It also allows managing of employees and tracking team productivity through time-tracking and other HRIS features",
             "owner": "Channel Info Technology",
             "company_link": "https://bposeats.com/",
             "website": "https://applybpo.com",
@@ -77,7 +77,7 @@
                 "Do research-related tasks",
                 "Employ Agile methodologies and Scrum"
             ],
-            "project_repo": "N/A"
+            "project_repo": ""
         },
         {
             "title": "BPOSeats.com",
@@ -112,7 +112,7 @@
                 "Do research-related tasks",
                 "Employ Agile methodologies and Scrum"
             ],
-            "project_repo": "N/A"
+            "project_repo": ""
         },
         {
             "title": "Booqista - Consumer Mobile App",
@@ -144,60 +144,9 @@
             "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-mobile-app"
         },
         {
-            "title": "Up On Time (UOT)",
-            "desc": "A sample app built in Flutter; the goal is to manage alarms and sync calendar events and notify the user",
-            "owner": "Nuvensis.ch",
-            "company_link": "https://www.nuvensis.ch/",
-            "website": "https://nuvensis.atlassian.net/secure/RapidBoard.jspa?rapidView=22&view=planning&selectedIssue=UOT-6&issueLimit=100",
-            "technologies": [
-                "Flutter", "flutter_bloc", "hive_flutter", "Figma", "Slack", "Git"
-            ],
-            "features": [
-                "Manage alarm settings (sync window, sync time, etc.)",
-                "Sync calendar events to app",
-                "Send a push notification to the user about the next alarm"
-            ],
-            "key_contributions": [
-                "Explore the ins and outs of Flutter",
-                "Explore Flutter BLoC and Hive",
-                "Learn the basic of design, layouting, and UI principles in Flutter",
-                "Work with libraries in Flutter",
-                "Code features and logic"
-            ],
-            "project_repo": "https://gitlab.com/nuvensis/up-on-time/mobile-app"
-        },
-        {
-            "title": "GuessWhut!?",
-            "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship",
-            "owner": "Channel Info Tech Internship",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Vue.js", "Django", "CSS", "HTML", "MongoDB", "OpenTok.js", "Python Anywhere", "Agile and Scrum", "Git"
-            ],
-            "features": [
-                "Generate a game session online",
-                "Invite friends to the game session",
-                "Play with friends remotely  via video communication",
-                "Draw in the screen to help in guessing",
-                "Chat with other users thru the chat feature",
-                "Track high scores",
-                "Display in-game ads for revenue generation"
-            ],
-            "key_contributions": [
-                "Implement the main game screen",
-                "Implement the video communication feature through OpenTok",
-                "Implement the on-screen sketching feature",
-                "Tests, code reviews, and bug fixes",
-                "Deploy using Python Anywhere",
-                "Do daily stand-ups"
-            ],
-            "project_repo": "https://gitlab.com/guesswhut/guesswhut"
-        },
-        {
             "title": "Building a Sign Language Gesture Classifier Using LSTM",
             "desc": "The general objective of this study is to develop a machine learning model based on the Long Short-Term Memory (LSTM) model",
-            "owner": "Thesis Paper for BS in Computer Science",
+            "owner": "Thesis Paper for BS Computer Science",
             "company_link": "https://www.upcebu.edu.ph/",
             "website": "https://bit.ly/2Xr3kXv",
             "technologies": [
@@ -222,121 +171,11 @@
             "project_repo": "https://bit.ly/2Xr3kXv"
         },
         {
-            "title": "Django Poll App",
-            "desc": "A basic poll application built in Django (can view polls and vote in them; can add, change, and delete polls)",
-            "owner": "Sample Project",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Django", "CSS", "HTML", "Javascript"
-            ],
-            "features": [
-                "User can view polls and vote in them",
-                "A user admin can add, change, and delete polls"
-            ],
-            "key_contributions": [
-                "Explore the ins and outs of Django",
-                "Integrate Django with CSS, HTML, and Javascript"
-            ],
-            "project_repo": "https://gitlab.com/arnielpama/djangopollapp2"
-        },
-        {
-            "title": "Simulation of Multiprogramming",
-            "desc": "-",
-            "owner": "CMSC 125 lab 1",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkdhRjZ0emFQcUlqTnZBaUtNYTZDcE9WQVFKVTdzdTRWR1EzbkNQQWhqTVE?usp=sharing"
-        },
-        {
-            "title": "Simulation of Memory Management and Allocation Strategies",
-            "desc": "-",
-            "owner": "CMSC 125 lab 3",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "jQuery", "HTML", "CSS", "Vue.js"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flpoRGxTZGZwZnFfam9yd3h5X01rQ25wU1E1Smd6OFdyRTRZaWNBRDZjN0k?usp=sharing"
-        },
-        {
-            "title": "Simulation of Typing Test",
-            "desc": "-",
-            "owner": "Internship Practice Exercise",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Vue.js", "vue-cli", "HTML", "CSS", "Node.js"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://gitlab.com/arnielpama/bposeats-typing-test"
-        },
-        {
-            "title": "Generate Fourier series graph",
-            "desc": "-",
-            "owner": "CMSC 137 lab 1 - fourier",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Python", "numpy", "matplotlib"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fmpuUU9VVE94Yl93SC1tdmNJMmplOHFuWkVLUHNRblFzZGtFZkhLQ1RKWEk?usp=sharing"
-        },
-        {
-            "title": "Enter a binary number and generate its square wave graphs",
-            "desc": "-",
-            "owner": "CMSC 137 lab 2 - encoding",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkM1elkzamt3NmFob3BzWXo1aXdzajNzVzd6TGFvMzJJUUg1QVlHNnV3eE0?usp=sharing"
-        },
-        {
-            "title": "Enter a binary number to generate its digital-to-analog modulations",
-            "desc": "-",
-            "owner": "CMSC 137 125 lab 4 - modulation",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Python", "scipy", "Vue.js", "jQuery", "HTML", "CSS"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flZkMHVPTm00Q2hBSkF1czRiRnBzOFlONXRlTjNuLTBOUTEzXzE2SkJuWFk?usp=sharing"
-        },
-        {
-            "title": "Enter a binary number to generate its hamming code",
-            "desc": "-",
-            "owner": "CMSC lab 5 - hamming code",
-            "company_link": "N/A",
-            "website": "N/A",
-            "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnBLZlBmOVFOOHk0VVpTNVpQT3dobWJVcFRGYlNvbURVT3lCY1NSZlRMdzg?usp=sharing"
-        },
-        {
-            "title": "BigFoot Island - a children's made game in Javascript",
+            "title": "BigFoot Island - A Children's Game in Javascript",
             "desc": "People in BigFoot island are cursed with big feet as a punishment for making too much carbon footprint. Your goal is to maintain the size of your feet by reducing your carbon footprint. The game has 4 levels.",
             "owner": "Thesis Paper for a friend in VSU, the goal is to teach kids the importance of the planet by reducing their carbon footprints. The goal is to find out if games and game design can have an effect in a child's awareness of climate issues.",
-            "company_link": "N/A",
-            "website": "N/A",
+            "company_link": "",
+            "website": "",
             "technologies": [
                 "Vue.js", "jQuery", "HTML", "CSS"
             ],
@@ -345,11 +184,11 @@
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnB5RGhobXRNeEJrQm14TW9YTXBJdDZXZTNLVnRhbkdYaWZOcHFsT3Zva1k?usp=sharing"
         },
         {
-            "title": "Snate the Bookish Snake",
+            "title": "Snate the Bookish Snake - Assembly x86",
             "desc": "Snate is a unique snake that grows by eating the letters of the alphabet! To proceed to the next level, you  must help Snate in eating the right letters to complete the current level's goal: a word, a phrase, or sentence.",
             "owner": "In partial fulfillment of CMSC 131 (Introduction to Computer Organization and Machine-Level Programming)",
-            "company_link": "N/A",
-            "website": "N/A",
+            "company_link": "",
+            "website": "",
             "technologies": [
                 "Assembly x86", "DOSBox"
             ],
@@ -374,11 +213,172 @@
             "project_repo": "https://github.com/pama-arniel/SNATE/blob/master/SNATE.asm"
         },
         {
+            "title": "GuessWhut!? (Play Charades)",
+            "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship",
+            "owner": "Channel Info Tech Internship",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Vue.js", "Django", "CSS", "HTML", "MongoDB", "OpenTok.js", "Python Anywhere", "Agile and Scrum", "Git"
+            ],
+            "features": [
+                "Generate a game session online",
+                "Invite friends to the game session",
+                "Play with friends remotely  via video communication",
+                "Draw in the screen to help in guessing",
+                "Chat with other users thru the chat feature",
+                "Track high scores",
+                "Display in-game ads for revenue generation"
+            ],
+            "key_contributions": [
+                "Implement the main game screen",
+                "Implement the video communication feature through OpenTok",
+                "Implement the on-screen sketching feature",
+                "Tests, code reviews, and bug fixes",
+                "Deploy using Python Anywhere",
+                "Do daily stand-ups"
+            ],
+            "project_repo": "https://gitlab.com/guesswhut/guesswhut"
+        },
+        {
+            "title": "Up On Time (UOT)",
+            "desc": "A mini app built in Flutter. The goal of this app is to manage alarms, sync calendar events, and notify the user before each event",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://nuvensis.atlassian.net/secure/RapidBoard.jspa?rapidView=22&view=planning&selectedIssue=UOT-6&issueLimit=100",
+            "technologies": [
+                "Flutter", "flutter_bloc", "hive_flutter", "Figma", "Slack", "Git"
+            ],
+            "features": [
+                "Manage alarm settings (sync window, sync time, etc.)",
+                "Sync calendar events to app",
+                "Send a push notification to the user about the next alarm"
+            ],
+            "key_contributions": [
+                "Explore the ins and outs of Flutter",
+                "Explore Flutter BLoC and Hive",
+                "Learn the basic of design, layouting, and UI principles in Flutter",
+                "Work with libraries in Flutter",
+                "Code features and logic"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/up-on-time/mobile-app"
+        },
+        {
+            "title": "Simulation of Multiprogramming",
+            "desc": "-",
+            "owner": "CMSC 125 lab 1",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Vue.js", "jQuery", "HTML", "CSS"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkdhRjZ0emFQcUlqTnZBaUtNYTZDcE9WQVFKVTdzdTRWR1EzbkNQQWhqTVE?usp=sharing"
+        },
+        {
+            "title": "Simulation of Memory Management and Allocation Strategies",
+            "desc": "-",
+            "owner": "CMSC 125 lab 3",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "jQuery", "HTML", "CSS", "Vue.js"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flpoRGxTZGZwZnFfam9yd3h5X01rQ25wU1E1Smd6OFdyRTRZaWNBRDZjN0k?usp=sharing"
+        },
+        {
+            "title": "Simulation of Typing Test",
+            "desc": "-",
+            "owner": "Internship Practice Exercise",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Vue.js", "vue-cli", "HTML", "CSS", "Node.js"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://gitlab.com/arnielpama/bposeats-typing-test"
+        },
+        {
+            "title": "Poll App in Django",
+            "desc": "A basic poll app built in Django. This app can view polls and vote in them. This can also add, change, and delete polls",
+            "owner": "Sample Project",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Django", "CSS", "HTML", "Javascript"
+            ],
+            "features": [
+                "User can view polls and vote in them",
+                "A user admin can add, change, and delete polls"
+            ],
+            "key_contributions": [
+                "Explore the ins and outs of Django",
+                "Integrate Django with CSS, HTML, and Javascript"
+            ],
+            "project_repo": "https://gitlab.com/arnielpama/djangopollapp2"
+        },
+        {
+            "title": "Generate Fourier series graph",
+            "desc": "-",
+            "owner": "CMSC 137 lab 1 - fourier",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Python", "numpy", "matplotlib"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fmpuUU9VVE94Yl93SC1tdmNJMmplOHFuWkVLUHNRblFzZGtFZkhLQ1RKWEk?usp=sharing"
+        },
+        {
+            "title": "Enter a binary number and generate its square wave graphs",
+            "desc": "-",
+            "owner": "CMSC 137 lab 2 - encoding",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Vue.js", "jQuery", "HTML", "CSS"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkM1elkzamt3NmFob3BzWXo1aXdzajNzVzd6TGFvMzJJUUg1QVlHNnV3eE0?usp=sharing"
+        },
+        {
+            "title": "Enter a binary number to generate its digital-to-analog modulations",
+            "desc": "-",
+            "owner": "CMSC 137 125 lab 4 - modulation",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Python", "scipy", "Vue.js", "jQuery", "HTML", "CSS"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flZkMHVPTm00Q2hBSkF1czRiRnBzOFlONXRlTjNuLTBOUTEzXzE2SkJuWFk?usp=sharing"
+        },
+        {
+            "title": "Enter a binary number to generate its hamming code",
+            "desc": "-",
+            "owner": "CMSC lab 5 - hamming code",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Vue.js", "jQuery", "HTML", "CSS"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnBLZlBmOVFOOHk0VVpTNVpQT3dobWJVcFRGYlNvbURVT3lCY1NSZlRMdzg?usp=sharing"
+        },
+        {
             "title": "Mini Statistics Package",
-            "desc": "Allow real time computations on data sampling, data representation, and measures of central tendency; Write a project which combines the different concepts in basic statistics",
+            "desc": "A mini app that can do real time computations on data sampling, data representation, and measures of central tendency",
             "owner": "CMSC (Statistics for Computer Science)",
-            "company_link": "N/A",
-            "website": "N/A",
+            "company_link": "",
+            "website": "",
             "technologies": [
                 "Java", "Java Swing UI"
             ],
