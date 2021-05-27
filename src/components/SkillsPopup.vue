@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: "Popup",
+  name: "SkillsPopup",
   props: {
     showModal: {
       type: Boolean,

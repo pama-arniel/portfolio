@@ -1,6 +1,6 @@
 <template>
 <div>
-   <Popup :showModal="showModal" @close-modal="showModal=false"/>
+   <SkillsPopup :showModal="showModal" @close-modal="showModal=false"/>
 
    <section id="about-section" class="body-font overflow-hidden">
       <div class="font-inter container px-5 py-10 mx-auto">
@@ -38,14 +38,14 @@
 </template>
 
 <script>
-import Popup from './Popup.vue'
+import SkillsPopup from './SkillsPopup.vue'
 import Experience from './Experience.vue'
 import Button from './Button.vue'
 
 export default {
   name: 'About',
   components: {
-      Popup,
+      SkillsPopup,
       Experience,
       Button
   },
