@@ -26,7 +26,7 @@
         },
         {
             "title": "Booqista - Merchant Web App",
-            "desc": "A business platform that allows businesses and merchants to keep their services up and running in the CWA marketplace; it is packed with tools that they can use to manage their business",
+            "desc": "An online platform that allows merchants to post, manage, and sell their services to Booqista consumers",
             "owner": "Nuvensis.ch",
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://seller.booqista.com/",
@@ -45,7 +45,7 @@
             "project_repo": "https://gitlab.com/nuvensis/booqista/merchant-web-app"
         },
         {
-            "title": "ApplyBPO",
+            "title": "ApplyBPO.com",
             "desc": "An online platform which connects users and job applicants with potential employers and job postings; it also allows managing of employees thru team and departments; track team productivity through time-tracking and other HRIS features",
             "owner": "Channel Info Technology",
             "company_link": "https://bposeats.com/",
@@ -80,10 +80,10 @@
             "project_repo": "N/A"
         },
         {
-            "title": "BPOSeats",
+            "title": "BPOSeats.com",
             "desc": "An online platform which allows businesses to manage their teams and to set up offices and infrastructures (even from other countries)",
             "owner": "Channel Info Technology",
-            "company_link": "N/A",
+            "company_link": "https://bposeats.com/",
             "website": "https://bposeats.com/",
             "technologies": [
                 "Vue.js", "Django", "Python", "REST API", "jQuery", "HTML", "CSS", "SQL", "PostgreSQL", "Confluence", "JIRA", "Git", "Scrum", "Agile", "AWS"
@@ -121,7 +121,7 @@
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://play.google.com/store/apps/details?id=com.booqista.consumer",
             "technologies": [
-                "Flutter", "Fluttter BLoC (store management)", "Hive (local storage)", "Figma", "Dribbble", "GraphQL", "PostgreSQL",
+                "Flutter", "flutter_bloc", "hive_flutter", "Figma", "Dribbble", "GraphQL", "PostgreSQL",
                 "Axios REST API", "Firebase", "JIRA", "Confluence", "Slack", "Git"
             ],
             "features": [
@@ -150,7 +150,7 @@
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://nuvensis.atlassian.net/secure/RapidBoard.jspa?rapidView=22&view=planning&selectedIssue=UOT-6&issueLimit=100",
             "technologies": [
-                "Flutter", "Fluttter BLoC (state management)", "Hive (local storage)", "Figma", "Slack", "Git"
+                "Flutter", "flutter_bloc", "hive_flutter", "Figma", "Slack", "Git"
             ],
             "features": [
                 "Manage alarm settings (sync window, sync time, etc.)",
@@ -376,7 +376,7 @@
         {
             "title": "Mini Statistics Package",
             "desc": "Allow real time computations on data sampling, data representation, and measures of central tendency; Write a project which combines the different concepts in basic statistics",
-            "owner": "CMSC 105",
+            "owner": "CMSC (Statistics for Computer Science)",
             "company_link": "N/A",
             "website": "N/A",
             "technologies": [

@@ -4,10 +4,10 @@
     <div class="slideshow-container">
       <div v-if="refString == 'projects'">
         <div
-          v-for="i in currNumOfGroups"
-          :key="'projects-' + i"
+          v-for="i in numOfProjectsGroups"
+          :key="'project-group-' + i"
           :class="classSlidesValue">
-            <ProjectsCards/>
+            <ProjectsCards :projects="projectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"/>
         </div>
       </div>
       <div v-if="refString == 'articles'">
@@ -41,6 +41,7 @@
 import ProjectsCards from './ProjectsCards.vue'
 import ArticlesCards from './ArticlesCards.vue'
 import articlesJSON from '../assets/articles/articles_list.json'
+import projectsJSON from '../assets/projects/projects_list.json'
 
 export default {
   name: 'Carousel',
@@ -59,7 +60,9 @@ export default {
     return {
       slideIndex : 1,
       articlesList: articlesJSON.list,
+      projectsList: projectsJSON.list,
       ARTICLES_PER_GROUP: 4,
+      PROJECTS_PER_GROUP: 4
     };
   },
   computed: {
@@ -76,11 +79,11 @@ export default {
 
       return this.numOfProjectsGroups;
     },
-    numOfProjectsGroups() {
-      return 3;
-    },
     numOfArticlesGroups() {
       return Math.ceil(this.articlesList.length / this.ARTICLES_PER_GROUP);
+    },
+    numOfProjectsGroups() {
+      return Math.ceil(this.projectsList.length / this.PROJECTS_PER_GROUP);
     }
   },
   mounted() {
