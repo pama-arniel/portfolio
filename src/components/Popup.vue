@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: "large-modal",
+  name: "Popup",
   props: {
     showModal: {
       type: Boolean,
