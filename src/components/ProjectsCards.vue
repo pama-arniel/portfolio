@@ -11,12 +11,6 @@
           <img class="h-50 rounded-t-xl w-full object-cover object-center mb-6" :src="getPic('inv_uplogo.jpg')" alt="content">
 
           <div class="mx-6">
-            <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-              <a v-if="project.company_link != 'N/A'" :href="project.company_link" title="See company" target="_blank">
-                {{ project.owner }}
-              </a>
-              <span v-else>{{ project.owner }}</span>
-            </h3> -->
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">{{ project.title }}</h2>
             <p class="leading-relaxed text-base">{{ project.desc }}</p>
           </div>
@@ -31,6 +25,16 @@
                 :key="'project-' + index + '-tech-' + tIndex"
                 class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl">
                   #{{ tech }}
+              </span>
+            </div>
+          </div>
+
+          <div v-if="getProjectLink(project)" class="mx-6 mt-6">
+            <div class="flex flex-wrap justify-starts items-center">
+              <span class="text-xs text-indigo-500 inline-block truncate w-4/5 ml-1">
+                  <a :href="getProjectLink(project)" title="Open link to project" target="_blank">
+                    🌐 {{ getProjectLink(project) }}
+                  </a>
               </span>
             </div>
           </div>
@@ -54,6 +58,10 @@ export default {
     getPic(fileName) {
       let images = require.context('../assets/projects/', false, /\.(png|jpe?g|svg)$/);
       return images('./' + fileName);
+    },
+
+    getProjectLink(project){
+      return project.website ? project.website : project.project_repo;
     }
   }
 }
