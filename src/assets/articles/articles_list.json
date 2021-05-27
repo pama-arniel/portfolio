@@ -1,9 +1,9 @@
 {
     "list": [
         {
-            "title": "The Lehman Brothers’ Case",
-            "desc": "Discusses the importance of using automated processes and establishing coding standards to maintain the future scalability and maintainability of large projects with big teams",
-            "href": "https://bit.ly/3hIykPM"
+            "title": "Building a Sign Language Gesture Classifier Using LSTM",
+            "desc": "Generates a machine learning model based on the LSTM model to classify 100 sign language gesture videos which correspond to common action words used in grocery stores (Thesis Paper for BS Computer Science)",
+            "href": "https://docs.google.com/document/d/1WFAUaHdvpurJ2U_ii9Nts_M51nsOWUQ9gkype1-2NYU/edit?usp=sharing"
         },
         {
             "title": "Initiating Projects or Businesses (Integration Management)",
@@ -44,6 +44,11 @@
             "title": "Fault Tree Analysis (FTA) for Hazard Prevention",
             "desc": "Discusses the application of FTA for an Airport Ground Control System (AGCS). It identifies the undesired top events or accidents which could happen in the system, estimate their likelihood of happening, and come up with preventive measures",
             "href": "https://bit.ly/3yxtSJr"
+        },
+        {
+            "title": "The Lehman Brothers’ Case",
+            "desc": "Discusses the importance of using automated processes and establishing coding standards to maintain the future scalability and maintainability of large projects with big teams",
+            "href": "https://bit.ly/3hIykPM"
         },
         {
             "title": "Comparing Programming Languages",
