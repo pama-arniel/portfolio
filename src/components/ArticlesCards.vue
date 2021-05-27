@@ -4,7 +4,7 @@
     <div class="flex flex-wrap">
       <div
         v-for="(article, index) in articles"
-        :key="'article-card' + index"
+        :key="'article-card-' + index"
         class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 section-background"
       >
         <h2 class="text-lg sm:text-xl font-medium title-font mb-2">{{ article.title }}</h2>
