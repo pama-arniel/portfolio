@@ -7,7 +7,7 @@
         :key="'project-card-' + index"
         class="xl:w-1/4 md:w-1/2 p-4"
       >
-        <div class="bg-white rounded-xl pb-6">
+        <div class="bg-white rounded-xl pb-6 project-card">
           <img class="h-50 rounded-t-xl w-full object-cover object-center mb-6" :src="getPic('inv_uplogo.jpg')" alt="content">
 
           <div class="mx-6">
@@ -58,3 +58,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.project-card:hover
+{
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+</style>
