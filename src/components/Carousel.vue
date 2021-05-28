@@ -10,12 +10,13 @@
             class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent text-black"
           >
           <div class="select text-black font-medium">
-            <select x-model="image_type" class="text-sm outline-none focus:outline-none bg-transparent">
-              <option value="all" selected>All</option>
-              <option value="photo">Photo</option>
-              <option value="illustration">Illustration</option>
-              <option value="vector">Vector</option>
-              </select>
+            <select v-model="chosenTag" x-model="image_type" class="text-sm outline-none focus:outline-none bg-transparent">
+              <option
+                v-for="(tag, i) in currTagsList"
+                :key="refString + 'tag-' + i"
+                :value="tag" selected
+              >{{ tag }}</option>
+            </select>
           </div>
         </div>
     </div>
@@ -79,25 +80,42 @@ export default {
   data() {
     return {
       slideIndex : 1,
+      searchKey: "",
+      chosenTag: "",
+
       articlesList: articlesJSON.list,
       projectsList: projectsJSON.list,
+
       ARTICLES_PER_GROUP: 4,
       PROJECTS_PER_GROUP: 4,
-      searchKey: ""
+
+      tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
+      tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Programming']
     };
   },
   computed: {
+    filteredArticlesList() {
+      return [];
+    },
+    filteredProjectsList() {
+      return [];
+    },
     classSlidesValue() {
       return `${this.refString}-mySlides mySlides fade`;
     },
     classDotValue() {
       return `${this.refString}-dot dot`;
     },
+    currTagsList() {
+      if(this.refString == 'articles') {
+        return this.tagsForArticles;
+      }
+      return this.tagsForProjects;
+    },
     currNumOfGroups() {
       if(this.refString == 'articles') {
         return this.numOfArticlesGroups;
       }
-
       return this.numOfProjectsGroups;
     },
     numOfArticlesGroups() {
