@@ -1,5 +1,6 @@
 <template>
 <div>
+  <!-- search bar component -->
   <div class="flex items-center justify-center pb-6">
     <div class="box-wrapper text-base">
         <div class="rounded-lg flex items-center w-full p-3 shadow-sm bg-white bg-opacity-80 border border-gray-300">
@@ -8,7 +9,7 @@
             v-model.trim="searchKey" type="search" placeholder="search for terms" x-model="q"
             class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent text-black"
           >
-          <div class="select text-black">
+          <div class="select text-black font-medium">
             <select x-model="image_type" class="text-sm outline-none focus:outline-none bg-transparent">
               <option value="all" selected>All</option>
               <option value="photo">Photo</option>
