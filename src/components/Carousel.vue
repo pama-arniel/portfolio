@@ -1,39 +1,68 @@
 <template>
 <div>
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+   <div class="flex flex-wrap justify-center items-center mb-5">
+      <!-- the search bar -->
+      <div class="relative">
+         <input
+            v-model.trim="searchKey" type="text" class="h-12 w-70 sm:w-1/2 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none text-base text-black"
+            placeholder="Search anything..."
+            >
+         <div class="absolute top-4 right-3">
+            <svg version="1.1" class="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+               <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+                  c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+                  C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+                  S32.459,40,21.983,40z"/>
+            </svg>
+         </div>
+      </div>
+
+      <!-- tag pills -->
+      <div class="align-bottom ml-2">
+          <span
+            v-for="i in 3"
+            :key="i"
+            class="px-4 py-2 m-1 text-base rounded-full text-indigo-500 border border-indigo-500 undefined "
+          >
+              Hello
+          </span>
+      </div>
+   </div>
+
+   <!-- Slideshow container -->
+   <div class="slideshow-container">
       <div v-if="refString == 'projects'">
-        <div
-          v-for="i in numOfProjectsGroups"
-          :key="'project-group-' + i"
-          :class="classSlidesValue">
+         <div
+            v-for="i in numOfProjectsGroups"
+            :key="'project-group-' + i"
+            :class="classSlidesValue">
             <ProjectsCards :projects="projectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"/>
-        </div>
+         </div>
       </div>
       <div v-if="refString == 'articles'">
-        <div
-          v-for="i in numOfArticlesGroups"
-          :key="'article-group-' + i"
-          :class="classSlidesValue">
+         <div
+            v-for="i in numOfArticlesGroups"
+            :key="'article-group-' + i"
+            :class="classSlidesValue">
             <ArticlesCards :articles="articlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"/>
-        </div>
+         </div>
       </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+      <a class="next" @click="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-        <a class="next" @click="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span
-          v-for="i in currNumOfGroups"
-          :key="i"
-          :class="classDotValue"
-          @click="currentSlide(i)"
-        ></span>
-    </div>
+   <!-- The dots/circles -->
+   <div style="text-align:center">
+      <span
+         v-for="i in currNumOfGroups"
+         :key="i"
+         :class="classDotValue"
+         @click="currentSlide(i)"
+         ></span>
+   </div>
 </div>
 </template>
 
@@ -62,7 +91,8 @@ export default {
       articlesList: articlesJSON.list,
       projectsList: projectsJSON.list,
       ARTICLES_PER_GROUP: 4,
-      PROJECTS_PER_GROUP: 4
+      PROJECTS_PER_GROUP: 4,
+      searchKey: ""
     };
   },
   computed: {
