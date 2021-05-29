@@ -6,7 +6,7 @@
         <div class="rounded-lg flex items-center w-full p-3 shadow-sm bg-black bg-opacity-80 border border-gray-300">
           <button class="outline-none focus:outline-none"><svg class="w-5 text-gray-600 h-5 cursor-pointer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
           <input
-            v-model.trim="searchKey" type="search" placeholder="search for terms" x-model="q"
+            @input="debounceSearch" type="search" placeholder="search for terms" x-model="q"
             class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent"
           >
           <div class="select font-medium">
@@ -86,62 +86,86 @@ export default {
       searchKey: "",
       chosenTag: "All",
 
-      articlesList: articlesJSON.list,
-      projectsList: projectsJSON.list,
-
       ARTICLES_PER_GROUP: 4,
       PROJECTS_PER_GROUP: 4,
 
       tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
-      tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Programming']
+      tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Programming'],
+
+      filteredArticlesList: articlesJSON.list,
+      filteredProjectsList: projectsJSON.list,
     };
   },
   watch: {
+    chosenTag(newChosenTag) {
+      if(this.refString == 'articles') {
+        // make opposite filtered array empty (save memory size)
+        this.filteredProjectsList = [];
+
+        // filter articles by tag
+        this.filteredArticlesList = this.filterListByTag(articlesJSON.list, newChosenTag);
+
+      } else if(this.refString == 'projects') {
+        // make opposite filtered array empty (save memory size)
+        this.filteredArticlesList = [];
+
+        // filter projects by tag
+        this.filteredProjectsList = this.filterListByTag(projectsJSON.list, newChosenTag);
+      }
+    },
+
+    searchKey(newSearchKey) {
+      if(this.refString == 'articles') {
+        // make opposite filtered array empty (save memory size)
+        this.filteredProjectsList = [];
+
+        // filter articles by tag
+        this.filteredArticlesList = this.filterListBySearchKey(articlesJSON.list, newSearchKey);
+
+      } else if(this.refString == 'projects') {
+        // make opposite filtered array empty (save memory size)
+        this.filteredArticlesList = [];
+
+        // filter projects by tag
+        this.filteredProjectsList = this.filterListBySearchKey(projectsJSON.list, newSearchKey);
+      }
+    },
+
     filteredArticlesList() {
       this.showSlideDefaults();
     },
+
     filteredProjectsList() {
       this.showSlideDefaults();
     },
   },
   computed: {
-    filteredArticlesList() {
-      if(this.refString == 'projects') {
-        return []; // return empty if carousel is for projects
-      } else if(this.chosenTag == 'All') {
-        return this.articlesList;
-      }
-      return [];
-    },
-    filteredProjectsList() {
-      if(this.refString == 'articles') {
-        return []; // return empty if carousel is for articles
-      } else if(this.chosenTag == 'All') {
-        return this.projectsList;
-      }
-      return [];
-    },
     classSlidesValue() {
       return `${this.refString}-mySlides mySlides fade`;
     },
+
     classDotValue() {
       return `${this.refString}-dot dot`;
     },
+
     currTagsList() {
       if(this.refString == 'articles') {
         return this.tagsForArticles;
       }
       return this.tagsForProjects;
     },
+
     currNumOfGroups() {
       if(this.refString == 'articles') {
         return this.numOfArticlesGroups;
       }
       return this.numOfProjectsGroups;
     },
+
     numOfArticlesGroups() {
       return Math.ceil(this.filteredArticlesList.length / this.ARTICLES_PER_GROUP);
     },
+
     numOfProjectsGroups() {
       return Math.ceil(this.filteredProjectsList.length / this.PROJECTS_PER_GROUP);
     }
@@ -150,6 +174,74 @@ export default {
       this.showSlides(this.slideIndex);
   },
   methods: {
+    debounceSearch(event) {
+      clearTimeout(this.debounce);
+      this.debounce = setTimeout(() => {
+        this.searchKey = event.target.value
+      }, 600);
+    },
+
+    filterListByTag(origList, chosenTag){
+      if(chosenTag == 'All') {
+        return origList;
+      } else {
+        return origList.filter((item) => {
+          let regex = new RegExp(item?.tags?.join( "|" ), "i");
+          return regex.test(chosenTag);
+        });
+      }
+    },
+
+    // determine if an item's key values contain the search term
+    filterListBySearchKey(origList, searchKey){
+      if(!searchKey) return origList;
+
+      return origList.filter((item) => {
+        return this.isItemFoundInKeyValuePairs(item, searchKey);
+      });
+    },
+
+    isItemFoundInKeyValuePairs(item, searchKey){
+      let arrayTypeKeys = ['technologies', 'features', 'key_contributions'];
+
+      // iterate the key-value pairs of the item and
+      // determine if the search term is found in one of them
+      for (const [currKey, currValue] of Object.entries(item)) {
+        console.log('currkey: ', currKey);
+        console.log('currValue: ', currValue);
+        console.log('------------------');
+        // skip tags in search
+        if(currKey == 'tags') continue;
+
+        // for array-type key values
+        if(arrayTypeKeys.includes(currKey)){
+          if(currValue.length > 0){
+            let regex = new RegExp(currValue.join("|"), "i");
+
+            // if found in array, break loop and return true
+            if(regex.test(searchKey)){
+              return true;
+            }
+          }
+        }
+
+        // else, for string-type key values
+        else {
+          if(currValue){
+            let searchRegex = new RegExp(searchKey, "gi");
+
+            // if found in string, break loop and add item to filtered objects
+            if(currValue.match(searchRegex)){
+              return true;
+            }
+          }
+        }
+      }
+
+      // return false if not found in any of the key values
+      return false;
+    },
+
     showSlideDefaults() {
       this.$nextTick(() => {
         this.slideIndex = 1;
