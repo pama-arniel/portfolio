@@ -2,15 +2,15 @@
 <div>
   <!-- search bar component -->
   <div class="flex items-center justify-center pb-6">
-    <div class="box-wrapper text-base">
-        <div class="rounded-lg flex items-center w-full p-3 shadow-sm bg-white bg-opacity-80 border border-gray-300">
+    <div class="box-wrapper text-base text-white">
+        <div class="rounded-lg flex items-center w-full p-3 shadow-sm bg-black bg-opacity-80 border border-gray-300">
           <button class="outline-none focus:outline-none"><svg class="w-5 text-gray-600 h-5 cursor-pointer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
           <input
             v-model.trim="searchKey" type="search" placeholder="search for terms" x-model="q"
-            class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent text-black"
+            class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent"
           >
-          <div class="select text-black font-medium">
-            <select v-model="chosenTag" x-model="image_type" class="text-sm outline-none focus:outline-none bg-transparent">
+          <div class="select font-medium">
+            <select v-model="chosenTag" x-model="image_type" class="text-sm outline-none focus:outline-none bg-black">
               <option
                 v-for="(tag, i) in currTagsList"
                 :key="refString + 'tag-' + i"
@@ -23,13 +23,13 @@
   </div>
 
    <!-- Slideshow container -->
-   <div class="slideshow-container">
+   <div v-if="currNumOfGroups > 0" class="slideshow-container">
       <div v-if="refString == 'projects'">
          <div
             v-for="i in numOfProjectsGroups"
             :key="'project-group-' + i"
             :class="classSlidesValue">
-            <ProjectsCards :projects="projectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"/>
+            <ProjectsCards :projects="filteredProjectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"/>
          </div>
       </div>
       <div v-if="refString == 'articles'">
@@ -37,12 +37,12 @@
             v-for="i in numOfArticlesGroups"
             :key="'article-group-' + i"
             :class="classSlidesValue">
-            <ArticlesCards :articles="articlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"/>
+            <ArticlesCards :articles="filteredArticlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"/>
          </div>
       </div>
       <!-- Next and previous buttons -->
-      <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-      <a class="next" @click="plusSlides(1)">&#10095;</a>
+      <a v-if="currNumOfGroups > 1" class="prev" @click="plusSlides(-1)">&#10094;</a>
+      <a v-if="currNumOfGroups > 1" class="next" @click="plusSlides(1)">&#10095;</a>
    </div>
    <br>
 
@@ -81,7 +81,7 @@ export default {
     return {
       slideIndex : 1,
       searchKey: "",
-      chosenTag: "",
+      chosenTag: "All",
 
       articlesList: articlesJSON.list,
       projectsList: projectsJSON.list,
@@ -93,11 +93,29 @@ export default {
       tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Programming']
     };
   },
+  watch: {
+    filteredArticlesList() {
+      this.showSlideDefaults();
+    },
+    filteredProjectsList() {
+      this.showSlideDefaults();
+    },
+  },
   computed: {
     filteredArticlesList() {
+      if(this.refString == 'projects') {
+        return []; // return empty if carousel is for projects
+      } else if(this.chosenTag == 'All') {
+        return this.articlesList;
+      }
       return [];
     },
     filteredProjectsList() {
+      if(this.refString == 'articles') {
+        return []; // return empty if carousel is for articles
+      } else if(this.chosenTag == 'All') {
+        return this.projectsList;
+      }
       return [];
     },
     classSlidesValue() {
@@ -119,16 +137,23 @@ export default {
       return this.numOfProjectsGroups;
     },
     numOfArticlesGroups() {
-      return Math.ceil(this.articlesList.length / this.ARTICLES_PER_GROUP);
+      return Math.ceil(this.filteredArticlesList.length / this.ARTICLES_PER_GROUP);
     },
     numOfProjectsGroups() {
-      return Math.ceil(this.projectsList.length / this.PROJECTS_PER_GROUP);
+      return Math.ceil(this.filteredProjectsList.length / this.PROJECTS_PER_GROUP);
     }
   },
   mounted() {
       this.showSlides(this.slideIndex);
   },
   methods: {
+    showSlideDefaults() {
+      this.$nextTick(() => {
+        this.slideIndex = 1;
+        this.showSlides(this.slideIndex);
+      });
+    },
+
     // Next/previous controls
     plusSlides(n) {
         this.slideIndex += n;
@@ -142,28 +167,36 @@ export default {
     },
 
     showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName(this.classSlidesValue);
-        let dots = document.getElementsByClassName(this.classDotValue);
-        
-        if (n > slides.length) {
-            this.slideIndex = 1;
-        }
+      // don't show slides if no results
+      if(this.currNumOfGroups <= 0) return;
 
-        if (n < 1) {
-            this.slideIndex = slides.length;
-        }
-        
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        
+      let i;
+      let slides = document.getElementsByClassName(this.classSlidesValue);
+      let dots = document.getElementsByClassName(this.classDotValue);
+
+      if (n > slides.length) {
+          this.slideIndex = 1;
+      }
+
+      if (n < 1) {
+          this.slideIndex = slides.length;
+      }
+
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      if(slides[this.slideIndex-1]){
         slides[this.slideIndex-1].style.display = "block";
+      }
+
+      if(dots[this.slideIndex-1]){
         dots[this.slideIndex-1].className += " active";
+      }
     }
   }
 }
