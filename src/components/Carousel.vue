@@ -232,7 +232,7 @@ export default {
         if(arrayTypeKeys.includes(currKey)){
           if(currValue.length > 0){
             let completeValue = currValue.join(",");
-            let keyRegex = new RegExp(currKey, "gi");
+            let keyRegex = new RegExp(searchKey, "gi");
 
             // if found in array, break loop and return true
             if(completeValue.match(keyRegex)){
