@@ -3,97 +3,116 @@
         {
             "title": "Building a Sign Language Gesture Classifier Using LSTM",
             "desc": "Generates a machine learning model based on the LSTM model to classify 100 sign language gesture videos which correspond to common action words used in grocery stores (Thesis Paper for BS Computer Science)",
-            "href": "https://docs.google.com/document/d/1WFAUaHdvpurJ2U_ii9Nts_M51nsOWUQ9gkype1-2NYU/edit?usp=sharing"
+            "href": "https://docs.google.com/document/d/1WFAUaHdvpurJ2U_ii9Nts_M51nsOWUQ9gkype1-2NYU/edit?usp=sharing",
+            "tags": ["All", "Machine Learning", "Special Problems"]
         },
         {
             "title": "Initiating Projects or Businesses (Integration Management)",
             "desc": "Layouts plans for the HRIS, creates job descriptions for people needed in the project, establishes a project charter, and does financial analysis (payback and ROI)",
-            "href": "https://bit.ly/2T4pp0C"
+            "href": "https://bit.ly/2T4pp0C",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Basics of Project Management (PM)",
             "desc": "Analyzes three important PM case studies and discusses the role that project management plays in the success or failure of each project; provides solutions or suggestions to improve the current state of the project",
-            "href": "https://bit.ly/3ytrnIp"
+            "href": "https://bit.ly/3ytrnIp",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Organizational Structures in Business",
             "desc": "Analyzes the strengths and weaknesses of First National Bank (FNB) and discusses the impact of their organizational structure, team composition, and project methodologies on their productivity",
-            "href": "https://bit.ly/3uedFFR"
+            "href": "https://bit.ly/3uedFFR",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Relay-Race Approach vs Cross-Functional Teams",
             "desc": "Discusses the pros and cons of the relay-race approach and the cross-functional team approach towards the development and productivity of projects",
-            "href": "https://bit.ly/3bO9YA9"
+            "href": "https://bit.ly/3bO9YA9",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "The Neverending Scope Creep",
             "desc": "Analyzes the current project status of a project nearing bankruptcy; discusses the pitfalls which come from scope creep and the lack of sound project management practices; provides possible actions steps to the project manager",
-            "href": "https://bit.ly/3fHlcHU"
+            "href": "https://bit.ly/3fHlcHU",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Work Breakdown Structure (WBS)",
             "desc": "Discusses the process of making a Work Breakdown Structure (WBS) for a project and how helpful it is in managing expectations and product requirements",
-            "href": "https://bit.ly/2Sl3nX8"
+            "href": "https://bit.ly/2Sl3nX8",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Project Planning: Cost Analysis",
             "desc": "Aims to create and monitor the project budget of a sample company; identifies resource needs for each task in the project; estimates planned values (PV) and records actual values (AC) for money and time spent",
-            "href": "https://bit.ly/3fK51tD"
+            "href": "https://bit.ly/3fK51tD",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Fault Tree Analysis (FTA) for Hazard Prevention",
             "desc": "Discusses the application of FTA for an Airport Ground Control System (AGCS). It identifies the undesired top events or accidents which could happen in the system, estimate their likelihood of happening, and come up with preventive measures",
-            "href": "https://bit.ly/3yxtSJr"
+            "href": "https://bit.ly/3yxtSJr",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "The Lehman Brothers’ Case",
             "desc": "Discusses the importance of using automated processes and establishing coding standards to maintain the future scalability and maintainability of large projects with big teams",
-            "href": "https://bit.ly/3hIykPM"
+            "href": "https://bit.ly/3hIykPM",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Comparing Programming Languages",
             "desc": "Compares C, C++, Java, and Python in terms of simplicity, writability, readability, programming paradigms, and methods of implementations (e.g. compilation, virtual machines, interpretation, etc.)",
-            "href": "https://bit.ly/34bthze"
+            "href": "https://bit.ly/34bthze",
+            "tags": ["All", "Special Problems"]
         },
         {
             "title": "Programming Language Grammars",
             "desc": "Discusses the difference between ambiguous and unambiguous languages, derives expressions using a set of Backus-Naur Form (BNF) grammar rules, writes a simple BNF grammar, and proves the ambiguity of a language using a derivation tree",
-            "href": "https://bit.ly/3wkO2Vk"
+            "href": "https://bit.ly/3wkO2Vk",
+            "tags": ["All", "Machine Learning", "Special Problems"]
         },
         {
             "title": "Adaptive N-Version Programming",
             "desc": "Discusses a new and improved version of N-Version programming (a fault tolerance technique which is used for maintaining high reliability of software systems)",
-            "href": "https://bit.ly/3fHm7bk"
+            "href": "https://bit.ly/3fHm7bk",
+            "tags": ["All", "Project Management"]
         },
         {
             "title": "Lexical Analysis and Parsing",
             "desc": "Discusses concepts like the approaches to building a lexical analyzer, the complexity of parsing algorithms, the left recursion and the problem of infinite loops, and static type vs dynamic type bindings",
-            "href": "https://bit.ly/2T96bHf"
+            "href": "https://bit.ly/2T96bHf",
+            "tags": ["All", "Machine Learning", "Special Problems"]
         },
         {
             "title": "Programming Language (PL) Paradigms",
             "desc": "Discusses important topics like the difference between declarative and imperative languages, the trade-offs between writability and readability of PLs, compilation vs interpretation of code, code blocks, and delimiters, etc.",
-            "href": "https://bit.ly/3ffNJpb"
+            "href": "https://bit.ly/3ffNJpb",
+            "tags": ["All", "Special Problems"]
         },
         {
             "title": "Memory Allocation",
             "desc": "Discusses concepts like internal and external fragmentations, allocation algorithms (first-fit, best-fit, and worst-fit algorithms), memory compaction, and swapping for memory allocation",
-            "href": "https://bit.ly/3oJisOq"
+            "href": "https://bit.ly/3oJisOq",
+            "tags": ["All", "Special Problems"]
         },
         {
             "title": "Scheduling Algorithms",
             "desc": "Discusses the difference between preemptive scheduling and non-preemptive schedule; evaluates different scheduling algorithms (first-come-first-serve, shortest job first, shortest remaining processing time)",
-            "href": "https://bit.ly/2RICvR1"
+            "href": "https://bit.ly/2RICvR1",
+            "tags": ["All", "Special Problems"]
         },
         {
             "title": "Basic Operating Systems (OS) Concepts",
             "desc": "Discusses topics like time-sharing, system calls, single or double buffering, system interrupts (how they are useful and how it happens), and privileged kernel instructions",
-            "href": "https://bit.ly/348jgmz"
+            "href": "https://bit.ly/348jgmz",
+            "tags": ["All", "Special Problems"]
         },
         {
             "title": "Multiprogramming Concepts",
             "desc": "Discusses topics like CPU efficiency, the process of staging, time slicing, the different types of operating systems, and job sequencing",
-            "href": "https://bit.ly/3hKgcFf"
+            "href": "https://bit.ly/3hKgcFf",
+            "tags": ["All", "Special Problems"]
         }
     ]
 }
