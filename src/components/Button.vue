@@ -28,7 +28,7 @@ export default {
         return {
           "base-spinner": this.isLoading,
           "cursor-not-allowed": this.isLoading,
-          "call-to-action px-9 py-5 font-bold": true
+          "call-to-action px-9 py-5 font-bold text-sm sm:text-base": true
         };
       }
   },
