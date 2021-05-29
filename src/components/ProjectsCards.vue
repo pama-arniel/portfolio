@@ -31,7 +31,7 @@
 
           <div v-if="getProjectLink(project)" class="mx-6 mt-6">
             <div class="flex flex-wrap justify-starts items-center">
-              <span class="text-xs text-indigo-500 inline-block truncate w-4/5 ml-1">
+              <span class="text-xs text-indigo-500 truncate-link ml-1">
                   <a :href="getProjectLink(project)" title="Open link to project" target="_blank">
                     🌐 {{ getProjectLink(project) }}
                   </a>
@@ -66,3 +66,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.truncate-link {
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style>
