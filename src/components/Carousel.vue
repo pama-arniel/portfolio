@@ -6,7 +6,7 @@
         <div class="rounded-lg flex items-center w-full p-3 shadow-sm bg-black bg-opacity-80 border border-gray-300">
           <button class="outline-none focus:outline-none"><svg class="w-5 text-gray-600 h-5 cursor-pointer" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
           <input
-            @input="debounceSearch" type="search" placeholder="search for terms" x-model="q"
+            @input="debounceSearch" type="search" placeholder="search related terms" x-model="q"
             class="w-full pl-4 text-sm outline-none focus:outline-none bg-transparent"
           >
           <div class="select font-medium">
@@ -105,20 +105,7 @@ export default {
   },
   watch: {
     chosenTag(newChosenTag) {
-      if(this.refString == 'articles') {
-        // make opposite filtered array empty (save memory size)
-        this.filteredProjectsList = [];
-
-        // filter articles by tag
-        this.filteredArticlesList = this.filterListByTag(articlesJSON.list, newChosenTag);
-
-      } else if(this.refString == 'projects') {
-        // make opposite filtered array empty (save memory size)
-        this.filteredArticlesList = [];
-
-        // filter projects by tag
-        this.filteredProjectsList = this.filterListByTag(projectsJSON.list, newChosenTag);
-      }
+      this.initiateRefilteringOfList(this.searchKey, newChosenTag);
     },
 
     filteredArticlesList() {
@@ -173,96 +160,68 @@ export default {
         this.searchKey = newSearchKey;
 
         // filter the new list
-        this.initiateFilteringBySearch(newSearchKey);
+        this.initiateRefilteringOfList(newSearchKey, this.chosenTag);
       }, 600);
     },
 
-    initiateFilteringBySearch(newSearchKey){
-      console.log('search key: ', newSearchKey);
-
+    initiateRefilteringOfList(searchKey, chosenTag){
       if(this.refString == 'articles') {
         // make opposite filtered array empty (save memory size)
         this.filteredProjectsList = [];
 
-        // filter articles by tag
-        this.filteredArticlesList = this.filterListBySearchKey(articlesJSON.list, newSearchKey);
-
+        // filter projects by search and by tag
+        this.filteredArticlesList = this.filterListBySearchKeyAndTag(articlesJSON.list, searchKey, chosenTag);
       } else if(this.refString == 'projects') {
         // make opposite filtered array empty (save memory size)
         this.filteredArticlesList = [];
 
-        // filter projects by tag
-        this.filteredProjectsList = this.filterListBySearchKey(projectsJSON.list, newSearchKey);
-      }
-    },
-
-    filterListByTag(origList, chosenTag){
-      if(chosenTag == 'All') {
-        return origList;
-      } else {
-        return origList.filter((item) => {
-          let tags = item?.tags?.join(",");
-          let tagRegex = new RegExp(chosenTag, "gi");
-          return tags.match(tagRegex);
-        });
+        // filter projects by search and by tag
+        this.filteredProjectsList = this.filterListBySearchKeyAndTag(projectsJSON.list, searchKey, chosenTag);
       }
     },
 
     // determine if an item's key values contain the search term
-    filterListBySearchKey(origList, searchKey){
-      if(!searchKey) return origList;
+    filterListBySearchKeyAndTag(origList, searchKey, tag){
+      if(!searchKey && tag == 'All') return origList;
 
       return origList.filter((item) => {
-        return this.isItemFoundInKeyValuePairs(item, searchKey);
+        return this.isItemIncludedInFilter(item, searchKey, tag);
       });
     },
 
-    isItemFoundInKeyValuePairs(item, searchKey){
+    isItemIncludedInFilter(item, searchKey, tag){
+      let tags = item?.tags?.join(",");
+      let tagRegex = new RegExp(tag, "gi");
 
-      let arrayTypeKeys = ['technologies', 'features', 'key_contributions'];
-      let keysToSkip = ['company_link', 'website', 'project_repo', 'tags'];
+      if(tags.match(tagRegex)){
+        if(!searchKey){
+          return true;
+        } else {
+          let keysToSkip = ['company_link', 'website', 'project_repo', 'tags'];
 
-      // iterate the key-value pairs of the item and
-      // determine if the search term is found in one of them
-      for (const [currKey, currValue] of Object.entries(item)) {
-        // skip keys that should not be included in the search
-        if(keysToSkip.includes(currKey)) continue;
+          // iterate the key-value pairs of the item and
+          // determine if the search term is found in one of them
+          for (const [currKey, currValue] of Object.entries(item)) {
+            // skip keys that should not be included in the search
+            if(keysToSkip.includes(currKey)) continue;
 
-        // for array-type key values
-        if(arrayTypeKeys.includes(currKey)){
-          if(currValue.length > 0){
-            let completeValue = currValue.join(",");
-            let keyRegex = new RegExp(searchKey, "gi");
+            if(currValue){
+              let completeValue = Array.isArray(currValue) ? currValue?.join(",") : currValue;
+              let keyRegex = new RegExp(searchKey, "gi");
 
-            // if found in array, break loop and return true
-            if(completeValue.match(keyRegex)){
-              console.log('regex used: ', keyRegex);
-              console.log('currkey: ', currKey);
-              console.log('complete value: ', completeValue);
-              console.log('------------------');
-              return true;
+              // if found in array, break loop and return true
+              if(completeValue.match(keyRegex)){
+                return true;
+              }
             }
           }
-        }
 
-        // else, for string-type key values
-        else {
-          if(currValue){
-            let searchRegex = new RegExp(searchKey, "gi");
-
-            // if found in string, break loop and add item to filtered objects
-            if(currValue.match(searchRegex)){
-              // console.log('currkey: ', currKey);
-              // console.log('currValue: ', currValue);
-              // console.log('------------------');
-              return true;
-            }
-          }
+          return false;
         }
+      } else {
+        // early return; return false when tag is not found
+        return false;
       }
-
-      // return false if not found in any of the key values
-      return false;
     },
 
     showSlideDefaults() {
