@@ -23,7 +23,10 @@
   </div>
 
    <!-- Slideshow container -->
-   <div v-if="currNumOfGroups > 0" class="slideshow-container">
+   <div v-if="typing" class="flex flex-col text-center w-full">
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">{{ this.typing }}</p>
+    </div>
+   <div v-else-if="currNumOfGroups > 0" class="slideshow-container">
       <div v-if="refString == 'projects'">
          <div
             v-for="i in numOfProjectsGroups"
@@ -41,8 +44,8 @@
          </div>
       </div>
       <!-- Next and previous buttons -->
-      <a v-if="currNumOfGroups > 1" class="prev" @click="plusSlides(-1)">&#10094;</a>
-      <a v-if="currNumOfGroups > 1" class="next" @click="plusSlides(1)">&#10095;</a>
+      <a id="prev-button" v-if="currNumOfGroups > 1" class="prev" @click="plusSlides(-1, 'prev-button')">&#10094;</a>
+      <a id="next-button" v-if="currNumOfGroups > 1" class="next" @click="plusSlides(1, 'next-button')">&#10095;</a>
    </div>
    <div v-else class="flex flex-col text-center w-full">
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Your search did not match any documents.</p>
@@ -50,7 +53,7 @@
    <br>
 
    <!-- The dots/circles -->
-   <div style="text-align:center">
+   <div v-if="!typing" id="dots-buttons" style="text-align:center">
       <span
          v-for="i in currNumOfGroups"
          :key="i"
@@ -85,6 +88,10 @@ export default {
       slideIndex : 1,
       searchKey: "",
       chosenTag: "All",
+      typing: "",
+
+      // determine which of the dot buttons or the next-prev buttons are clicked
+      clickedTransitionButtonID: "",
 
       ARTICLES_PER_GROUP: 4,
       PROJECTS_PER_GROUP: 4,
@@ -175,9 +182,12 @@ export default {
   },
   methods: {
     debounceSearch(event) {
+      let newSearchKey = event.target.value;
+      this.typing = newSearchKey ? "Typing..." : "";
       clearTimeout(this.debounce);
       this.debounce = setTimeout(() => {
-        this.searchKey = event.target.value
+        this.typing = "";
+        this.searchKey = newSearchKey;
       }, 600);
     },
 
@@ -250,13 +260,15 @@ export default {
     },
 
     // Next/previous controls
-    plusSlides(n) {
+    plusSlides(n, clickedButton) {
+        this.clickedTransitionButtonID = clickedButton;
         this.slideIndex += n;
         this.showSlides(this.slideIndex);
     },
 
     // Thumbnail image controls
     currentSlide(n) {
+        this.clickedTransitionButtonID = "dots-buttons";
         this.slideIndex = n;
         this.showSlides(this.slideIndex);
     },
@@ -293,10 +305,13 @@ export default {
         dots[this.slideIndex-1].className += " active";
       }
 
-      // scroll to end section area so the dots are visible
-      // to the user's eyes every time they go to the next slide
-      let elmnt = document.getElementById(this.refString + '-section');
-      elmnt.scrollIntoView({block: "end"});
+      // scroll to the dots or prev-next area so they are always
+      // visible to the user if they were the last buttons clicked
+      if(this.clickedTransitionButtonID){
+        let elmnt = document.getElementById(this.clickedTransitionButtonID);
+        elmnt.scrollIntoView({block: "center"});
+        this.clickedTransitionButtonID = "";
+      }
     }
   }
 }
