@@ -121,23 +121,6 @@ export default {
       }
     },
 
-    searchKey(newSearchKey) {
-      if(this.refString == 'articles') {
-        // make opposite filtered array empty (save memory size)
-        this.filteredProjectsList = [];
-
-        // filter articles by tag
-        this.filteredArticlesList = this.filterListBySearchKey(articlesJSON.list, newSearchKey);
-
-      } else if(this.refString == 'projects') {
-        // make opposite filtered array empty (save memory size)
-        this.filteredArticlesList = [];
-
-        // filter projects by tag
-        this.filteredProjectsList = this.filterListBySearchKey(projectsJSON.list, newSearchKey);
-      }
-    },
-
     filteredArticlesList() {
       this.showSlideDefaults();
     },
@@ -188,7 +171,29 @@ export default {
       this.debounce = setTimeout(() => {
         this.typing = "";
         this.searchKey = newSearchKey;
+
+        // filter the new list
+        this.initiateFilteringBySearch(newSearchKey);
       }, 600);
+    },
+
+    initiateFilteringBySearch(newSearchKey){
+      console.log('search key: ', newSearchKey);
+
+      if(this.refString == 'articles') {
+        // make opposite filtered array empty (save memory size)
+        this.filteredProjectsList = [];
+
+        // filter articles by tag
+        this.filteredArticlesList = this.filterListBySearchKey(articlesJSON.list, newSearchKey);
+
+      } else if(this.refString == 'projects') {
+        // make opposite filtered array empty (save memory size)
+        this.filteredArticlesList = [];
+
+        // filter projects by tag
+        this.filteredProjectsList = this.filterListBySearchKey(projectsJSON.list, newSearchKey);
+      }
     },
 
     filterListByTag(origList, chosenTag){
@@ -196,8 +201,9 @@ export default {
         return origList;
       } else {
         return origList.filter((item) => {
-          let regex = new RegExp(item?.tags?.join( "|" ), "i");
-          return regex.test(chosenTag);
+          let tags = item?.tags?.join(",");
+          let tagRegex = new RegExp(chosenTag, "gi");
+          return tags.match(tagRegex);
         });
       }
     },
@@ -212,24 +218,28 @@ export default {
     },
 
     isItemFoundInKeyValuePairs(item, searchKey){
+
       let arrayTypeKeys = ['technologies', 'features', 'key_contributions'];
+      let keysToSkip = ['company_link', 'website', 'project_repo', 'tags'];
 
       // iterate the key-value pairs of the item and
       // determine if the search term is found in one of them
       for (const [currKey, currValue] of Object.entries(item)) {
-        console.log('currkey: ', currKey);
-        console.log('currValue: ', currValue);
-        console.log('------------------');
-        // skip tags in search
-        if(currKey == 'tags') continue;
+        // skip keys that should not be included in the search
+        if(keysToSkip.includes(currKey)) continue;
 
         // for array-type key values
         if(arrayTypeKeys.includes(currKey)){
           if(currValue.length > 0){
-            let regex = new RegExp(currValue.join("|"), "i");
+            let completeValue = currValue.join(",");
+            let keyRegex = new RegExp(currKey, "gi");
 
             // if found in array, break loop and return true
-            if(regex.test(searchKey)){
+            if(completeValue.match(keyRegex)){
+              console.log('regex used: ', keyRegex);
+              console.log('currkey: ', currKey);
+              console.log('complete value: ', completeValue);
+              console.log('------------------');
               return true;
             }
           }
@@ -242,6 +252,9 @@ export default {
 
             // if found in string, break loop and add item to filtered objects
             if(currValue.match(searchRegex)){
+              // console.log('currkey: ', currKey);
+              // console.log('currValue: ', currValue);
+              // console.log('------------------');
               return true;
             }
           }
