@@ -44,6 +44,9 @@
       <a v-if="currNumOfGroups > 1" class="prev" @click="plusSlides(-1)">&#10094;</a>
       <a v-if="currNumOfGroups > 1" class="next" @click="plusSlides(1)">&#10095;</a>
    </div>
+   <div v-else class="flex flex-col text-center w-full">
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Your search did not match any documents.</p>
+    </div>
    <br>
 
    <!-- The dots/circles -->
