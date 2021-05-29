@@ -44,8 +44,8 @@
          </div>
       </div>
       <!-- Next and previous buttons -->
-      <a id="prev-button" v-if="currNumOfGroups > 1" class="prev" @click="plusSlides(-1, 'prev-button')">&#10094;</a>
-      <a id="next-button" v-if="currNumOfGroups > 1" class="next" @click="plusSlides(1, 'next-button')">&#10095;</a>
+      <a :id="`${refString}-prev-button`" v-if="currNumOfGroups > 1" class="prev" @click="plusSlides(-1, `${refString}-prev-button`)">&#10094;</a>
+      <a :id="`${refString}-next-button`" v-if="currNumOfGroups > 1" class="next" @click="plusSlides(1, `${refString}-next-button`)">&#10095;</a>
    </div>
    <div v-else class="flex flex-col text-center w-full">
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Your search did not match any documents.</p>
@@ -53,12 +53,12 @@
    <br>
 
    <!-- The dots/circles -->
-   <div v-if="!typing" id="dots-buttons" style="text-align:center">
+   <div v-if="!typing" :id="`${refString}-dots-button`" style="text-align:center">
       <span
          v-for="i in currNumOfGroups"
          :key="i"
          :class="classDotValue"
-         @click="currentSlide(i)"
+         @click="currentSlide(i, `${refString}-dots-button`)"
          ></span>
    </div>
 </div>
@@ -239,8 +239,8 @@ export default {
     },
 
     // Thumbnail image controls
-    currentSlide(n) {
-        this.clickedTransitionButtonID = "dots-buttons";
+    currentSlide(n, clickedButton) {
+        this.clickedTransitionButtonID = clickedButton;
         this.slideIndex = n;
         this.showSlides(this.slideIndex);
     },
