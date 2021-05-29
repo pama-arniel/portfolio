@@ -292,6 +292,11 @@ export default {
       if(dots[this.slideIndex-1]){
         dots[this.slideIndex-1].className += " active";
       }
+
+      // scroll to end section area so the dots are visible
+      // to the user's eyes every time they go to the next slide
+      let elmnt = document.getElementById(this.refString + '-section');
+      elmnt.scrollIntoView({block: "end"});
     }
   }
 }
