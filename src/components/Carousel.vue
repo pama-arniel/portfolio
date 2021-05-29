@@ -97,7 +97,7 @@ export default {
       PROJECTS_PER_GROUP: 4,
 
       tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
-      tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Programming'],
+      tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Special Problems'],
 
       filteredArticlesList: articlesJSON.list,
       filteredProjectsList: projectsJSON.list,
@@ -197,7 +197,7 @@ export default {
         if(!searchKey){
           return true;
         } else {
-          let keysToSkip = ['company_link', 'website', 'project_repo', 'tags'];
+          let keysToSkip = ['company_link', 'website', 'project_repo', 'tags', 'href'];
 
           // iterate the key-value pairs of the item and
           // determine if the search term is found in one of them
