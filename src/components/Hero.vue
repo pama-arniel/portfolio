@@ -13,7 +13,7 @@
       <span
         v-for="bullet in bullets"
         :key="bullet"
-        class="font-bold text-white my-6 mx-6 text-center align-middle"
+        class="font-bold text-white m-2 sm:m-6 text-center align-middle"
       >
          <span class="sm:text-2xl text-sm align-middle">⚙️</span> {{bullet}}
       </span>
