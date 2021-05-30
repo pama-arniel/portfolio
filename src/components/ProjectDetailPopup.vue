@@ -17,7 +17,7 @@
                <!-- table -->
                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
                   <div class="px-4 py-5 sm:px-6">
-                     <h2 class="text-lg leading-6 font-bold text-gray-900 font-medium title-font mt-2">
+                     <h2 class="text-lg leading-6 font-bold text-gray-900 title-font mt-2">
                            {{project.title}}
                      </h2>
                      <p class="mt-1 text-gray-500">
@@ -33,10 +33,10 @@
                               v-if="!keysToHide.includes(keyName) && value"
                               class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
                            >
-                              <dt class="font-medium text-gray-500">
+                              <dt class="font-bold text-gray-900">
                                  <span>{{ formatKeyName(keyName) }}</span>
                               </dt>
-                              <dd class="mt-1 text-gray-900 sm:mt-0 sm:col-span-2">
+                              <dd class="mt-1 text-gray-500 sm:mt-0 sm:col-span-2">
                                  <span v-if="!value || !value.length">N/A</span>
                                  <span
                                     v-else-if="keysToDisplayAsLink.includes(keyName)"
