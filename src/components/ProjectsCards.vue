@@ -67,13 +67,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.truncate-link {
-  display: block;
-  width: 200px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-</style>
