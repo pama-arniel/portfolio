@@ -1,6 +1,6 @@
 <template>
 <section id="hero-section" class="text-gray-600 body-font">
-  <div class="container mx-auto flex pt-20 sm:pt-28 pb-24 items-center justify-center flex-col">
+  <div class="container mx-auto flex pt-16 sm:pt-28 pb-24 items-center justify-center flex-col">
     <img alt="Jose Arniel Pama - Graduation Photo" src="@/assets/profile.jpg"
       class="mb-10 object-cover rounded-full h-32 w-32"/>
     
