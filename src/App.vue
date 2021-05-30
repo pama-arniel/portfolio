@@ -53,14 +53,13 @@ export default {
 <style scoped>
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 /* ---- tsparticles container ---- */
 #tsparticles {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -2;
 }
 
 #app {
