@@ -1,7 +1,7 @@
 <template>
 <div id="my-alert" :class="`text-center py-4 lg:px-4 fixed bottom-0 left-0 w-full z-50 hidden shake-notif`">
-    <div :class="`p-2 ${getColor}-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex`" role="alert">
-        <span :class="`flex rounded-full ${getColor}-500 uppercase px-2 py-1 text-xs font-bold mx-2`">{{ tag }}</span>
+    <div :class="getDivClass()" role="alert">
+        <span :class="getTagClass()">{{ tag }}</span>
         <span class="font-semibold mr-2 text-left flex-auto">{{ message }}</span>
         <svg
             class="fill-current h-4 w-4 mx-2"
@@ -35,12 +35,21 @@ export default {
             return 'Error in submitting your message. There may be some error in the network. Please try again.';
         }
         return 'Your message have been successfully sent!';
-      },
-      getColor() {
-        return (this.type=='success') ? 'bg-green' : 'bg-red';
       }
   },
   methods: {
+    getColor() {
+      return (this.type=='success') ? 'bg-green' : 'bg-red';
+    },
+
+    getDivClass() {
+      return `p-2 ${this.getColor()}-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex`;
+    },
+
+    getTagClass() {
+      return `flex rounded-full ${this.getColor()}-500 uppercase px-2 py-1 text-xs font-bold mx-2`;
+    },
+
     showAlert(hideAfter){
       console.log(hideAfter)
       document.getElementById("my-alert").classList.remove("hidden");
