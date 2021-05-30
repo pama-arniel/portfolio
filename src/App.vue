@@ -58,7 +58,7 @@ canvas {
 #tsparticles {
   position: fixed;
   width: 100%;
-  height: calc(100% + 3em);
+  height: calc(100% + 20%);
   z-index: -2;
 }
 
