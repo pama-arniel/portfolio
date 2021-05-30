@@ -3,7 +3,7 @@
         <div class="mx-auto px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="w-full justify-between flex items-center">
-                    <a class="flex-shrink-0" href="/">
+                    <a class="flex-shrink-0" href="#">
                         <img class="h-9 w-9 rounded-full" src="@/assets/logo.png" alt="Logo"/>
                     </a>
                     <div class="hidden md:block">
