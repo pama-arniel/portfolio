@@ -6,6 +6,7 @@
         v-for="(project, index) in projects"
         :key="'project-card-' + index"
         class="xl:w-1/4 md:w-1/2 p-4"
+        @click="$emit('project-card-clicked', project)"
       >
         <div class="bg-white rounded-xl pb-6 scale-on-hover">
           <img class="h-50 rounded-t-xl w-full object-cover object-center mb-6" :src="getPic('inv_uplogo.jpg')" alt="content">
