@@ -37,3 +37,11 @@ h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+/**
+   * PurgeCSS:
+   * bg-red-500
+   * bg-red-800
+   * bg-green-500
+   * bg-green-800
+**/
