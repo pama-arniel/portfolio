@@ -4,9 +4,9 @@
          v-if="showModal"
          class="overflow-x-hidden fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex"
          >
-         <div class="relative w-auto my-6 mx-auto w-2xl lg:w-7/12 h-3/4 overflow-y-scroll">
+         <div class="relative w-auto my-6 mx-auto w-2xl lg:w-7/12 h-3/4 overflow-y-auto">
             <!--content-->
-            <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-yellow-50">
+            <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-white">
                <div @click="toggleModal()" class="modal-close absolute top-0 right-0 align-middle cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
                   <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                      <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
@@ -49,7 +49,7 @@
 
          </div>
       </div>
-      <div v-if="showModal" class="opacity-25 fixed inset-0 z-40"></div>
+      <div v-if="showModal" class="bg-black opacity-50 fixed inset-0 z-40"></div>
    </div>
 </template>
 
