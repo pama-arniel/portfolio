@@ -42,15 +42,16 @@ export default {
   },
   methods: {
     showAlert(hideAfter){
-        document.getElementById("my-alert").classList.remove("hidden");
-        if(hideAfter) {
-            setTimeout(this.fadeItOut, 10000);
-        }
+      console.log(hideAfter)
+      document.getElementById("my-alert").classList.remove("hidden");
+      // if(hideAfter) {
+      //     setTimeout(this.fadeItOut, 10000);
+      // }
     },
 
     fadeItOut(){
-        let alert = document.getElementById("my-alert");
-        alert.classList.add("hidden")
+      let alert = document.getElementById("my-alert");
+      alert.classList.add("hidden");
     }
   }
 }
