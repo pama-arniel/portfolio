@@ -38,7 +38,7 @@
             </div>
         </div>
         <div :class="getMobileNavbarClass()">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black">
                 <a 
                     v-for="(label, index) in labels"
                     :key="'label-' + index"
@@ -124,8 +124,8 @@ a.selectedSection {
 }
 
 .sticky {
-    background: rgba(1, 2, 10);
-    box-shadow: -1px -3px 6px #1d1c1c32, 1px 3px 6px #12121332;
+    background: rgba(1, 2, 10, 0.5);
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
     position: fixed;
     z-index: 40;
     top: 0;
