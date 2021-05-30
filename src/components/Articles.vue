@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Carousel from './Carousel2.vue'
+import Carousel from './Carousel.vue'
 
 export default {
   name: 'Articles',
