@@ -6,7 +6,7 @@
          >
          <div class="relative w-auto my-6 mx-auto w-2xl lg:w-7/12 h-3/4 overflow-y-auto rounded-lg">
             <!--content-->
-            <div class="border-0 shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-white">
+            <div class="border-0 shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-white rounded-lg">
                <div @click="toggleModal()" class="modal-close absolute top-0 right-0 align-middle cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
                   <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                      <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
@@ -23,7 +23,7 @@
                <div
                   v-for="(skillGroup, index) in skillGroups"
                   :key="'skill-group-'+ index"
-                  class="m-5 rounded-t"
+                  class="m-5"
                   >
                   <h4 class="font-bold mb-2">
                      {{ skillGroup.name }}
@@ -40,7 +40,7 @@
                </div>
 
                <!--footer-->
-               <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200">
+               <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-lg">
                   <button class="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" @click="toggleModal()">
                   Close
                   </button>
