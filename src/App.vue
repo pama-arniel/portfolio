@@ -67,5 +67,6 @@ canvas {
   position: relative;
   top: 0;
   right: 0;
+  z-index: 5;
 }
 </style>
