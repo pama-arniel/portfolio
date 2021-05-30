@@ -1,5 +1,10 @@
 <template>
 <div>
+  <ProjectDetailPopup
+    :project="selectedProjectCard"
+    :showModal="showModal" @close-modal="showModal=false"
+  />
+
   <!-- search bar component -->
   <div class="flex items-center justify-center pb-6">
     <div class="box-wrapper text-base text-white">
@@ -32,7 +37,10 @@
             v-for="i in numOfProjectsGroups"
             :key="'project-group-' + i"
             :class="classSlidesValue">
-            <ProjectsCards :projects="filteredProjectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"/>
+            <ProjectsCards
+              :projects="filteredProjectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"
+              @project-card-clicked="handleClickedProjectCard"
+            />
          </div>
       </div>
       <div v-if="refString == 'articles'">
@@ -65,6 +73,7 @@
 </template>
 
 <script>
+import ProjectDetailPopup from './ProjectDetailPopup.vue'
 import ProjectsCards from './ProjectsCards.vue'
 import ArticlesCards from './ArticlesCards.vue'
 import articlesJSON from '../assets/articles/articles_list.json'
@@ -80,6 +89,7 @@ export default {
     },
   },
   components: {
+    ProjectDetailPopup,
     ProjectsCards,
     ArticlesCards
   },
@@ -89,6 +99,8 @@ export default {
       searchKey: "",
       chosenTag: "All",
       typing: "",
+      showModal: false,
+      selectedProjectCard: [],
 
       // determine which of the dot buttons or the next-prev buttons are clicked
       clickedTransitionButtonID: "",
@@ -151,6 +163,11 @@ export default {
       this.showSlides(this.slideIndex);
   },
   methods: {
+    handleClickedProjectCard(project){
+      this.selectedProjectCard = project;
+      this.showModal = true;
+    },
+
     debounceSearch(event) {
       let newSearchKey = event.target.value;
       this.typing = newSearchKey ? "Typing..." : "";
