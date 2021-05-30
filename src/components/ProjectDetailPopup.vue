@@ -119,7 +119,7 @@ export default {
        } else if(keyName == 'technologies'){
           return '⚙️ Technologies:';
        } else if(keyName == 'features'){
-          return '🧱 Features:';
+          return '🎨 Features:';
        } else if(keyName == 'project_repo'){
           return '📁 Project Repo';
        } else if(keyName == 'key_contributions'){
