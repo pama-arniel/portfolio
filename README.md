@@ -1,4 +1,4 @@
-# online-cv-draft
+# online cv
 
 ## Project setup
 ```
