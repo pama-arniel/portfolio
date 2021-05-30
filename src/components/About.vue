@@ -15,7 +15,7 @@
                   class="leading-relaxed mb-6 content-start"
                   >
                   <div class="float-left">
-                     <span class="text-2xl">⚙️ </span>
+                     <span class="sm:text-2xl text-sm">⚙️ </span>
                   </div>
                   <div>
                      <span class="font-bold text-white my-6 pl-2 align-middle flex">
