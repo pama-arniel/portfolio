@@ -100,7 +100,7 @@ export default {
       chosenTag: "All",
       typing: "",
       showModal: false,
-      selectedProjectCard: [],
+      selectedProjectCard: {},
 
       // determine which of the dot buttons or the next-prev buttons are clicked
       clickedTransitionButtonID: "",
