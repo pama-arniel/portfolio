@@ -42,11 +42,10 @@ export default {
   },
   methods: {
     showAlert(hideAfter){
-      console.log(hideAfter)
       document.getElementById("my-alert").classList.remove("hidden");
-      // if(hideAfter) {
-      //     setTimeout(this.fadeItOut, 10000);
-      // }
+      if(hideAfter) {
+          setTimeout(this.fadeItOut, 10000);
+      }
     },
 
     fadeItOut(){
