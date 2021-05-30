@@ -23,13 +23,6 @@ h1 {
     background: rgba(1, 2, 10, 0.3);
 }
 
-.scale-on-hover:hover
-{
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-}
-
 .truncate-link {
     display: block;
     width: 200px;
@@ -56,4 +49,13 @@ h1 {
 .bg-red-800 {
     --tw-bg-opacity: 1;
     background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop screens only  */
+    .scale-on-hover:hover {
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+    }
 }
