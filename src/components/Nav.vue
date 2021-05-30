@@ -124,8 +124,8 @@ a.selectedSection {
 }
 
 .sticky {
-    background: rgba(1, 2, 10, 0.3);
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    background: rgba(1, 2, 10);
+    box-shadow: -1px -3px 6px #1d1c1c32, 1px 3px 6px #12121332;
     position: fixed;
     z-index: 40;
     top: 0;
