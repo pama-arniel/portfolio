@@ -1,10 +1,10 @@
 <template>
-   <div class="body-font">
+   <div class="body-font p-2">
       <div
          v-if="showModal && project"
          class="overflow-x-hidden fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex"
          >
-         <div class="relative w-auto my-6 mx-auto w-2xl lg:w-7/12 max-h-screen overflow-y-auto">
+         <div class="relative w-auto m-3 w-2xl lg:w-7/12 max-h-screen overflow-y-auto">
             <!-- content -->
             <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-white">
                <!-- close 'x' button -->
@@ -15,7 +15,7 @@
                </div>
 
                <!-- table -->
-               <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+               <div class="bg-white shadow overflow-hidden rounded-lg">
                   <div class="px-4 py-5 sm:px-6">
                      <h2 class="text-lg leading-6 font-bold text-gray-900 title-font mt-2">
                            {{project.title}}
