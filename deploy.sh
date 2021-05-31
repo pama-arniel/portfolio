@@ -18,7 +18,7 @@ cd dist
 echo Deploying..
 git init
 git add -A
-git commit -m 'Deploy portfolio'
+git commit -m 'Deploy portfolio version with old carousel impl'
 
 # deploy
 git push -f git@github.com:pama-arniel/portfolio.git master:gh-pages

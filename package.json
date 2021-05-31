@@ -13,8 +13,7 @@
     "emailjs-com": "latest",
     "particles.vue": "^2.10.0",
     "postcss-loader": "^5.3.0",
-    "vue": "^2.6.11",
-    "vue-slick-carousel": "^1.0.6"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
