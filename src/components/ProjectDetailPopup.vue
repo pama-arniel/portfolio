@@ -16,6 +16,7 @@
 
                <!-- table -->
                <div class="bg-white shadow overflow-hidden rounded-lg">
+                  <!-- header -->
                   <div class="px-4 py-5 sm:px-6">
                      <h2 class="text-lg leading-6 font-bold text-gray-900 title-font mt-2">
                            {{project.title}}
@@ -24,6 +25,13 @@
                            {{project.desc}}
                      </p>
                   </div>
+                  <!-- image -->
+                  <div class="flex flex-wrap justify-center">
+                     <div class="w-9/12 m-4">
+                        <img :src="getPic(project.attached_photo)" :alt="project.title" class="shadow rounded max-w-full h-auto align-middle border-none" />
+                     </div>
+                  </div>
+                  <!-- project details -->
                   <div class="border-t border-gray-200">
                      <dl>
                         <div
@@ -102,7 +110,7 @@ export default {
   },
   data() {
     return {
-       keysToHide: ['title', 'desc', 'owner'],
+       keysToHide: ['title', 'desc', 'owner', 'attached_photo'],
        keysToDisplayAsLink: ['company_link', 'website', 'project_repo'],
        keysToDisplayAsPills: ['technologies', 'tags']
     };
@@ -130,7 +138,13 @@ export default {
        }
 
        return keyName;
-    }
+    },
+
+    getPic(fileName) {
+      let file = fileName ? fileName : 'proj_uplogo.jpg';
+      let images = require.context('../assets/projects/', false, /\.(png|jpe?g|svg)$/);
+      return images('./' + file);
+    },
   }
 }
 </script>
