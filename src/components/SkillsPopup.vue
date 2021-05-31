@@ -2,9 +2,9 @@
    <div class="body-font">
       <div
          v-if="showModal"
-         class="overflow-x-hidden fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex"
+         class="overflow-x-hidden fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex mx-3"
          >
-         <div class="relative w-auto my-6 mx-auto w-2xl lg:w-7/12 h-3/4 overflow-y-auto rounded-lg">
+         <div class="relative w-auto my-6 mx-auto w-2xl lg:w-7/12 h-5/6 overflow-y-auto rounded-lg">
             <!--content-->
             <div class="border-0 shadow-lg relative flex flex-col w-full outline-none focus:outline-none bg-white rounded-lg">
                <div @click="toggleModal()" class="modal-close absolute top-0 right-0 align-middle cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
