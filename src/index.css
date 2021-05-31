@@ -5,18 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 h1 {
-    font-family: 'IBM Plex Sans', 'sans serif';
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .purple-header {
-    font-family: 'IBM Plex Sans', 'sans serif';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bold;
     color: #8A00FF;
     text-shadow: 1px 3px 12px #ffffff42;
 }
 
 .body-font {
-    font-family: 'Inter', 'sans serif';
+    font-family: 'Inter', sans-serif;
 }
 
 .section-background {
