@@ -33,26 +33,22 @@
     </div>
     <div v-else-if="currNumOfGroups > 0">
       <div v-if="refString == 'projects'">
-        <VueSlickCarousel :arrows="true" :dots="true">
-          <div
+        <VueSlickCarousel v-bind="carouselSettings">
+          <ProjectsCards
             v-for="i in numOfProjectsGroups"
-            :key="'project-group-' + i"
-            class="fade">
-            <ProjectsCards
-                :projects="filteredProjectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"
-                @project-card-clicked="handleClickedProjectCard"
-                />
-          </div>
+            :key="Date() + i"
+            :projects="filteredProjectsList.slice(i*PROJECTS_PER_GROUP - PROJECTS_PER_GROUP, i*PROJECTS_PER_GROUP)"
+            @project-card-clicked="handleClickedProjectCard"
+          />
         </VueSlickCarousel>
       </div>
       <div v-else-if="refString == 'articles'">
-        <VueSlickCarousel :arrows="true" :dots="true">
-          <div
+        <VueSlickCarousel v-bind="carouselSettings">
+          <ArticlesCards
             v-for="i in numOfArticlesGroups"
-            :key="'article-group-' + i"
-            class="fade">
-            <ArticlesCards :articles="filteredArticlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"/>
-          </div>
+            :key="Date() + i"
+            :articles="filteredArticlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"
+          />
         </VueSlickCarousel>
       </div>
     </div>
@@ -99,6 +95,11 @@ export default {
 
       ARTICLES_PER_GROUP: 4,
       PROJECTS_PER_GROUP: 4,
+      carouselSettings: {
+        "dots": true,
+        "arrows": true,
+        "adoptiveHeight": true
+      },
 
       tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
       tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Special Problems'],
