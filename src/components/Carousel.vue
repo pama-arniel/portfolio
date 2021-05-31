@@ -98,7 +98,7 @@ export default {
       carouselSettings: {
         "dots": true,
         "arrows": true,
-        "adoptiveHeight": true
+        "adaptiveHeight": true
       },
 
       tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
