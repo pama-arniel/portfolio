@@ -327,7 +327,7 @@ export default {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 10px 17px;
+  padding: 10px 18px;
   color: #8A00FF;
   text-shadow: 1px 3px 12px #ffffff42;
   box-shadow: -1px -3px 6px #bf00ff32, 1px 3px 6px #8a00ff32;
@@ -347,26 +347,6 @@ export default {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
