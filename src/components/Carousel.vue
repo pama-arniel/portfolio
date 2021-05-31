@@ -91,15 +91,11 @@ export default {
   },
   data() {
     return {
-      slideIndex : 1,
       searchKey: "",
       chosenTag: "All",
       typing: "",
       showModal: false,
       selectedProjectCard: {},
-
-      // determine which of the dot buttons or the next-prev buttons are clicked
-      clickedTransitionButtonID: "",
 
       ARTICLES_PER_GROUP: 4,
       PROJECTS_PER_GROUP: 4,
@@ -114,15 +110,7 @@ export default {
   watch: {
     chosenTag(newChosenTag) {
       this.initiateRefilteringOfList(this.searchKey, newChosenTag);
-    },
-
-    filteredArticlesList() {
-      this.showSlideDefaults();
-    },
-
-    filteredProjectsList() {
-      this.showSlideDefaults();
-    },
+    }
   },
   computed: {
     currTagsList() {
@@ -146,9 +134,6 @@ export default {
     numOfProjectsGroups() {
       return Math.ceil(this.filteredProjectsList.length / this.PROJECTS_PER_GROUP);
     }
-  },
-  mounted() {
-      // 
   },
   methods: {
     handleClickedProjectCard(project){
