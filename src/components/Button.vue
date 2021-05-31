@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .call-to-action {
-    font-family: 'Inter';
+    font-family: 'Inter', 'sans serif';
     color: #fff;
     border: none;
     border-radius: 10px;
