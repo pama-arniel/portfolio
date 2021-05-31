@@ -66,7 +66,7 @@ export default {
     return {
         skillGroups: [
             {
-                'name': 'Industry Knowledge',
+                'name': '🏭 Industry Knowledge',
                 'list': [
                     'Software Development', 'Software Development Life Cycle (SDLC)', 'Front-end Development',
                     'User Interface Design', 'Agile Methodologies', 'Scrum', 'Debugging', 'Code Review',
@@ -74,7 +74,7 @@ export default {
                 ],
             },
             {
-                'name': 'Tools and Technologies',
+                'name': '⚙️ Tools and Technologies',
                 'list': [
                     'Flutter', 'Vue.js', 'Python', 'Django', 'REST API', 'Javascript',
                     'HTML', 'CSS', 'jQuery', 'C, C++', 'Java', 'Perl', 'Arduino',
@@ -84,13 +84,13 @@ export default {
                 ]
             },
             {
-                'name': 'Interpersonal Skills',
+                'name': '🙋🏽‍♂️ Interpersonal Skills',
                 'list': [
                     'Problem Solving', 'Time Management', 'Leadership', 'Communication'
                 ]
             },
             {
-                'name': 'Other Skills',
+                'name': '👨‍💻 Other Skills',
                 'list': [
                     'Natural Language Processing (NLP)', 'Artificial Intelligence (AI)',
                     'Machine Learning (ML)', 'Data Science',
