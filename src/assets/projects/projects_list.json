@@ -295,7 +295,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkdhRjZ0emFQcUlqTnZBaUtNYTZDcE9WQVFKVTdzdTRWR1EzbkNQQWhqTVE?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_multiprogramming.jpg"
         },
         {
             "title": "Simulation of Memory Management and Allocation Strategies",
@@ -309,7 +310,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flpoRGxTZGZwZnFfam9yd3h5X01rQ25wU1E1Smd6OFdyRTRZaWNBRDZjN0k?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_memoryallocation.jpg"
         },
         {
             "title": "Simulation of Typing Test",
@@ -323,7 +325,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://gitlab.com/arnielpama/bposeats-typing-test",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_typingtest.jpg"
         },
         {
             "title": "Poll App in Django",
@@ -357,7 +360,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fmpuUU9VVE94Yl93SC1tdmNJMmplOHFuWkVLUHNRblFzZGtFZkhLQ1RKWEk?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_fourier.jpg"
         },
         {
             "title": "Enter a binary number and generate its square wave graphs",
@@ -371,7 +375,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkM1elkzamt3NmFob3BzWXo1aXdzajNzVzd6TGFvMzJJUUg1QVlHNnV3eE0?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_squarewave.jpg"
         },
         {
             "title": "Enter a binary number to generate its digital-to-analog modulations",
@@ -385,7 +390,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flZkMHVPTm00Q2hBSkF1czRiRnBzOFlONXRlTjNuLTBOUTEzXzE2SkJuWFk?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_modulation.jpg"
         },
         {
             "title": "Enter a binary number to generate its hamming code",
@@ -399,7 +405,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnBLZlBmOVFOOHk0VVpTNVpQT3dobWJVcFRGYlNvbURVT3lCY1NSZlRMdzg?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"]
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_hammingcode.jpg"
         },
         {
             "title": "Mini Statistics Package",
@@ -417,7 +424,8 @@
             ],
             "key_contributions": [],
             "project_repo": "https://github.com/pama-arniel/Mini-stat-Package",
-            "tags": ["All", "Special Problems"]
+            "tags": ["All", "Special Problems"],
+            "attached_photo": "proj_statpackage.jpg"
         }
     ]
 }
