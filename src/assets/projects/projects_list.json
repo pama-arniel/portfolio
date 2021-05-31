@@ -23,7 +23,8 @@
                 "Test app and add bug fixes"
             ],
             "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-web-app",
-            "tags": ["All", "Web"]
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_consumerwebapp.jpg"
         },
         {
             "title": "Booqista - Merchant Web App",
@@ -44,7 +45,8 @@
                 "Implement features", "Test app", "Review code changes", "Add bug fixes"
             ],
             "project_repo": "https://gitlab.com/nuvensis/booqista/merchant-web-app",
-            "tags": ["All", "Web"]
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_merchantwebapp.jpg"
         },
         {
             "title": "ApplyBPO.com",
@@ -80,7 +82,8 @@
                 "Employ Agile methodologies and Scrum"
             ],
             "project_repo": "",
-            "tags": ["All", "Web"]
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_applybpo.jpg"
         },
         {
             "title": "BPOSeats.com",
@@ -116,7 +119,8 @@
                 "Employ Agile methodologies and Scrum"
             ],
             "project_repo": "",
-            "tags": ["All", "Web"]
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_bposeats.jpg"
         },
         {
             "title": "Booqista - Consumer Mobile App",
@@ -146,7 +150,8 @@
                 "Fix bugs"
             ],
             "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-mobile-app",
-            "tags": ["All", "Mobile"]
+            "tags": ["All", "Mobile"],
+            "attached_photo": "proj_consumermobileapp.jpg"
         },
         {
             "title": "Building a Sign Language Gesture Classifier Using LSTM",
@@ -174,7 +179,8 @@
                 "Use OpenCV (computer vision library in python and supports model execution for ML)"
             ],
             "project_repo": "https://bit.ly/2Xr3kXv",
-            "tags": ["All", "Machine Learning", "Special Problems"]
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_handskeleton.jpg"
         },
         {
             "title": "BigFoot Island - A Children's Game in Javascript",
@@ -188,7 +194,8 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnB5RGhobXRNeEJrQm14TW9YTXBJdDZXZTNLVnRhbkdYaWZOcHFsT3Zva1k?usp=sharing",
-            "tags": ["All", "Web", "Games"]
+            "tags": ["All", "Web", "Games"],
+            "attached_photo": "proj_bigfoot.jpg"
         },
         {
             "title": "Snate the Bookish Snake - Assembly x86",
@@ -218,14 +225,15 @@
             	"Randomize numbers in Assembly"
             ],
             "project_repo": "https://github.com/pama-arniel/SNATE/blob/master/SNATE.asm",
-            "tags": ["All", "Special Problems", "Games"]
+            "tags": ["All", "Special Problems", "Games"],
+            "attached_photo": "proj_snate.jpg"
         },
         {
             "title": "GuessWhut!? (Play Charades)",
             "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship",
             "owner": "Channel Info Tech Internship",
             "company_link": "",
-            "website": "",
+            "website": "https://drive.google.com/file/d/1LKbfMAUill8tPx6NXYY2iSjC3UDq2lb4/view?usp=sharing",
             "technologies": [
                 "Vue.js", "Django", "CSS", "HTML", "MongoDB", "OpenTok.js", "Python Anywhere", "Agile and Scrum", "Git"
             ],
@@ -247,7 +255,8 @@
                 "Do daily stand-ups"
             ],
             "project_repo": "https://gitlab.com/guesswhut/guesswhut",
-            "tags": ["All", "Web", "Games"]
+            "tags": ["All", "Web", "Games"],
+            "attached_photo": "proj_guesswhut.jpg"
         },
         {
             "title": "Up On Time (UOT)",
@@ -271,7 +280,8 @@
                 "Code features and logic"
             ],
             "project_repo": "https://gitlab.com/nuvensis/up-on-time/mobile-app",
-            "tags": ["All", "Mobile"]
+            "tags": ["All", "Mobile"],
+            "attached_photo": "proj_uot.jpg"
         },
         {
             "title": "Simulation of Multiprogramming",
