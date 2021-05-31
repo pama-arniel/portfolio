@@ -285,7 +285,7 @@
         },
         {
             "title": "Simulation of Multiprogramming",
-            "desc": "-",
+            "desc": "When a certain task needs to run, a process must be created for it. This process needs to access resources like the RAM and CPU. In this simulation, each program is given a certain time slice where it gets processed by a certain resource.",
             "owner": "CMSC 125 lab 1",
             "company_link": "",
             "website": "",
@@ -300,7 +300,7 @@
         },
         {
             "title": "Simulation of Memory Management and Allocation Strategies",
-            "desc": "-",
+            "desc": "Jobs are kept simultaneously in memory. These jobs are given time slices (usually fixed ones) and have to be swapped from memory to memory to give the best memory allocation for each job.",
             "owner": "CMSC 125 lab 3",
             "company_link": "",
             "website": "",
@@ -315,7 +315,7 @@
         },
         {
             "title": "Simulation of Typing Test",
-            "desc": "-",
+            "desc": "The goal of this app is to simulate the algorithm for typing tests, interact with user events (keyboard typing and enter keys), and familiarize the formulas used in calculating the typing speed",
             "owner": "Internship Practice Exercise",
             "company_link": "",
             "website": "",
