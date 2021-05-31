@@ -33,7 +33,7 @@
     </div>
     <div v-else-if="currNumOfGroups > 0">
       <div v-if="refString == 'projects'">
-        <VueSlickCarousel :arrows="true" :dots="true">
+        <VueSlickCarousel :arrows="true" :dots="true" :autoplay="true">
           <div
             v-for="i in numOfProjectsGroups"
             :key="'project-group-' + i"
@@ -46,7 +46,7 @@
         </VueSlickCarousel>
       </div>
       <div v-else-if="refString == 'articles'">
-        <VueSlickCarousel :arrows="true" :dots="true">
+        <VueSlickCarousel :arrows="true" :dots="true" :autoplay="true">
           <div
             v-for="i in numOfArticlesGroups"
             :key="'article-group-' + i"
@@ -75,7 +75,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
-  name: 'ImprovedCarousel',
+  name: 'Carousel',
   props: {
     // added to class names to distinguish the carousel section
     refString: {
