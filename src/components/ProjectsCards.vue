@@ -23,7 +23,7 @@
               <span
                 v-for="(tech, tIndex) in project.technologies"
                 :key="'project-' + index + '-tech-' + tIndex"
-                class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl">
+                class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-purple-300 rounded-2xl">
                   #{{ tech }}
               </span>
             </div>

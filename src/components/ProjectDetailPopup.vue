@@ -51,7 +51,7 @@
                                     <span
                                        v-for="(pillValue, pillIndex) in value"
                                        :key="'pill-' + pillIndex"
-                                       class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-blue-100 rounded-2xl">
+                                       class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-purple-300 rounded-2xl">
                                           #{{ pillValue }}
                                     </span>
                                  </div>
@@ -60,6 +60,7 @@
                                        <li
                                           v-for="(arrayItem, itemIndex) in value"
                                           :key="'item-' + itemIndex"
+                                          class="text-black"
                                        >{{arrayItem}}</li>
                                     </ul>
                                  </div>
