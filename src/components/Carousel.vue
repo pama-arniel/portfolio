@@ -33,7 +33,7 @@
     </div>
     <div v-else-if="currNumOfGroups > 0">
       <div v-if="refString == 'projects'">
-        <VueSlickCarousel :arrows="true" :dots="true" :autoplay="true">
+        <VueSlickCarousel :arrows="true" :dots="true">
           <div
             v-for="i in numOfProjectsGroups"
             :key="'project-group-' + i"
@@ -46,7 +46,7 @@
         </VueSlickCarousel>
       </div>
       <div v-else-if="refString == 'articles'">
-        <VueSlickCarousel :arrows="true" :dots="true" :autoplay="true">
+        <VueSlickCarousel :arrows="true" :dots="true">
           <div
             v-for="i in numOfArticlesGroups"
             :key="'article-group-' + i"
