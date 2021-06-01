@@ -346,7 +346,8 @@
                 "Integrate Django with CSS, HTML, and Javascript"
             ],
             "project_repo": "https://gitlab.com/arnielpama/djangopollapp2",
-            "tags": ["All", "Web"]
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_pollsapp.jpg"
         },
         {
             "title": "Generate Fourier series graph",
