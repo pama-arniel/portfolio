@@ -214,7 +214,7 @@ export default {
         if(!searchKey){
           return true;
         } else {
-          let keysToSkip = ['company_link', 'website', 'project_repo', 'tags', 'href'];
+          let keysToSkip = ['company_link', 'website', 'project_repo', 'tags', 'href', 'figma_designs'];
 
           // iterate the key-value pairs of the item and
           // determine if the search term is found in one of them

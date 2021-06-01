@@ -111,7 +111,7 @@ export default {
   data() {
     return {
        keysToHide: ['title', 'desc', 'owner', 'attached_photo'],
-       keysToDisplayAsLink: ['company_link', 'website', 'project_repo'],
+       keysToDisplayAsLink: ['company_link', 'website', 'project_repo', 'figma_designs'],
        keysToDisplayAsPills: ['technologies', 'tags']
     };
   },
@@ -135,6 +135,8 @@ export default {
           return '🔑 Key Contributions:';
        } else if(keyName == 'tags'){
           return '🏷️ Tags:';
+       } else if(keyName == 'figma_designs'){
+          return '👨‍🎨 Figma Designs:';
        }
 
        return keyName;

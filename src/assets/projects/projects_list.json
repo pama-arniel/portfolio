@@ -149,6 +149,7 @@
                 "Test and find bugs",
                 "Fix bugs"
             ],
+            "figma_designs": "https://www.figma.com/file/j8ZTcX9yczm56kEBnEV2gi/?node-id=664%3A0",
             "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-mobile-app",
             "tags": ["All", "Mobile"],
             "attached_photo": "proj_consumermobileapp.jpg"
