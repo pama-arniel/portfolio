@@ -1,6 +1,33 @@
 {
     "list": [
         {
+            "title": "Personal Online Portfolio",
+            "desc": "An online resume built from scratch. It contains a compilation of my projects, skills, involvements, articles, and other important job details. It took me around 24+ hours to finish (spread throughout 2 weeks)",
+            "owner": "Personal",
+            "company_link": "",
+            "website": "https://pama-arniel.github.io/portfolio/",
+            "technologies": [
+                "Vue.js", "TailwindCSS", "Figma", "GitHub", "HTML", "CSS", "Javascript"
+            ],
+            "features": [
+                "Employ a 3D modern look",
+                "Make it mobile responsive",
+                "Display experiences, skills, projects, articles, and involvements",
+                "Add a carousel for displaying projects and articles",
+                "Provide the ability to search via tags or search key"
+            ],
+            "key_contributions": [
+                "Implement the website from scratch",
+                "Design the website components using Figma, HTML, TailwindCSS, and Vue JS",
+                "Use TailwindCSS for website responsiveness",
+                "Provide logic to searching and displaying of popups and lists",
+                "Deploy website to GitHub pages"
+            ],
+            "project_repo": "https://github.com/pama-arniel/portfolio",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_onlinecv.jpg"
+        },
+        {
             "title": "Booqista - Consumer Web App",
             "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants",
             "owner": "Nuvensis.ch",
