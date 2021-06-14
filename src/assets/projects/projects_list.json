@@ -455,6 +455,183 @@
             "project_repo": "https://github.com/pama-arniel/Mini-stat-Package",
             "tags": ["All", "Special Problems"],
             "attached_photo": "proj_statpackage.jpg"
+        },
+        {
+            "title": "Tokenization and searching",
+            "desc": "Write a program using PERL that takes in as input a text document.",
+            "owner": "NLP Course",
+            "company_link": "",
+            "website": "https://drive.google.com/file/d/1S8pivelGeGO2x6zrPAV0f7-v6ccmHtlP/view?usp=sharing",
+            "technologies": [
+                "PERL"
+            ],
+            "features": [
+            	"Tokenize the texts in the document",
+                "Count the number of tokens and types",
+                "Keep track of the number and types of punctuations used",
+                "Search words based on user input. The user can use the wildcards * which represents one or more characters and ? which represents a single character. For example, a user search of ba* will display bag, bath, bathing, bask, etc or ?at will display cat, fat, rat, etc. or combinations of the wildcards such as ?at* to display cat, bat, bath, bathe, rat, rate, rates, etc"
+            ],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/1B74w4rasWL87HABsvdB6H32kMw7RpiDx?usp=sharing",
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_tokenization.jpg"
+        },
+        {
+            "title": "Maze Search",
+            "desc": "Implement A* Search, use Manhattan Distance and Straight-Line Distance as heuristic",
+            "owner": "Intro to AI",
+            "company_link": "",
+            "website": "https://github.com/pama-arniel/Maze-Search-Hooray/blob/master/maze%20python%20version/python%20documentation.pdf",
+            "technologies": [
+                "Java", "Python"
+            ],
+            "features": [
+            	"Part 1: Basic Pathfinding (Implement A* Search, use Manhattan Distance and Straight-Line Distance as heuristics) - start goal to end goal",
+                "Part 2: Search With Multiple Goals - finding the shortest path through a maze while hitting multiple goals (make Pacman eat all the dots)"
+            ],
+            "key_contributions": [],
+            "project_repo": "https://github.com/pama-arniel/Maze-Search-Hooray",
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_maze.jpg"
+        },
+        {
+            "title": "Image Compression Using K-Means",
+            "desc": "Implement the K-Means algorithm and apply it on image compression",
+            "owner": "Intro to AI",
+            "company_link": "",
+            "website": "https://github.com/pama-arniel/K-Means-Clustering/blob/master/pama-bonganay%20documentation.pdf",
+            "technologies": [
+                "Java", "Python"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://github.com/pama-arniel/K-Means-Clustering",
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_kmeans.jpg"
+        },
+        {
+            "title": "Hitori Solver",
+            "desc": "The goal is to paint out some cells so that there are no duplicate numbers in any row or column",
+            "owner": "",
+            "company_link": "",
+            "website": "https://github.com/pama-arniel/Hitori-Solver/blob/master/hitori%20solver%20final%20presentation.pdf",
+            "technologies": [
+                "C", "C++"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://github.com/pama-arniel/Hitori-Solver",
+            "tags": ["All", "Special Problems"],
+            "attached_photo": "proj_hitori.jpg"
+        },
+        {
+            "title": "Backus-Naur Form",
+            "desc": "Write a Backus-Naur Form to describe simple expressions",
+            "owner": "",
+            "company_link": "",
+            "website": "https://drive.google.com/file/d/1N_AJLk4m0fSVAmBFsl-IZqJGMVXmTC65/view?usp=sharing",
+            "technologies": [
+                "Java"
+            ],
+            "features": [
+            	"Write a Backus-Naur Form to describe simple expressions",
+            	"Limited to the variable identifiers x, y, or z",
+            	"Contain operations of addition (+), subtraction (-), and unary negation (~) together with parentheses"
+            ],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkNlTWpldmZrUFVnT0xNNWlIWVVRMWFSNmF1UngwMWctVTR3VHJyT3NSeUk?usp=sharing",
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_bnf.jpg"
+        },
+        {
+            "title": "Recursive Descent Parser",
+            "desc": "Determine whether an arithmetic expression is valid or not; Determine whether a given number or decimal is valid or not",
+            "owner": "",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Java"
+            ],
+            "features": [
+            	"Determine whether an arithmetic expression is valid or not",
+            	"Determine whether a given number or decimal is valid or not"
+            ],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fjlEdko2UFREanl0WGNidV9RZlZDV1dvcjl0c3QxYXE1SGlVTG4xaloxcGc?usp=sharing",
+            "tags": ["All", "Special Problems"],
+            "attached_photo": "proj_rdp.jpg"
+        },
+        {
+            "title": "Expressions",
+            "desc": "Conversion of infix, prefix, and postfix notations",
+            "owner": "",
+            "company_link": "",
+            "website": "https://drive.google.com/file/d/1Gxl6I0BDBIM_AILg0PiGbacBMyf4LpoY/view?usp=sharing",
+            "technologies": [
+                "Java"
+            ],
+            "features": [
+            	"Infix → Prefix and postfix equivalent",
+            	"Prefix → Infix and postfix equivalent",
+                "Postfix → Infix and prefix equivalent",
+                "Use the same algorithms above to accept an expression (this time variables are actual numbers) and evaluate them to give the final answer."
+            ],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flVsQnhUSzd0QVZPNGhDU0ZZMUQ0NnpVRU4ydkVSeXNBb0ZjLWpzdERaMzA?usp=sharing",
+            "tags": ["All", "Special Problems"],
+            "attached_photo": "proj_expressions.jpg"
+        },
+        {
+            "title": "IG Scraper",
+            "desc": "Crawls and scrapes Instagram profiles given a starting input file",
+            "owner": "CMSC 195 (Practicum)",
+            "company_link": "https://bposeats.com/",
+            "website": "",
+            "technologies": [
+                "Python"
+            ],
+            "features": [
+            	"To run the script, type 'python scraper.py'",
+            	"Run script with optional arguments",
+                "Example: 'python scraper.py -i 'orig-celebs.txt' --users=20 --followers=200 --post=100 --has_email=True --is_private=True'",
+                "Using all filter tags is unnecessary. You can do: 'python scraper.py -i 'orig-celebs.txt' --users 20 --followers 200'",
+                "Default number of max users to scrape is 100 if no --users argument is supplied",
+                "To stop program while scraping, press ESC."
+            ],
+            "key_contributions": [],
+            "project_repo": "https://gitlab.com/arnielpama/ig-scraper",
+            "tags": ["All", "Special Problems"],
+            "attached_photo": "proj_igcrawler.jpg"
+        },
+        {
+            "title": "Simulate a syntax checker for a source code written in c",
+            "desc": "-",
+            "owner": "",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Java"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/183JjUozyvhiiTMPVLB-rhBkZW2G076UT?usp=sharing",
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_dfa.jpg"
+        },
+        {
+            "title": "Convert a regex to Deterministic Finite Automata",
+            "desc": "-",
+            "owner": "",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Java"
+            ],
+            "features": [],
+            "key_contributions": [],
+            "project_repo": "https://drive.google.com/drive/folders/1aHY0vjaFYl2JA9ZC-1COUN96AW161KUz?usp=sharing",
+            "tags": ["All", "Machine Learning", "Special Problems"],
+            "attached_photo": "proj_languageacceptor.jpg"
         }
     ]
 }
