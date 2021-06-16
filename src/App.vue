@@ -63,7 +63,7 @@ canvas {
 }
 
 #app {
-  background: transparent;
+  background: rgba(0,0,0, 0.5);
   position: relative;
   top: 0;
   right: 0;
