@@ -34,7 +34,7 @@ export default {
         if(this.type == 'error') {
             return 'Error in submitting your message. There may be some error in the network. Please try again.';
         }
-        return 'Your message have been successfully sent!';
+        return 'Your message has been successfully sent!';
       },
       getColor() {
         return (this.type=='success') ? 'bg-green' : 'bg-red';

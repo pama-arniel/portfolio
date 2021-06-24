@@ -20,7 +20,7 @@
 
       <div class="flex justify-center mt-16">
         <div class="inline-flex py-2 px-2">
-          <Button :text="'Hire Me'" @button-clicked="goToSection('contact-section')"/>
+          <Button :text="'Contact Me'" @button-clicked="goToSection('contact-section')"/>
         </div>
         <div class="ml-4 inline-flex py-2 px-2">
           <Button :text="'See My Works'" @button-clicked="goToSection('projects-section')"/>
