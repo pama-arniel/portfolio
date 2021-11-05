@@ -23,6 +23,6 @@ git add -A
 git commit -m 'Update portfolio experiences list'
 
 # deploy
-git push -f git@github.com:pama-arniel/portfolio.git master:gh-pages
+git push -f https://github.com/pama-arniel/portfolio.git master:gh-pages
 
 cd -
