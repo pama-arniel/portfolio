@@ -10,15 +10,15 @@
       <h1 class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description">
         I am a Software Engineer who specializes in Web Development. I can also do mobile, UI/UX, or AI.</h1>
 
-      <!-- <span
+      <span
         v-for="bullet in bullets"
         :key="bullet"
         class="font-bold text-white m-2 sm:m-6 text-center align-middle"
       >
          <span class="sm:text-2xl text-sm align-middle">⚙️</span> {{bullet}}
-      </span> -->
+      </span>
 
-      <div class="flex justify-center mt-14">
+      <div class="flex justify-center mt-16">
         <div class="inline-flex py-2 px-2">
           <Button :text="'Contact Me'" @button-clicked="goToSection('contact-section')"/>
         </div>
@@ -42,7 +42,8 @@ export default {
   data() {
     return {
         bullets: [
-            'Passionate',
+            // 'Passionate',
+            'Creative',
             'Curious',
             'Driven',
         ]
