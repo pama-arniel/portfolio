@@ -1,6 +1,25 @@
 {
     "list": [
         {
+            "title": "LiveSwitch",
+            "desc": "A video-conferencing app built using Flutter and the LiveSwitch SDK (a WebRTC-based library)",
+            "owner": "Nuvensis.ch",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Flutter", "Firebase", "flutter_bloc", "Azure DevOps", "Zeplin.io"
+            ],
+            "key_contributions": [
+                "Worked on the front-end, created templates, components, widgets, and applied user interactivity and frontend logic",
+                "Worked on the back-end (authentication, CRUD operations, etc.) for the app using Firebase",
+                "Worked with WebRTC concepts to implement the video-conferencing and chat feature"
+            ],
+            "project_repo": "",
+            "zeplin_designs": "https://app.zeplin.io/project/6079c56b3bcc2591f118f8db",
+            "tags": ["All", "Mobile"],
+            "attached_photo": "proj_liveswitch.jpg"
+        },
+        {
             "title": "Booqista - Consumer Web App",
             "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants",
             "owner": "Nuvensis.ch",
