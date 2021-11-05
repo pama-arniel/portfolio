@@ -17,8 +17,10 @@ cd dist
 
 echo Deploying..
 git init
+git config user.email 'pamajosearniel@gmail.com'
+git config user.name 'Arniel Pama'
 git add -A
-git commit -m 'Deploy portfolio version with old carousel impl'
+git commit -m 'Update portfolio experiences list'
 
 # deploy
 git push -f git@github.com:pama-arniel/portfolio.git master:gh-pages
