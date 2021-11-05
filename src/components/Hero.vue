@@ -1,7 +1,7 @@
 <template>
 <section id="hero-section" class="text-gray-600 body-font">
   <div class="container mx-auto flex pt-16 sm:pt-28 pb-24 items-center justify-center flex-col">
-    <img alt="Jose Arniel Pama - Graduation Photo" src="@/assets/profile.jpg"
+    <img alt="Jose Arniel Pama - profile" src="@/assets/profile2.jpg"
       class="mb-10 object-cover rounded-full h-32 w-32"/>
     
     <div class="text-center lg:w-9/12 w-full">
