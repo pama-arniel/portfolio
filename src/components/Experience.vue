@@ -7,11 +7,14 @@
          class="py-8 px-4 lg:w-1/2"
          >
          <div class="h-full flex items-start section-background">
-            <div class="w-15 flex-shrink-0 flex flex-col text-left leading-none">
+            <div class="w-15 md:flex-shrink-0 md:flex md:flex-col text-left leading-none hidden">
                <span class="pb-2 mb-2 border-b-2 border-gray-500">{{experience.endDate}}</span>
                <span class="title-font leading-none">{{experience.startDate}}</span>
             </div>
-            <div class="flex-grow pl-6">
+            <div class="flex-grow md:pl-6">
+               <p class="leading-relaxed text-gray-600 md:hidden block">
+                  {{experience.startDate}} - {{experience.endDate}}
+               </p>
                <h1 class="title-font text-3xl mb-2 purple-header align-top">{{experience.position}}</h1>
                <h2 class="tracking-widest font-bold">{{experience.company}}</h2>
                <p class="leading-relaxed mb-5 text-gray-500">

@@ -53,10 +53,9 @@ export default {
     return {
         showModal: false,
         descriptions: [
-            'I help people develop their software ideas from concept to reality.',
-            'I work well with a team and meet targets with high quality work.',
-            'I can quickly master new software packages and hardware technologies.',
-            'I love to learn new skills and explore something new.'
+            'I help people develop their software ideas from concept to reality with an added touch of creativity and a spark of joy to my outputs.',
+            'I work well with a team, enjoy exchanging ideas and collaboration, and meet targets with high-quality work.',
+            'I can quickly master new software packages and hardware technologies. I love to learn new skills and explore something novel.'
         ]
     };
   }
