@@ -66,22 +66,23 @@ export default {
     return {
         skillGroups: [
             {
-                'name': '🏭 Industry Knowledge',
-                'list': [
-                    'Software Development', 'Software Development Life Cycle (SDLC)', 'Front-end Development',
-                    'User Interface Design', 'Agile Methodologies', 'Scrum', 'Debugging', 'Code Review',
-                    'Design', 'Back-end Development', 'Object-Oriented Programming (OOP)', 'Data Structures',
-                ],
-            },
-            {
                 'name': '⚙️ Tools and Technologies',
                 'list': [
                     'Flutter', 'Vue.js', 'Python', 'Django', 'REST API', 'Javascript',
-                    'HTML', 'CSS', 'jQuery', 'C, C++', 'Java', 'Perl', 'Arduino',
-                    'Android', 'Assembly x86', 'MIPS', 'SQL', 'SQLite', 'MongoDB',
-                    'PostgreSQL', 'Confluence', 'JIRA', 'Figma', 'Git', 'Linux',
+                    'HTML', 'CSS', 'jQuery', 'Firebase', 'Android Jetpack Compose', 'C#',
+                    'ASP .Net', 'MSSQL', 'Azure DevOps', 'Adaptive Cards', 'Bot Framework',
+                    'C, C++', 'Java', 'Perl', 'Arduino', 'Android', 'Assembly x86', 'MIPS',
+                    'SQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Confluence', 'JIRA', 'Figma', 'Git', 'Linux',
                     'Slack'
                 ]
+            },
+            {
+                'name': '🏭 Industry Knowledge',
+                'list': [
+                    'Software Development', 'Front-end Development', 'User Interface Design', 'Agile Methodologies',
+                    'Scrum', 'Debugging', 'Code Review', 'Design', 'Back-end Development',
+                    'Object-Oriented Programming (OOP)', 'Data Structures',
+                ],
             },
             {
                 'name': '🙋🏽‍♂️ Interpersonal Skills',
