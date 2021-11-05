@@ -111,7 +111,7 @@ export default {
   data() {
     return {
        keysToHide: ['title', 'desc', 'owner', 'attached_photo'],
-       keysToDisplayAsLink: ['company_link', 'website', 'project_repo', 'figma_designs'],
+       keysToDisplayAsLink: ['company_link', 'website', 'project_repo', 'figma_designs', 'zeplin_designs'],
        keysToDisplayAsPills: ['technologies', 'tags']
     };
   },
@@ -137,6 +137,8 @@ export default {
           return '🏷️ Tags:';
        } else if(keyName == 'figma_designs'){
           return '👨‍🎨 Figma Designs:';
+       } else if(keyName == 'zeplin_designs'){
+          return '👨‍🎨 Zeplin Designs:';
        }
 
        return keyName;
