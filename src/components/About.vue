@@ -8,7 +8,7 @@
             <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center" src="@/assets/about/about_hero3.png">
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                <h2 class="text-sm title-font text-gray-500 tracking-widest">ABOUT ME</h2>
-               <h1 class="text-4xl title-font mb-8 purple-header">I am a proficient programmer who</h1>
+               <h1 class="text-4xl title-font mb-8 purple-header">I am a well-rounded developer.</h1>
                <div
                   v-for="description in descriptions"
                   :key="description"
@@ -53,10 +53,10 @@ export default {
     return {
         showModal: false,
         descriptions: [
-            'Posseses a strong knowledge of web development, software engineering, and the fundamentals of programming.',
-            'Can quickly master new software packages and hardware technologies.',
-            'Can work well under pressure and meet targets while delivering high quality work.',
-            'Loves to learn new skills and explore something new.'
+            'I help people develop their software ideas from concept to reality.',
+            'I work well with a team and meet targets with high quality work.',
+            'I can quickly master new software packages and hardware technologies.',
+            'I love to learn new skills and explore something new.'
         ]
     };
   }

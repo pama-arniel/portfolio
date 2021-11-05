@@ -106,7 +106,7 @@ export default {
       clickedTransitionButtonID: "",
 
       ARTICLES_PER_GROUP: 4,
-      PROJECTS_PER_GROUP: 4,
+      PROJECTS_PER_GROUP: 8,
 
       tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
       tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Special Problems'],

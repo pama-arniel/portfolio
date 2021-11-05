@@ -1,18 +1,72 @@
 {
     "list": [
         {
+            "title": "Contacts List",
+            "desc": "A sample personal project showcasing the VueJS techstack with Firebase database and hosting",
+            "website": "https://contacts-list2.web.app/",
+            "technologies": [
+                "VueJS", "Firebase", "Vuefire", "Git"
+            ],
+            "key_contributions": [
+                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for the contacts list",
+                "Worked on implementing logic for searching a contact",
+                "Worked with Vuefire (the Firebase library specific to VueJS) for the backend requests",
+                "Deployed the app to Firebase"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_contacts_list.jpg"
+        },
+        {
+            "title": "Products Grid",
+            "desc": "A sample personal project showcasing the VueJS techstack with Vuex store/persistence management",
+            "website": "https://pama-arniel.github.io/products/",
+            "technologies": [
+                "VueJS", "Vuex", "GitHub pages"
+            ],
+            "key_contributions": [
+                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for products",
+                "Worked on implementing logic for searching a product",
+                "Worked on data persistence and store management using Vuex",
+                "Deployed the app on GitHub pages"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_products_grid.jpg"
+        },
+        {
+            "title": "Employee Hub",
+            "desc": "A time-tracking and resource management app used for managing employees and teams",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.dewmaker.design/",
+            "website": "",
+            "technologies": [
+                "C Sharp", "ASP .Net", "Javascript", "jQuery", "MSSQL", "Azure DevOps", "Adaptive Cards", "Bot Framework SDK"
+            ],
+            "key_contributions": [
+                "Worked on the front-end (creating UI, applying logic) using Javascript",
+                "Worked on the back-end (implementing CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL",
+                "Developed a mini bot complementary to Employee Hub using C# and the Bot Framework SDK (v4)",
+                "Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_employeehub.jpg"
+        },
+        {
             "title": "LiveSwitch",
             "desc": "A video-conferencing app built using Flutter and the LiveSwitch SDK (a WebRTC-based library)",
             "owner": "Nuvensis.ch",
             "company_link": "",
             "website": "",
             "technologies": [
-                "Flutter", "Firebase", "flutter_bloc", "Azure DevOps", "Zeplin.io"
+                "Flutter", "Firebase", "flutter_bloc", "Azure DevOps", "Zeplin.io", "Android Jetpack Compose"
             ],
             "key_contributions": [
                 "Worked on the front-end, created templates, components, widgets, and applied user interactivity and frontend logic",
                 "Worked on the back-end (authentication, CRUD operations, etc.) for the app using Firebase",
-                "Worked with WebRTC concepts to implement the video-conferencing and chat feature"
+                "Worked with WebRTC concepts to implement the video-conferencing and chat feature",
+                "Used Android Jetpack Compose for functionalities in the mobile app that are platform-specific (e.g. UI or screens that only work in Android and not in iOS)"
             ],
             "project_repo": "",
             "zeplin_designs": "https://app.zeplin.io/project/6079c56b3bcc2591f118f8db",

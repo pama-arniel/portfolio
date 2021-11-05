@@ -57,13 +57,9 @@ export default {
                 company: 'Dewmaker Design, Inc.',
                 description: 'Technologies: Flutter, Firebase, Android Jetpack Compose,  C#, ASP .Net, Javascript, jQuery, MSSQL, Azure DevOps, Adaptive Cards, Bot Framework SDK',
                 tasks: [
-                    'Developed a video-conferencing mobile app using Flutter and the LiveSwitch SDK (a WebRTC-based library)',
-                    'Worked on both the front-end (creating templates, components, widgets, applying logic, etc.) and back-end (authentication, CRUD operations) for the video-conferencing app using Flutter and Firebase',
-                    'Used Android Jetpack Compose for functionalities in the mobile app that are platform-specific (e.g. UI or screens that only work in Android and not in iOS)',
-                    'Developed a  time-tracking and resource management app (i.e. Employee Hub) using C# and Javascript technologies',
-                    'Worked on both the front-end (creating UI, applying logic) using Javascript and back-end logic (CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL',
-                    'Developed a mini bot complementary to Employee Hub using C# and the Bot Framework SDK (v4)',
-                    'Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure'
+                    'Worked on both the front-end (creating templates, components, widgets, applying logic, etc.) and back-end (authentication, CRUD operations) for a video-conferencing app built using Flutter, Android Jetpack Compose, and Firebase',
+                    'Worked on both the front-end (creating UI, applying logic) using Javascript and back-end logic (CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL for an employee management app',
+                    'Developed an MS Teams bot complementary to Employee Hub using C# and the Bot Framework SDK (v4), used Adaptive Cards (adaptivecards.io) for the UI, and deployed the bot on Microsoft Azure'
                 ],
                 logo: 'dewmaker.png',
                 website: 'https://dewmaker.design/'
@@ -73,12 +69,12 @@ export default {
                 endDate: 'Jun 2021',
                 position: 'Software Engineer',
                 company: 'NUVENSIS / BEAPTECH Inc.',
-                description: 'Nuvensis aims to make reliable software solutions that are built within record time.',
+                description: 'Technologies: Flutter, VueJS, PostgreSQL, GraphQL, Axios, Quasar, Tailwind CSS, Node.js, Figma',
                 tasks: [
-                    'Develop mobile apps using Flutter,  BLoC pattern (store management), Hive (for storage), and PostgreSQL and GraphQL (for backend)',
-                    'Develop web apps using Vue.js, Quasar, Tailwind CSS, Node.js, and PostgreSQL and GraphQL',
-                    'Design UI using Figma and Dribbble',
-                    'Implement code and logic for frontend'
+                    'Developed mobile apps using Flutter,  BLoC pattern (store management), Hive (for storage), and PostgreSQL and GraphQL (for backend)',
+                    'Developed web apps using Vue.js, Quasar, Tailwind CSS, Node.js, and PostgreSQL and GraphQL',
+                    'Designed UI using Figma and Dribbble',
+                    'Implemented code and logic for frontend'
                 ],
                 logo: 'nuvensis.png',
                 website: 'http://nuvensis.ch/'
@@ -88,7 +84,7 @@ export default {
                 endDate: 'Aug 2020',
                 position: 'Web Developer',
                 company: 'BPOSeats.com / Channel Info Tech',
-                description: 'BPOSeats.com aims to establish a platform where talents and clients connect effortlessly.',
+                description: 'Technologies: VueJS, Python Django, REST API, jQuery, HTML, CSS, SQL, PostgreSQL, Confluence, JIRA, Git, Scrum, Agile, AWS',
                 tasks: [
                     'Back-end development, front-end development, implementation of HRIS-related features',
                     'Managing some small teams, code reviews, some research-related tasks, Agile Development, Scrum',
@@ -103,7 +99,7 @@ export default {
                 endDate: 'Aug 2018',
                 position: 'Web Developer Intern',
                 company: 'BPOSeats.com / Channel Info Tech',
-                description: 'The goal is to master the basics of web development and  produce a gamified web app capstone project.',
+                description: 'Technologies: VueJS, Python Django, REST API, jQuery, HTML, CSS, MongoDB, OpenTok',
                 tasks: [
                     'Developed "GuessWhut!?", an online video platform for playing charades with friends',
                     'Awarded as the TOP APP among the 5 other competitors in our internship',
