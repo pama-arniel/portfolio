@@ -4,7 +4,7 @@
       <div 
          v-for="(experience, index) in experiences"
          :key="'experience-' + index"
-         class="py-8 px-4 lg:w-1/3"
+         class="py-8 px-4 lg:w-1/2"
          >
          <div class="h-full flex items-start section-background">
             <div class="w-15 flex-shrink-0 flex flex-col text-left leading-none">
@@ -50,9 +50,27 @@ export default {
   data() {
     return {
         experiences: [
+           {
+                startDate: 'Jun 2021',
+                endDate: 'Oct 2021',
+                position: 'Software Developer',
+                company: 'Dewmaker Design, Inc.',
+                description: 'Technologies: Flutter, Firebase, Android Jetpack Compose,  C#, ASP .Net, Javascript, jQuery, MSSQL, Azure DevOps, Adaptive Cards, Bot Framework SDK',
+                tasks: [
+                    'Developed a video-conferencing mobile app using Flutter and the LiveSwitch SDK (a WebRTC-based library)',
+                    'Worked on both the front-end (creating templates, components, widgets, applying logic, etc.) and back-end (authentication, CRUD operations) for the video-conferencing app using Flutter and Firebase',
+                    'Used Android Jetpack Compose for functionalities in the mobile app that are platform-specific (e.g. UI or screens that only work in Android and not in iOS)',
+                    'Developed a  time-tracking and resource management app (i.e. Employee Hub) using C# and Javascript technologies',
+                    'Worked on both the front-end (creating UI, applying logic) using Javascript and back-end logic (CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL',
+                    'Developed a mini bot complementary to Employee Hub using C# and the Bot Framework SDK (v4)',
+                    'Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure'
+                ],
+                logo: 'dewmaker.png',
+                website: 'https://dewmaker.design/'
+            },
             {
-                startDate: '10/2020',
-                endDate: 'Present',
+                startDate: 'Oct 2020',
+                endDate: 'Jun 2021',
                 position: 'Software Engineer',
                 company: 'NUVENSIS / BEAPTECH Inc.',
                 description: 'Nuvensis aims to make reliable software solutions that are built within record time.',
@@ -66,8 +84,8 @@ export default {
                 website: 'http://nuvensis.ch/'
             },
             {
-                startDate: '07/2019',
-                endDate: '08/2020',
+                startDate: 'Jul 2019',
+                endDate: 'Aug 2020',
                 position: 'Web Developer',
                 company: 'BPOSeats.com / Channel Info Tech',
                 description: 'BPOSeats.com aims to establish a platform where talents and clients connect effortlessly.',
@@ -81,8 +99,8 @@ export default {
                 website: 'https://bposeats.com/'
             },
             {
-                startDate: '06/2018',
-                endDate: '08/2018',
+                startDate: 'Jun 2018',
+                endDate: 'Aug 2018',
                 position: 'Web Developer Intern',
                 company: 'BPOSeats.com / Channel Info Tech',
                 description: 'The goal is to master the basics of web development and  produce a gamified web app capstone project.',
