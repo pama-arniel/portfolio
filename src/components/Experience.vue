@@ -53,6 +53,21 @@ export default {
   data() {
     return {
         experiences: [
+            {
+               startDate: 'Dec 2021',
+               endDate: 'Present',
+               position: 'Front-end Developer',
+               company: 'LUMEA',
+               description: 'Technologies: VueJS 3, Quasar, TailwindCSS, MirageJS, Vuex 4, Pinia, Cypress',
+               tasks: [
+                  'Helped implement and optimize medical technology processes for hospitals and patients',
+                  'Implemented front-end logic and UI designs using VueJS, Quasar, and TailwindCSS',
+                  'Used Vue 3 concepts and practices such as the Composition API',
+                  'Used cutting-edge VueJS technologies like MirageJS for API mocking, Vuex 4 and Pinia for store management, and Cypress for E2E testing'
+               ],
+               logo: 'lumea.png',
+               website: 'https://bit.ly/3bnkCAW'
+            },
            {
                 startDate: 'Jun 2021',
                 endDate: 'Oct 2021',
