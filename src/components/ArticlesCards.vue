@@ -9,7 +9,7 @@
       >
         <h2 class="text-lg sm:text-xl font-medium title-font mb-2">{{ article.title }}</h2>
         <p class="leading-relaxed text-gray-500 mb-4">{{ article.desc }}</p>
-        <a :href="article.href" target="_blank" class="text-indigo-500 inline-flex items-center">Learn More
+        <a :href="article.href" target="_blank" class="text-indigo-500 inline-flex items-center" @click="$emit('clicked-learn-more')">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>

@@ -48,7 +48,7 @@
             v-for="i in numOfArticlesGroups"
             :key="'article-group-' + i"
             :class="classSlidesValue">
-            <ArticlesCards :articles="filteredArticlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)"/>
+            <ArticlesCards :articles="filteredArticlesList.slice(i*ARTICLES_PER_GROUP - ARTICLES_PER_GROUP, i*ARTICLES_PER_GROUP)" @clicked-learn-more="handleClickedLearnMore"/>
          </div>
       </div>
       <!-- Next and previous buttons -->
@@ -179,6 +179,10 @@ export default {
     clearInterval(this.myInterval);
   },
   methods: {
+    handleClickedLearnMore() {
+      clearInterval(this.myInterval);
+    },
+
     nextSlide() {
       this.slideIndex++;
       this.showSlides(this.slideIndex);
