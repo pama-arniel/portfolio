@@ -172,7 +172,7 @@ export default {
     }
   },
   mounted() {
-      this.showSlides(this.slideIndex);
+      this.showSlides(this.slideIndex, true);
       this.myInterval = setInterval(this.nextSlide, 5000);
   },
   beforeUnmount() {
@@ -295,7 +295,7 @@ export default {
       elmnt.scrollIntoView({block: "center"});
     },
 
-    showSlides(n) {
+    showSlides(n, calledOnMount = false) {
 
       // don't show slides if no results
       if(this.currNumOfGroups <= 0) return;
@@ -337,8 +337,8 @@ export default {
       //   this.clickedTransitionButtonID = "";
       // }
 
-      // only scroll into view if myInterval is null (meaning the slide event is from the user)
-      if(!this.myInterval) {
+      // only scroll into view if myInterval is null (meaning the slide event is from the user) and not called on mount
+      if(!this.myInterval && !calledOnMount) {
         this.scrollSearchBarIntoView()
       }
     }
