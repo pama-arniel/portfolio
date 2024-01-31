@@ -1,56 +1,8 @@
 {
     "list": [
         {
-            "title": "Booqista - Consumer Web App",
-            "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants",
-            "owner": "Nuvensis.ch",
-            "company_link": "https://www.nuvensis.ch/",
-            "website": "https://market.booqista.com/",
-            "technologies": [
-                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
-            ],
-            "features": [
-                "Search and discover a wide range of services and offers from merchants",
-                "Book services and schedule appointments with merchants",
-                "View merchant profiles, listings, services, prices",
-                "Review and rate services"
-            ],
-            "key_contributions": [
-                "Implement profile information and account settings",
-                "Implement managing of bookings and appointments",
-                "Implement authentication related features (sign up, log in, forgot password, etc.)",
-                "Implement E2E testing using Testcafe.io",
-                "Test app and add bug fixes"
-            ],
-            "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-web-app",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_consumerwebapp.jpg"
-        },
-        {
-            "title": "Booqista - Merchant Web App",
-            "desc": "An online platform that allows merchants to post, manage, and sell their services to Booqista consumers",
-            "owner": "Nuvensis.ch",
-            "company_link": "https://www.nuvensis.ch/",
-            "website": "https://seller.booqista.com/",
-            "technologies": [
-                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
-            ],
-            "features": [
-                "Setup and manage business account",
-                "Post and manage listings and services",
-                "Manage the appointments and bookings from consumers",
-                "View reviews and ratings from consumers"
-            ],
-            "key_contributions": [
-                "Implement features", "Test app", "Review code changes", "Add bug fixes"
-            ],
-            "project_repo": "https://gitlab.com/nuvensis/booqista/merchant-web-app",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_merchantwebapp.jpg"
-        },
-        {
             "title": "ApplyBPO.com",
-            "desc": "An online platform for hiring and managing applicants. It also allows managing of employees and tracking team productivity through time-tracking and other HRIS features",
+            "desc": "An online platform for hiring and managing applicants. It also allows managing of employees and tracking team productivity through time-tracking and other Human Resources Information System (HRIS) features",
             "owner": "Channel Info Technology",
             "company_link": "https://bposeats.com/",
             "website": "https://applybpo.com",
@@ -123,6 +75,101 @@
             "attached_photo": "proj_bposeats.jpg"
         },
         {
+            "title": "Booqista - Consumer Web App",
+            "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://market.booqista.com/",
+            "technologies": [
+                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
+            ],
+            "features": [
+                "Search and discover a wide range of services and offers from merchants",
+                "Book services and schedule appointments with merchants",
+                "View merchant profiles, listings, services, prices",
+                "Review and rate services"
+            ],
+            "key_contributions": [
+                "Implement profile information and account settings",
+                "Implement managing of bookings and appointments",
+                "Implement authentication related features (sign up, log in, forgot password, etc.)",
+                "Implement E2E testing using Testcafe.io",
+                "Test app and add bug fixes"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-web-app",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_consumerwebapp.jpg"
+        },
+        {
+            "title": "Booqista - Merchant Web App",
+            "desc": "An online platform that allows merchants to post, manage, and sell their services to Booqista consumers",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.nuvensis.ch/",
+            "website": "https://seller.booqista.com/",
+            "technologies": [
+                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
+            ],
+            "features": [
+                "Setup and manage business account",
+                "Post and manage listings and services",
+                "Manage the appointments and bookings from consumers",
+                "View reviews and ratings from consumers"
+            ],
+            "key_contributions": [
+                "Implement features", "Test app", "Review code changes", "Add bug fixes"
+            ],
+            "project_repo": "https://gitlab.com/nuvensis/booqista/merchant-web-app",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_merchantwebapp.jpg"
+        },
+        {
+            "title": "Monetize",
+            "desc": "A financial service platform aiming to rewrite the narrative of SME operations by addressing the hard and boring parts: expense management, payroll, accounting, and tax compliance",
+            "owner": "Monetize",
+            "company_link": "https://www.linkedin.com/company/monetiz3/about/",
+            "website": "https://www.monetiz3.com/",
+            "technologies": [
+                "React", "Django", "Python", "REST API", "HTML", "CSS", "Notion", "Git", "Scrum", "Agile"
+            ],
+            "features": [
+                "Manage and setup accounts",
+                "Track contracts, companies, and assets",
+                "Manage insights and graphs",
+                "Track resources and assets"
+            ],
+            "key_contributions": [
+                "Code and implement frontend logic and features",
+                "Implement code rehauls and refactors",
+                "Implement manual tests",
+                "Bug fixing",
+                "Do code reviews",
+                "Do research-related tasks",
+                "Employ Agile methodologies and Scrum"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_monetize.jpg"
+        },
+        {
+            "title": "Employee Hub",
+            "desc": "A time-tracking and resource management app used for managing employees and teams",
+            "owner": "Nuvensis.ch",
+            "company_link": "https://www.dewmaker.design/",
+            "website": "",
+            "technologies": [
+                "C Sharp", "ASP .Net", "Javascript", "jQuery", "MSSQL", "Azure DevOps", "Adaptive Cards", "Bot Framework SDK"
+            ],
+            "key_contributions": [
+                "Worked on the front-end (creating UI, applying logic) using Javascript",
+                "Worked on the back-end (implementing CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL",
+                "Developed a mini bot complementary to Employee Hub using C# and the Bot Framework SDK (v4)",
+                "Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web", "Special Problems"],
+            "attached_photo": "proj_employeehub.jpg"
+        },
+        {
             "title": "Booqista - Consumer Mobile App",
             "desc": "A mobile platform that connects consumers to the best service providers or merchants",
             "owner": "Nuvensis.ch",
@@ -155,59 +202,6 @@
             "attached_photo": "proj_consumermobileapp.jpg"
         },
         {
-            "title": "Contacts List",
-            "desc": "A sample personal project showcasing the VueJS techstack with Firebase database and hosting",
-            "website": "https://contacts-list2.web.app/",
-            "technologies": [
-                "VueJS", "Firebase", "Vuefire", "Git"
-            ],
-            "key_contributions": [
-                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for the contacts list",
-                "Worked on implementing logic for searching a contact",
-                "Worked with Vuefire (the Firebase library specific to VueJS) for the backend requests",
-                "Deployed the app to Firebase"
-            ],
-            "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_contacts_list.jpg"
-        },
-        {
-            "title": "Products Grid",
-            "desc": "A sample personal project showcasing the VueJS techstack with Vuex store/persistence management",
-            "website": "https://pama-arniel.github.io/products/",
-            "technologies": [
-                "VueJS", "Vuex", "GitHub pages"
-            ],
-            "key_contributions": [
-                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for products",
-                "Worked on implementing logic for searching a product",
-                "Worked on data persistence and store management using Vuex",
-                "Deployed the app on GitHub pages"
-            ],
-            "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_products_grid.jpg"
-        },
-        {
-            "title": "Employee Hub",
-            "desc": "A time-tracking and resource management app used for managing employees and teams",
-            "owner": "Nuvensis.ch",
-            "company_link": "https://www.dewmaker.design/",
-            "website": "",
-            "technologies": [
-                "C Sharp", "ASP .Net", "Javascript", "jQuery", "MSSQL", "Azure DevOps", "Adaptive Cards", "Bot Framework SDK"
-            ],
-            "key_contributions": [
-                "Worked on the front-end (creating UI, applying logic) using Javascript",
-                "Worked on the back-end (implementing CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL",
-                "Developed a mini bot complementary to Employee Hub using C# and the Bot Framework SDK (v4)",
-                "Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure"
-            ],
-            "project_repo": "",
-            "tags": ["All", "Web", "Special Problems"],
-            "attached_photo": "proj_employeehub.jpg"
-        },
-        {
             "title": "LiveSwitch",
             "desc": "A video-conferencing app built using Flutter and the LiveSwitch SDK (a WebRTC-based library)",
             "owner": "Nuvensis.ch",
@@ -226,6 +220,23 @@
             "zeplin_designs": "https://app.zeplin.io/project/6079c56b3bcc2591f118f8db",
             "tags": ["All", "Mobile"],
             "attached_photo": "proj_liveswitch.jpg"
+        },
+        {
+            "title": "Products Grid",
+            "desc": "A sample personal project showcasing the VueJS techstack with Vuex store/persistence management",
+            "website": "https://pama-arniel.github.io/products/",
+            "technologies": [
+                "VueJS", "Vuex", "GitHub pages"
+            ],
+            "key_contributions": [
+                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for products",
+                "Worked on implementing logic for searching a product",
+                "Worked on data persistence and store management using Vuex",
+                "Deployed the app on GitHub pages"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_products_grid.jpg"
         },
         {
             "title": "Building a Sign Language Gesture Classifier Using LSTM",
@@ -297,6 +308,23 @@
             "project_repo": "https://github.com/pama-arniel/portfolio",
             "tags": ["All", "Web"],
             "attached_photo": "proj_onlinecv.jpg"
+        },
+        {
+            "title": "Contacts List",
+            "desc": "A sample personal project showcasing the VueJS techstack with Firebase database and hosting",
+            "website": "https://contacts-list2.web.app/",
+            "technologies": [
+                "VueJS", "Firebase", "Vuefire", "Git"
+            ],
+            "key_contributions": [
+                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for the contacts list",
+                "Worked on implementing logic for searching a contact",
+                "Worked with Vuefire (the Firebase library specific to VueJS) for the backend requests",
+                "Deployed the app to Firebase"
+            ],
+            "project_repo": "",
+            "tags": ["All", "Web"],
+            "attached_photo": "proj_contacts_list.jpg"
         },
         {
             "title": "Snate the Bookish Snake - Assembly x86",

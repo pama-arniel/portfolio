@@ -103,8 +103,7 @@ export default {
       required: true
     },
     project: {
-       type: Object,
-       required: true,
+       type: [Object, null],
        default: null
     }
   },

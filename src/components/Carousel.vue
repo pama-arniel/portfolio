@@ -2,7 +2,7 @@
 <div>
   <ProjectDetailPopup
     :project="selectedProjectCard"
-    :showModal="showModal" @close-modal="showModal=false"
+    :showModal="showModal" @close-modal="closeModal"
   />
 
   <!-- search bar component -->
@@ -31,7 +31,7 @@
    <div v-if="typing" class="flex flex-col text-center w-full">
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">{{ this.typing }}</p>
     </div>
-   <div v-else-if="currNumOfGroups > 0" class="slideshow-container">
+   <div v-else-if="currNumOfGroups > 0" :id="slideShowContainerId" class="slideshow-container">
       <div v-if="refString == 'projects'">
          <div
             v-for="i in numOfProjectsGroups"
@@ -100,19 +100,21 @@ export default {
       chosenTag: "All",
       typing: "",
       showModal: false,
-      selectedProjectCard: {},
+      selectedProjectCard: null,
 
       // determine which of the dot buttons or the next-prev buttons are clicked
       clickedTransitionButtonID: "",
 
       ARTICLES_PER_GROUP: 4,
-      PROJECTS_PER_GROUP: 8,
+      PROJECTS_PER_GROUP: 4,
 
       tagsForProjects: ['All', 'Machine Learning', 'Web', 'Mobile', 'Games', 'Special Problems'],
       tagsForArticles: ['All', 'Machine Learning', 'Project Management', 'Special Problems'],
 
       filteredArticlesList: articlesJSON.list,
       filteredProjectsList: projectsJSON.list,
+
+      myInterval: null
     };
   },
   watch: {
@@ -127,6 +129,12 @@ export default {
     filteredProjectsList() {
       this.showSlideDefaults();
     },
+
+    selectedProjectCard(newVal) {
+      if(newVal) {
+        clearInterval(this.myInterval);
+      }
+    }
   },
   computed: {
     classSlidesValue() {
@@ -157,12 +165,30 @@ export default {
 
     numOfProjectsGroups() {
       return Math.ceil(this.filteredProjectsList.length / this.PROJECTS_PER_GROUP);
+    },
+
+    slideShowContainerId() {
+      return  `slideshow-container-${this.refString}`;
     }
   },
   mounted() {
       this.showSlides(this.slideIndex);
+      this.myInterval = setInterval(this.nextSlide, 5000);
+  },
+  beforeUnmount() {
+    clearInterval(this.myInterval);
   },
   methods: {
+    nextSlide() {
+      this.slideIndex++;
+      this.showSlides(this.slideIndex);
+    },
+
+    closeModal() {
+      this.showModal = false;
+      this.selectedProjectCard = null;
+    },
+
     handleClickedProjectCard(project){
       this.selectedProjectCard = project;
       this.showModal = true;
@@ -253,6 +279,7 @@ export default {
         this.clickedTransitionButtonID = clickedButton;
         this.slideIndex += n;
         this.showSlides(this.slideIndex);
+        clearInterval(this.myInterval);
     },
 
     // Thumbnail image controls
@@ -260,9 +287,16 @@ export default {
         this.clickedTransitionButtonID = clickedButton;
         this.slideIndex = n;
         this.showSlides(this.slideIndex);
+        clearInterval(this.myInterval);
+    },
+
+    scrollSearchBarIntoView() {
+      let elmnt = document.getElementById(this.slideShowContainerId);
+      elmnt.scrollIntoView({block: "center"});
     },
 
     showSlides(n) {
+
       // don't show slides if no results
       if(this.currNumOfGroups <= 0) return;
 
@@ -294,12 +328,18 @@ export default {
         dots[this.slideIndex-1].className += " active";
       }
 
+      // --- deprecated ---
       // scroll to the dots or prev-next area so they are always
       // visible to the user if they were the last buttons clicked
-      if(this.clickedTransitionButtonID){
-        let elmnt = document.getElementById(this.clickedTransitionButtonID);
-        elmnt.scrollIntoView({block: "center"});
-        this.clickedTransitionButtonID = "";
+      // if(this.clickedTransitionButtonID){
+      //   let elmnt = document.getElementById(this.clickedTransitionButtonID);
+      //   elmnt.scrollIntoView({block: "center"});
+      //   this.clickedTransitionButtonID = "";
+      // }
+
+      // only scroll into view if myInterval is null (meaning the slide event is from the user)
+      if(!this.myInterval) {
+        this.scrollSearchBarIntoView()
       }
     }
   }
@@ -324,9 +364,9 @@ export default {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   width: auto;
-  margin-top: -22px;
+  /* margin-top: -22px; */
   padding: 10px 18px;
   color: #8A00FF;
   text-shadow: 1px 3px 12px #ffffff42;

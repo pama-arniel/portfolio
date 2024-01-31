@@ -1,11 +1,11 @@
 <template>
-<div>
+<div v-scroll-animation>
    <SkillsPopup :showModal="showModal" @close-modal="showModal=false"/>
 
    <section id="about-section" class="body-font overflow-hidden">
       <div class="font-inter container px-5 py-10 mx-auto">
          <div class="lg:w-4/5 mx-auto flex flex-wrap">
-            <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center" src="@/assets/about/about_hero3.png">
+            <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center about-image" src="@/assets/about/about_hero.png" v-scroll-animation="'fade-in-left'">
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                <h2 class="text-sm title-font text-gray-500 tracking-widest">ABOUT ME</h2>
                <h1 class="text-4xl title-font mb-8 purple-header">I am a well-rounded developer.</h1>
@@ -53,7 +53,7 @@ export default {
     return {
         showModal: false,
         descriptions: [
-            'I help people develop their software ideas from concept to reality with an added touch of creativity and a spark of joy to my outputs.',
+            'I help clients develop their software ideas from concept to reality with an added touch of creativity and a spark of joy to my outputs.',
             'I work well with a team, enjoy exchanging ideas and collaboration, and meet targets with high-quality work.',
             'I can quickly master new software packages and hardware technologies. I love to learn new skills and explore something novel.'
         ]
@@ -61,3 +61,24 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.fade-in-left {
+  animation: fade-in-left 2s ease;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-image:hover {
+   transform: scale(1.1);
+}
+</style>

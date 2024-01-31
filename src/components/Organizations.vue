@@ -1,5 +1,5 @@
 <template>
-<section id="organizations-section" class="text-white body-font">
+<section id="organizations-section" class="text-white body-font" v-scroll-animation>
   <div class="container px-10 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
       <h1 class="text-4xl title-font purple-header mb-4">Here Are My Involvements</h1>

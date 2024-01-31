@@ -46,6 +46,10 @@ export default {
     box-shadow: -1px -3px 6px #bf00ff32, 1px 3px 6px #8a00ff32;
 }
 
+.call-to-action:hover {
+  transform: scale(1.1);
+}
+
 @keyframes spinner {
   to {
     transform: rotate(360deg);

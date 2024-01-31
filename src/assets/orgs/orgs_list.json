@@ -3,8 +3,20 @@
         {
             "title": "Cum Laude",
             "subtitle": "University of the Philippines (UP) Cebu",
-            "description": "Top 3 among the 6 honor students from Class 2019, Department of Computer Science (DCS)",
+            "description": "Top 3 among the 6 honor students (out of 60+ CS students) from Class 2019, Department of Computer Science (DCS)",
             "picture": "inv_uplogo.jpg"
+        },
+        {
+            "title": "Part-time University Instructor",
+            "subtitle": "Visayas State University (VSU)",
+            "description": "Instructed computer science courses and facilitated class discussions for Fundamentals of Programming and Web Development.",
+            "picture": "inv_vsu.jpg"
+        },
+        {
+            "title": "Freelance Developer",
+            "subtitle": "Apt Software",
+            "description": "Contribute to projects written in Vue or React to make websites or mobile apps while occassionally sipping margarita",
+            "picture": "inv_freelancer.jpg"
         },
         {
             "title": "Scholar",

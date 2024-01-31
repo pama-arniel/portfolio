@@ -32,7 +32,7 @@ export default {
       },
       message() {
         if(this.type == 'error') {
-            return 'Error in submitting your message. There may be some error in the network. Please try again.';
+            return 'Error in submitting your message. Please try again or contact me directly at pamajosearniel@gmail.com.';
         }
         return 'Your message has been successfully sent!';
       },

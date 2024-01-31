@@ -2,60 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 
 h1 {
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .purple-header {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: bold;
-    color: #8A00FF;
-    text-shadow: 1px 3px 12px #ffffff42;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  color: #8a00ff;
+  text-shadow: 1px 3px 12px #ffffff42;
 }
 
 .body-font {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .section-background {
-    background: rgba(1, 2, 10, 0.3);
+  background: rgba(1, 2, 10, 0.3);
 }
 
 .truncate-link {
-    display: block;
-    width: 200px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  display: block;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .bg-green-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
 }
 
 .bg-green-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
 }
 
 .bg-red-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 
 .bg-red-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Apply the animation to the element */
+.animated-entrance {
+  animation: fadeIn 1s ease-out;
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop screens only  */
-    .scale-on-hover:hover {
-        -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        transform: scale(1.02);
-    }
+  /* For desktop screens only  */
+  .scale-on-hover:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-<section class="text-white body-font">
+<section class="text-white body-font" v-scroll-animation>
   <div class="container py-5 px-1.5 mx-auto">
     <div class="flex flex-wrap">
       <div
