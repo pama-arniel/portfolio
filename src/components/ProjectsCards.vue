@@ -8,7 +8,7 @@
         class="xl:w-1/4 md:w-1/2 p-4"
       >
         <div class="bg-white rounded-xl pb-6 scale-on-hover" @click="$emit('project-card-clicked', project)">
-          <img class="h-50 rounded-t-xl w-full object-cover object-center mb-6" :src="getPic(project.attached_photo)" alt="content">
+          <img class="h-50 rounded-t-xl w-full object-cover object-center mb-6" :src="getPic(project.attached_photo)" :alt="`${project.desc}`">
 
           <div class="mx-6">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">{{ project.title }}</h2>

@@ -12,7 +12,7 @@
         class="lg:w-1/4 sm:w-1/3 p-4"
       >
         <div class="flex relative">
-          <img alt="gallery" class="absolute rounded-xl inset-0 w-full h-full object-cover object-center" :src="getPic(org.picture)">
+          <img :alt="getAltText(org)" class="absolute rounded-xl inset-0 w-full h-full object-cover object-center" :src="getPic(org.picture)">
           <div class="px-8 py-10 rounded-xl relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">{{org.subtitle}}</h2>
             <h1 class="title-font text-lg font-bold text-gray-900 mb-3">{{org.title}}</h1>
@@ -39,6 +39,9 @@ export default {
     getPic(fileName) {
       let images = require.context('../assets/orgs/', false, /\.(png|jpe?g|svg)$/);
       return images('./' + fileName);
+    },
+    getAltText(org) {
+      return  `${org.subtitle} ${org.title}`;
     }
   }
 }

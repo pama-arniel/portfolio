@@ -28,7 +28,7 @@
                   <!-- image -->
                   <div class="flex flex-wrap justify-center">
                      <div class="w-9/12 m-4">
-                        <img :src="getPic(project.attached_photo)" :alt="project.title" class="shadow rounded max-w-full h-auto align-middle border-none" />
+                        <img :src="getPic(project.attached_photo)" :alt="project.desc" class="shadow rounded max-w-full h-auto align-middle border-none" />
                      </div>
                   </div>
                   <!-- project details -->

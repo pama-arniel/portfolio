@@ -50,7 +50,7 @@
               class="inline-flex items-center"
             >
               <img
-                alt="blog"
+                :alt="`${experience.position} experience`"
                 :src="getPic(experience.logo)"
                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center company-logo"
               />
