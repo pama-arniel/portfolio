@@ -9,7 +9,7 @@
         class="mb-10 object-cover rounded-full h-32 w-32"
       />
 
-      <div class="text-center lg:w-9/12 w-10/12">
+      <div class="text-center sm:w-10/12 lg:w-9/12 w-11/12">
         <h2 class="text-base title-font tracking-widest mb-2 hello-portion">
           Hello, I'm
         </h2>
