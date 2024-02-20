@@ -1,6 +1,7 @@
 <template>
   <div
-    class="container text-white font-inter px-10 pt-10 pb-24 mx-auto" v-scroll-animation
+    class="container text-white font-inter px-10 pt-10 pb-24 mx-auto"
+    v-scroll-animation
   >
     <div class="flex flex-wrap -mx-4 -my-8">
       <div
@@ -13,10 +14,10 @@
             class="w-15 md:flex-shrink-0 md:flex md:flex-col text-left leading-none hidden"
           >
             <span class="pb-2 mb-2 border-b-2 border-gray-500">{{
-              experience.endDate
+              experience.startDate
             }}</span>
             <span class="title-font leading-none">{{
-              experience.startDate
+              experience.endDate
             }}</span>
           </div>
           <div class="flex-grow md:pl-6">
@@ -74,9 +75,9 @@ export default {
     return {
       experiences: [
         {
-          startDate: "June 2023",
-          endDate: "Present",
-          position: "Full-Stack VueJS Developer",
+          startDate: "From Jun 2023",
+          endDate: "To Feb 2024",
+          position: "Full-Stack Developer - VueJS and Firebase",
           company: "Seikosoft",
           description: "Technologies: VueJS 3, Firebase",
           tasks: [
@@ -87,9 +88,9 @@ export default {
           website: "https://www.seikosoft.com/",
         },
         {
-          startDate: "Dec 2021",
-          endDate: "Jun 2023",
-          position: "Front-end Developer",
+          startDate: "From Dec 2021",
+          endDate: "To Jun 2023",
+          position: "Frontend Developer - VueJS, Quasar, TailwindCSS",
           company: "LUMEA",
           description:
             "Technologies: VueJS 3, Quasar, TailwindCSS, MirageJS, Vuex 4, Pinia, Cypress",
@@ -103,9 +104,9 @@ export default {
           website: "https://lumeadigital.com/",
         },
         {
-          startDate: "Jun 2021",
-          endDate: "Oct 2021",
-          position: "Software Developer",
+          startDate: "From Jun 2021",
+          endDate: "To Oct 2021",
+          position: "Software Developer - JavaScript, C#, Flutter",
           company: "Dewmaker Design, Inc.",
           description:
             "Technologies: Flutter, Firebase, Android Jetpack Compose,  C#, ASP .Net, Javascript, jQuery, MSSQL, Azure DevOps, Adaptive Cards, Bot Framework SDK",
@@ -118,9 +119,9 @@ export default {
           website: "https://dewmaker.design/",
         },
         {
-          startDate: "Oct 2020",
-          endDate: "Jun 2021",
-          position: "Software Engineer",
+          startDate: "From Oct 2020",
+          endDate: "To Jun 2021",
+          position: "Frontend Developer - VueJS, Flutter, and Figma",
           company: "NUVENSIS / BEAPTECH Inc.",
           description:
             "Technologies: Flutter, VueJS, PostgreSQL, GraphQL, Axios, Quasar, Tailwind CSS, Node.js, Figma",
@@ -134,9 +135,9 @@ export default {
           website: "http://nuvensis.ch/",
         },
         {
-          startDate: "Jul 2019",
-          endDate: "Aug 2020",
-          position: "Web Developer",
+          startDate: "From Jul 2019",
+          endDate: "To Aug 2020",
+          position: "Full-Stack Developer - VueJS, Python and Django",
           company: "BPOSeats.com / Channel Info Tech",
           description:
             "Technologies: VueJS, Python Django, REST API, jQuery, HTML, CSS, SQL, PostgreSQL, Confluence, JIRA, Git, Scrum, Agile, AWS",
@@ -150,9 +151,9 @@ export default {
           website: "https://bposeats.com/",
         },
         {
-          startDate: "Jun 2018",
-          endDate: "Aug 2018",
-          position: "Web Developer Intern",
+          startDate: "From Jun 2018",
+          endDate: "To Aug 2018",
+          position: "Full-Stack Web Developer (Intern)",
           company: "BPOSeats.com / Channel Info Tech",
           description:
             "Technologies: VueJS, Python Django, REST API, jQuery, HTML, CSS, MongoDB, OpenTok",

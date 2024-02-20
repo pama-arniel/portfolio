@@ -1,37 +1,34 @@
 <template>
   <div>
-    <Particles
-      id="tsparticles"
-      :options="configData"
-    />
-    
+    <Particles id="tsparticles" :options="configData" />
+
     <div id="app">
       <Nav class="mb-6" />
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Articles/>
-      <Organizations/>
-      <Contact/>
-      <Footer/>
+      <Hero />
+      <Projects />
+      <About />
+      <Articles />
+      <Organizations />
+      <Contact />
+      <Footer />
     </div>
   </div>
-</template>   
+</template>
 
 <script>
-import Nav from './components/Nav.vue'
-import Hero from './components/Hero.vue'
-import About from './components/About.vue'
-import Projects from './components/Projects.vue'
-import Articles from './components/Articles.vue'
-import Contact from './components/Contact.vue'
-import Organizations from './components/Organizations.vue'
-import Footer from './components/Footer.vue'
+import Nav from "./components/Nav.vue";
+import Hero from "./components/Hero.vue";
+import About from "./components/About.vue";
+import Projects from "./components/Projects.vue";
+import Articles from "./components/Articles.vue";
+import Contact from "./components/Contact.vue";
+import Organizations from "./components/Organizations.vue";
+import Footer from "./components/Footer.vue";
 
-import particlesConfig from './assets/particles_config.json'
+import particlesConfig from "./assets/particles_config.json";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Nav,
     Hero,
@@ -40,14 +37,14 @@ export default {
     Articles,
     Contact,
     Organizations,
-    Footer
+    Footer,
   },
   data() {
     return {
-        configData: particlesConfig
+      configData: particlesConfig,
     };
   },
-}
+};
 </script>
 
 <style scoped>
@@ -63,7 +60,7 @@ canvas {
 }
 
 #app {
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: relative;
   top: 0;
   right: 0;
