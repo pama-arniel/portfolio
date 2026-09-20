@@ -127,7 +127,7 @@ export default {
             "Technologies: Flutter, VueJS, PostgreSQL, GraphQL, Axios, Quasar, Tailwind CSS, Node.js, Figma",
           tasks: [
             "Developed mobile apps using Flutter,  BLoC pattern (store management), Hive (for storage), and PostgreSQL and GraphQL (for backend)",
-            "Developed web apps using Vue.js, Quasar, Tailwind CSS, Node.js, and PostgreSQL and GraphQL",
+            "Developed web apps using Vue, Quasar, Tailwind CSS, Node.js, and PostgreSQL and GraphQL",
             "Designed UI using Figma and Dribbble",
             "Implemented code and logic for frontend",
           ],
@@ -160,7 +160,7 @@ export default {
           tasks: [
             'Developed "GuessWhut!?", an online video platform for playing charades with friends',
             "Awarded as the TOP APP among the 5 other competitors in our internship",
-            "Used Django as web framework; CSS, HTML, and Vue.js for the UI/UX; MongoDB for the database; OpenTok library for video communication",
+            "Used Django as web framework; CSS, HTML, and Vue for the UI/UX; MongoDB for the database; OpenTok library for video communication",
           ],
           logo: "bposeats.png",
           website: "https://bposeats.com/",
