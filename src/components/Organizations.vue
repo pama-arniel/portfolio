@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getPic(fileName) {
-      let images = require.context('../assets/orgs/', false, /\.(png|jpe?g|svg)$/);
+      let images = require.context('../assets/orgs/', false, /\.(png|jpe?g|svg|webp)$/);
       return images('./' + fileName);
     },
     getAltText(org) {
