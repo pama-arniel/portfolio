@@ -68,9 +68,9 @@ export default {
             {
                 'name': '⚙️ Tools and Technologies',
                 'list': [
-                     'React', 'Vue', 'Flutter', 'Python', 'Django', 'REST API', 'Javascript',
-                    'HTML', 'CSS', 'jQuery', 'Firebase', 'Android Jetpack Compose', 'C#',
-                    'ASP .Net', 'MSSQL', 'Azure DevOps', 'Adaptive Cards', 'Bot Framework',
+                     'React/Next.js', 'Vue', 'Flutter', 'Python/Django', 'C# / ASP .NET', 'REST API', "Claude", "Copilot",
+                     'Javascript', 'HTML', 'CSS', 'jQuery', 'Firebase', 'Android Jetpack Compose',
+                    'MSSQL', 'Azure DevOps', 'Adaptive Cards', 'Bot Framework',
                     'C, C++', 'Java', 'Perl', 'Arduino', 'Android', 'Assembly x86', 'MIPS',
                     'SQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Confluence', 'JIRA', 'Figma', 'Git', 'Linux',
                     'Slack'
