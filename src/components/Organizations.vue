@@ -16,7 +16,7 @@
         @keydown.enter="toggleOrganization(index)"
         @keydown.space.prevent="toggleOrganization(index)"
       >
-        <div class="flex relative">
+        <div class="organization-card flex relative">
           <img :alt="getAltText(org)" class="absolute rounded-xl inset-0 w-full h-full object-cover object-center" :src="getPic(org.picture)">
           <div
             :class="['organization-details px-8 py-10 rounded-xl relative z-10 w-full border-4 border-gray-200 bg-white', { 'organization-details-visible': selectedOrganization === index }]"
@@ -61,11 +61,19 @@ export default {
 <style scoped>
 .organization-details {
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.2s ease;
 }
 
-.organization-details:hover,
 .organization-details-visible {
   opacity: 1;
+  pointer-events: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .organization-card:hover .organization-details {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 </style>
