@@ -68,7 +68,7 @@ export default {
             {
                 'name': '⚙️ Tools and Technologies',
                 'list': [
-                     'Vue.js', 'React', 'Flutter', 'Python', 'Django', 'REST API', 'Javascript',
+                     'React', 'Vue', 'Flutter', 'Python', 'Django', 'REST API', 'Javascript',
                     'HTML', 'CSS', 'jQuery', 'Firebase', 'Android Jetpack Compose', 'C#',
                     'ASP .Net', 'MSSQL', 'Azure DevOps', 'Adaptive Cards', 'Bot Framework',
                     'C, C++', 'Java', 'Perl', 'Arduino', 'Android', 'Assembly x86', 'MIPS',
