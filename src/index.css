@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
 
 h1 {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
 }
 
 .purple-header {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
   font-weight: bold;
   color: #8a00ff;
   text-shadow: 1px 3px 12px #ffffff42;
 }
 
 .body-font {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", "Inter", sans-serif;
 }
 
 .section-background {
@@ -56,17 +57,20 @@ h1 {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /* Apply the animation to the element */
 .animated-entrance {
   animation: fadeIn 1s ease-out;
 }
 
 @media only screen and (min-width: 768px) {
+
   /* For desktop screens only  */
   .scale-on-hover:hover {
     -webkit-transform: scale(1.02);

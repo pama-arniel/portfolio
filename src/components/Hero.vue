@@ -82,17 +82,17 @@ export default {
 
 <style scoped>
 .my-name {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
   font-weight: bold;
   color: #8a00ff;
   text-shadow: 1px 3px 12px #ffffff42;
 }
 .description {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.8);
 }
 .hello-portion {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
   color: #ffffff;
   text-shadow: 1px 3px 12px #ffffff42;
 }
