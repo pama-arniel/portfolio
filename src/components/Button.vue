@@ -21,6 +21,11 @@ export default {
       type: Boolean,
       required: false,
       default: false
+    },
+    variant: {
+      type: String,
+      required: false,
+      default: 'solid'
     }
   },
   computed: {
@@ -28,7 +33,8 @@ export default {
         return {
           "base-spinner": this.isLoading,
           "cursor-not-allowed": this.isLoading,
-          "call-to-action px-9 py-5 font-bold text-sm sm:text-base": true
+          "call-to-action px-9 py-5 font-bold text-sm sm:text-base": true,
+          "ghost-button": this.variant === 'ghost'
         };
       }
   },
@@ -48,6 +54,19 @@ export default {
 
 .call-to-action:hover {
   transform: scale(1.1);
+}
+
+.ghost-button {
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #d4b2ff;
+  border-radius: 10px;
+    box-shadow: none;
+}
+
+.ghost-button:hover {
+  color: #ffffff;
+  background: rgba(138, 0, 255, 0.2);
 }
 
 @keyframes spinner {

@@ -117,9 +117,9 @@ export default {
 }
 
 a.selectedSection {
-    color: #8A00FF;
+    color: #d4b2ff;
     text-decoration: none;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     border-bottom: #fff 3px solid;
 }
 

@@ -17,7 +17,7 @@
           Jose Arniel Pama
         </h1>
         <h1
-          class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description"
+          class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed text-center description"
         >
           I am a Software Engineer who specializes in Web Development. I can
           also do mobile, UI/UX, or AI development.
@@ -26,7 +26,7 @@
         <span
           v-for="bullet in bullets"
           :key="bullet"
-          class="font-bold text-white m-2 sm:m-6 text-center align-middle"
+          class="trait-tag inline-block font-bold text-white m-2 sm:m-6 text-center align-middle"
         >
           <span class="sm:text-2xl text-sm align-middle">⚙️</span> {{ bullet }}
         </span>
@@ -35,6 +35,7 @@
           <div class="inline-flex py-2 px-2">
             <Button
               :text="'Contact Me'"
+              :variant="'ghost'"
               @button-clicked="goToSection('contact-section')"
             />
           </div>
@@ -100,5 +101,12 @@ export default {
 img {
   box-shadow: 0px 0px 5px #ffffff;
   padding: 7px;
+}
+.trait-tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 </style>
