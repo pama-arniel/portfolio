@@ -6,10 +6,10 @@
         <img class="h-9 w-9 rounded-full" src="@/assets/logo.png" alt="Logo"/>
         <span class="ml-3 text-xl">Jose Arniel Pama</span>
       </a>
-      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2021 —
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2026 —
         <a rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">pamajosearniel@gmail.com</a>
       </p>
-      <div class="sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <div class="sm:ml-auto sm:mt-0 mt-4 flex items-center justify-center sm:justify-start">
         <SocialMedia />
       </div>
     </div>
