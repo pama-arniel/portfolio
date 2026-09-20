@@ -8,7 +8,7 @@
           <img
             alt="3D about section image"
             class="lg:w-1/2 w-full object-cover object-center about-image"
-            src="@/assets/about/about_hero.png"
+            src="@/assets/about/about_hero.jpg"
             v-scroll-animation="'fade-in-left'"
           />
           <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
