@@ -17,7 +17,7 @@
                 <input
                   v-model.trim="name"
                   type="text" id="name" name="from_name" required
-                  class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    class="contact-input w-full bg-white/5 backdrop-blur-md border border-white/10 rounded text-white placeholder-white/40 focus:border-purple-500 focus:outline-none text-base px-4 py-3 leading-8 transition-colors duration-200 ease-in-out"
                 >
               </div>
             </div>
@@ -27,7 +27,7 @@
                 <input
                   v-model.trim="email"
                   type="email" id="email" name="reply_to" required
-                  class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    class="contact-input w-full bg-white/5 backdrop-blur-md border border-white/10 rounded text-white placeholder-white/40 focus:border-purple-500 focus:outline-none text-base px-4 py-3 leading-8 transition-colors duration-200 ease-in-out"
                 >
               </div>
             </div>
@@ -37,7 +37,7 @@
                 <textarea
                   v-model="message"
                   id="message" name="message" required
-                  class="w-full bg-white bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    class="contact-input w-full bg-white/5 backdrop-blur-md border border-white/10 rounded text-white placeholder-white/40 focus:border-purple-500 focus:outline-none h-32 text-base px-4 py-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
@@ -46,14 +46,6 @@
             </div>
           </form>
 
-          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            <a class="text-indigo-500">pamajosearniel@gmail.com</a>
-            <p class="leading-normal my-5">
-              Cebu, Philippines
-            </p>
-            
-            <SocialMedia />
-          </div>
         </div>
       </div>
     </div>
@@ -66,7 +58,6 @@
 <script>
 import Button from './Button.vue'
 import Alert from './Alert.vue'
-import SocialMedia from './SocialMedia.vue'
 
 import emailjs from 'emailjs-com';
 import EmailConfig from '../assets/email_config.js'
@@ -75,8 +66,7 @@ export default {
   name: 'Contact',
   components: {
     Button,
-    Alert,
-    SocialMedia
+    Alert
   },
   data() {
     return {
@@ -114,3 +104,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.contact-input {
+  background-color: rgba(1, 2, 10, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+  caret-color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  padding: 12px 16px;
+}
+</style>
