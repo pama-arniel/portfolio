@@ -24,7 +24,21 @@
                 v-for="(tech, tIndex) in project.technologies"
                 :key="'project-' + index + '-tech-' + tIndex"
                 class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-purple-300 rounded-2xl">
-                  #{{ tech }}
+                  {{ tech }}
+              </span>
+            </div>
+          </div>
+
+          <div v-if="project.contribution_type" class="mx-6 mt-6">
+            <h6 class="tracking-widest text-gray-900 text-xs font-medium title-font mb-2">
+              🤓 Contribution Type
+            </h6>
+            <div class="flex flex-wrap justify-starts items-center">
+              <span
+                v-for="(contr, cIndex) in project.contribution_type"
+                :key="'project-' + index + '-contr-' + cIndex"
+                class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-purple-300 rounded-2xl">
+                  {{ contr }}
               </span>
             </div>
           </div>
@@ -57,7 +71,7 @@ export default {
   methods: {
     getPic(fileName) {
       let file = fileName ? fileName : 'proj_uplogo.jpg';
-      let images = require.context('../assets/projects/', false, /\.(png|jpe?g|svg)$/);
+      let images = require.context('../assets/projects/', false, /\.(png|jpe?g|svg|webp)$/);
       return images('./' + file);
     },
 
