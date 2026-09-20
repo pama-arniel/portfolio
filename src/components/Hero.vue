@@ -61,13 +61,13 @@ export default {
   data() {
     return {
       bullets: [
-        // 'Passionate',
-        // 'Creative',
-        // 'Curious',
-        // 'Driven',
-        "Quality",
-        "Efficiency",
-        "Reliability",
+        'Passionate',
+        'Creative',
+        'Curious',
+        'Driven',
+        // "Quality",
+        // "Efficiency",
+        // "Reliability",
       ],
     };
   },

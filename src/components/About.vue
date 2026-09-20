@@ -47,6 +47,12 @@
           </div>
         </div>
       </div>
+      <img
+        alt="Logos of clients and companies I have worked with"
+        class="w-full object-cover object-center"
+        src="@/assets/about/clients.png"
+        v-scroll-animation="'fade-in-left'"
+      />
       <!-- the experience part -->
       <Experience />
     </section>
