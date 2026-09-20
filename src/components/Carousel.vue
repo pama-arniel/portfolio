@@ -170,7 +170,7 @@ export default {
       clickedTransitionButtonID: "",
 
       ARTICLES_PER_GROUP: 4,
-      PROJECTS_PER_GROUP: 4,
+      PROJECTS_PER_GROUP: 12,
 
       tagsForProjects: [
         "All",
