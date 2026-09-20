@@ -20,9 +20,9 @@ git init
 git config user.email 'pamajosearniel@gmail.com'
 git config user.name 'Arniel Pama'
 git add -A
-git commit -m 'Update portfolio experiences list'
+git commit -m 'Update skills list and add tap-to-reveal functionality for organization cards'
 
 # deploy
-git push -f https://github.com/pama-arniel/portfolio.git master:gh-pages
+git push -f https://github.com/pama-arniel/portfolio.git main:gh-pages
 
 cd -
