@@ -10,10 +10,17 @@
         v-for="(org, index) in orgsList"
         :key="'org-' + index"
         class="lg:w-1/4 sm:w-1/3 p-4"
+        role="button"
+        tabindex="0"
+        @click="toggleOrganization(index)"
+        @keydown.enter="toggleOrganization(index)"
+        @keydown.space.prevent="toggleOrganization(index)"
       >
         <div class="flex relative">
           <img :alt="getAltText(org)" class="absolute rounded-xl inset-0 w-full h-full object-cover object-center" :src="getPic(org.picture)">
-          <div class="px-8 py-10 rounded-xl relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+          <div
+            :class="['organization-details px-8 py-10 rounded-xl relative z-10 w-full border-4 border-gray-200 bg-white', { 'organization-details-visible': selectedOrganization === index }]"
+          >
             <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">{{org.subtitle}}</h2>
             <h1 class="title-font text-lg font-bold text-gray-900 mb-3">{{org.title}}</h1>
             <p class="text-gray-800 leading-relaxed">{{org.description}}</p>
@@ -32,7 +39,8 @@ export default {
   name: 'Organizations',
   data() {
     return {
-        orgsList: orgsJSON.list
+        orgsList: orgsJSON.list,
+        selectedOrganization: null
     };
   },
   methods: {
@@ -42,7 +50,22 @@ export default {
     },
     getAltText(org) {
       return  `${org.subtitle} ${org.title}`;
+    },
+    toggleOrganization(index) {
+      this.selectedOrganization = this.selectedOrganization === index ? null : index;
     }
   }
 }
 </script>
+
+<style scoped>
+.organization-details {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.organization-details:hover,
+.organization-details-visible {
+  opacity: 1;
+}
+</style>
