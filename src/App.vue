@@ -1,5 +1,10 @@
 <template>
   <div>
+    <div
+      id="site-background"
+      aria-hidden="true"
+      :style="{ backgroundImage: `url(${auroraBackground})` }"
+    />
     <Particles id="tsparticles" :options="configData" />
 
     <div id="app">
@@ -26,6 +31,7 @@ import Organizations from "./components/Organizations.vue";
 import Footer from "./components/Footer.vue";
 
 import particlesConfig from "./assets/particles_config.json";
+import auroraBackground from "./assets/aurora_borealis.webp";
 
 export default {
   name: "App",
@@ -42,6 +48,7 @@ export default {
   data() {
     return {
       configData: particlesConfig,
+      auroraBackground,
     };
   },
 };
@@ -50,6 +57,15 @@ export default {
 <style scoped>
 canvas {
   display: block;
+}
+
+#site-background {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* ---- tsparticles container ---- */
 #tsparticles {

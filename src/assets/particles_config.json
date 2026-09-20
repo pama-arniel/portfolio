@@ -1,9 +1,4 @@
 {
-    "background": {
-        "color": {
-            "value": "#000"
-        }
-    },
     "fpsLimit": 60,
     "particles": {
         "number": {

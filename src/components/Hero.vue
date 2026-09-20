@@ -84,8 +84,9 @@ export default {
 .my-name {
   font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
   font-weight: bold;
-  color: #8a00ff;
-  text-shadow: 1px 3px 12px #ffffff42;
+  /* color: #8a00ff; */
+  color: #d4b2ff;
+  /* text-shadow: 1px 3px 12px #ffffff42; */
 }
 .description {
   font-family: "DM Sans", "Inter", sans-serif;
