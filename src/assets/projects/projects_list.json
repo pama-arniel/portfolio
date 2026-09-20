@@ -116,7 +116,9 @@
                 "Do research-related tasks",
                 "Employ Agile methodologies and Scrum"
             ],
-            "interesting_facts": [],
+            "interesting_facts": [
+                "I developed the recorded project demonstrations presented weekly to key client stakeholders."
+            ],
             "domain": [
                 "SaaS",
                 "Financial Technology Platform"
@@ -129,7 +131,7 @@
             "problems_encountered": [
                 "Configuring the charts and tables in Chart.js took a bit of time.",
                 "The app development was fast-paced so I had to work really fast.",
-                "I also had to record sprint demos and talk to the clients every week. The setting up of test data and debugging took a bit of time every time, because I had to ensure that everything is working before I start recording the demos."
+                "I developed the recorded sprint demos and presented them to the clients every week. The setting up of test data and debugging took a bit of time every time, because I had to ensure that everything was working before I started recording the demos."
             ],
             "owned_features": [
                 "Implemented all the tables for displaying the data (contracts, assets, etc.) and graphs (for tracking insights, projects, resources and budget)",
@@ -151,7 +153,7 @@
             "desc": "A parenting app used for managing music playlists, parenting articles, and picture/content editing.",
             "owner": "Apt Software",
             "company_link": "https://www.linkedin.com/company/apt-software-us/home/",
-            "website": "https://www.monetiz3.com/",
+            "website": "",
             "technologies": [
                 "React",
                 "Ionic Framework",
@@ -347,7 +349,7 @@
             "problems_encountered": [
                 "Maybe one of the issues (though minor) was that we are expected to follow the Zeplin designs pixel-perfectly (the margins and fonts need to be coded in the frontend just right). What we see in the designs need to be followed strictly.",
                 "Writing unit tests and API mock tests in MirageJS was also an unfamiliar territory at first, but we got the hang of it eventually.",
-                "Revamping a tissue annotation tool (e.g. compatibility issues; handling syncing of SVG data points)"
+                "Revamping the tissue annotation tool (e.g. compatibility issues; handling syncing of SVG data points; old utility library was written in jQuery/Vanilla JS and had to be rewritten to work in VueJS)"
             ],
             "owned_features": [
                 "Tissue annotation tool",
@@ -413,7 +415,7 @@
                 "Employ Agile methodologies and Scrum"
             ],
             "interesting_facts": [
-                "Has been rebranded into HQZen",
+                "Has been rebranded into HQZen (see https://hqzen.com/)",
                 "Used an in-house API builder called Sileo (built on top of Django)"
             ],
             "domain": [
@@ -498,7 +500,7 @@
                 "Employ Agile methodologies and Scrum"
             ],
             "interesting_facts": [
-                "Has been rebranded into HQZen",
+                "Has been rebranded into HQZen (see https://hqzen.com/)",
                 "Used an in-house API builder called Sileo (built on top of Django)"
             ],
             "domain": [
@@ -571,7 +573,9 @@
                 "Implement E2E testing using Testcafe.io",
                 "Test app and add bug fixes"
             ],
-            "interesting_facts": [],
+            "interesting_facts": [
+                "Booqista had three main systems: the consumer web app, the merchant web app, and the consumer mobile app. I worked on all three systems and contributed to the development of all three."
+            ],
             "domain": [
                 "SaaS",
                 "Logistics Platform",
@@ -639,7 +643,9 @@
                 "Review code changes",
                 "Add bug fixes"
             ],
-            "interesting_facts": [],
+            "interesting_facts": [
+                "Booqista had three main systems: the consumer web app, the merchant web app, and the consumer mobile app. I worked on all three systems and contributed to the development of all three."
+            ],
             "domain": [
                 "SaaS",
                 "Logistics Platform",
@@ -775,6 +781,7 @@
                 "Fix bugs"
             ],
             "interesting_facts": [
+                "Booqista had three main systems: the consumer web app, the merchant web app, and the consumer mobile app. I worked on all three systems and contributed to the development of all three.",
                 "First time working on Flutter. Because of this project, I became comfortable working on Flutter and discovered its common usages and advantages as a framework (i.e. write once, run anywhere)."
             ],
             "domain": [
@@ -872,7 +879,7 @@
         },
         {
             "title": "GuessWhut!? (Play Charades)",
-            "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship.",
+            "desc": "An online video platform for playing charades with friends. Awarded as top app among the five (5) competitors in the internship.",
             "owner": "Channel Info Tech - Internship",
             "company_link": "",
             "website": "https://drive.google.com/file/d/1LKbfMAUill8tPx6NXYY2iSjC3UDq2lb4/view?usp=sharing",
@@ -922,8 +929,8 @@
             "project_repo": "https://gitlab.com/guesswhut/guesswhut",
             "attached_photo": "proj_guesswhut.jpg",
             "problems_encountered": [
-                "There was a big bug (the screens from different users weren't syncing, the timers weren't syncing, the draw-on-the-screen feature does not update in realtime)—fixed that major bug in the main game screen to ensure that the timer and all the data are in sync.",
-                "Had to spend an entire day/night debugging the main game screen and logic.",
+                "The team encountered a major bug (the screens from different users weren't syncing, the timers weren't syncing, the draw-on-the-screen feature did not update in realtime). I was the programmer who fixed that major bug in the main game screen to ensure that the timer and all the data were in sync.",
+                "Had to spend 2-3 days debugging the main game screen and logic.",
                 "Sync data (i.e. timer, players, sketches) in a live-game video conferencing app"
             ],
             "owned_features": [
