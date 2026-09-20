@@ -1,13 +1,392 @@
 {
     "list": [
         {
+            "title": "CVSA + TxMCCS",
+            "desc": "A comprehensive web application built for the Texas Department of Motor Vehicles (TxDMV) to digitize and streamline the registration, credentialing, and compliance monitoring of motor carriers (trucking companies and transportation businesses) operating in Texas.",
+            "owner": "Lumea",
+            "company_link": "https://www.seikosoft.com/",
+            "website": "https://txmccs.txdmv.gov/",
+            "technologies": [
+                "React",
+                "REST API",
+                "HTML",
+                "CSS",
+                "SQL",
+                "PostgreSQL",
+                "JIRA",
+                "Git",
+                "Agile and Scrum",
+                "AWS",
+                "TailwindCSS",
+                "Slack",
+                "C#",
+                "ASP .Net",
+                "Javascript",
+                "Copilot",
+                "Claude"
+            ],
+            "features": [
+                "Digitize and streamline the registration of motor carriers",
+                "Digitize and streamline the credentialing process of motor carriers",
+                "Track the compliance monitoring of motor carriers",
+                "Replace manual paperwork with a unified digital platform",
+                "Track enhanced inspections for commercial vehicles",
+                "Record inspection and data submissions in a centralized cloud repository",
+                "Provide reporting and monitoring tools for various stakeholders"
+            ],
+            "key_contributions": [
+                "Developed and maintained a comprehensive suite of applications for the Commercial Vehicle Safety Alliance's Automated Data System, enabling electronic tracking and compliance monitoring of commercial vehicle Enhanced Inspections.",
+                "Implemented VIPR|Check; implemented RESTful APIs for law enforcement to query vehicle inspection histories, supporting weigh station screenings, crash investigations, and compliance verification",
+                "Implemented and maintained VIPR|Connect; developed APIs for seamless data exchange between inspection applications and the cloud repository, facilitating real-time checklist updates and record submissions.",
+                "Developed a comprehensive web application for the Texas Department of Motor Vehicles (TxDMV) to digitize motor carrier registration, credentialing, and compliance monitoring",
+                "Replaced manual paperwork with unified digital workflows for carriers, insurance providers, and state staff",
+                "Enhanced operational efficiency, reduced errors, and improved visibility into Texas motor carrier operations."
+            ],
+            "interesting_facts": [
+                "TxMCCS - This is a comprehensive web application built for the Texas Department of Motor Vehicles (TxDMV) to digitize and streamline the registration, credentialing, and compliance monitoring of motor carriers (trucking companies and transportation businesses) operating in Texas.",
+                "Commercial Vehicle Safety Alliance - This is the CVSA ADS (Automated Data System) for the VIPR (Vehicle Information and Performance Reporting) system. VIPR is a comprehensive suite of applications and services designed to manage and track Enhanced Inspections for commercial vehicles.",
+                "After I worked on Do My Laundry, the CEO asked if I could work on a React/.NET project. I took on the challenge and got onboarded with a new team, this time working with more engineers and a larger project scope.",
+                "I learned here, the hard way, that using Claude and Copilot tools doesn’t always mean reliable and efficient code. Not everything that the AI-assisted tool could generate is of quality. So we need to read the code manually and ensure that it follows the team coding styles and conventions."
+            ],
+            "domain": [
+                "B2B",
+                "Government Service Platform",
+                "Logistics Platform"
+            ],
+            "contribution_type": [
+                "Staff Engineer"
+            ],
+            "project_repo": "",
+            "attached_photo": "proj_TxMCCS_logo.webp",
+            "problems_encountered": [
+                "When I first worked on the application, the data forms and landing pages were working very slow so it took me a lot of time to load the pages and debug the features.",
+                "There is a lot to setup at first—the backend code and frontend code as well as the test data—so getting up to speed with the onboarding took a bit of time. There were also passwords and credentials that I need to have access with and the night shift difference made the onboarding flow slow.",
+                "When I first worked on a big feature, I wasn't fully aware of the coding styles and conventions of the team, so I experienced a bit of hiccup there.",
+                "All in all, after I first pushed and developed my first feature or fixes for the project, after I got onboarded and got familiar with the coding styles and conventions of the team, I had a breeze with working on the next features and bugfixes.",
+                "I learned here, the hard way, that using Claude and Copilot tools doesn’t always mean reliable and efficient code. Not everything that the AI-assisted tool could generate is of quality. So we need to read the code manually and ensure that it follows the team coding styles and conventions."
+            ],
+            "owned_features": [
+                "Frontend UIs and code",
+                "Backend APIs, controllers, and services",
+                "Bug fixes",
+                "Manual testing and debugging",
+                "AI-assisted development using Copilot/Claude",
+                "Daily scrum meetings",
+                "Client feedback"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
+        },
+        {
+            "title": "Monetize",
+            "desc": "A financial service platform aiming to rewrite the narrative of SME operations by addressing the hard and boring parts: expense management, payroll, accounting, and tax compliance.",
+            "owner": "Monetize",
+            "company_link": "https://www.linkedin.com/company/monetiz3/about/",
+            "website": "https://www.monetiz3.com/",
+            "technologies": [
+                "React",
+                "Python",
+                "REST API",
+                "HTML",
+                "CSS",
+                "Django",
+                "Notion",
+                "Git",
+                "Scrum",
+                "Agile",
+                "Ant Design",
+                "Chart.js"
+            ],
+            "features": [
+                "Manage and setup accounts",
+                "Track contracts, companies, and assets",
+                "Manage insights and graphs",
+                "Track resources and assets",
+                "Track payroll and accounting"
+            ],
+            "key_contributions": [
+                "Code and implement frontend logic and features",
+                "Implement code rehauls and refactors",
+                "Implement manual tests",
+                "Bug fixing",
+                "Do code reviews",
+                "Do research-related tasks",
+                "Employ Agile methodologies and Scrum"
+            ],
+            "interesting_facts": [],
+            "domain": [
+                "SaaS",
+                "Financial Technology Platform"
+            ],
+            "contribution_type": [
+                "Principal Engineer"
+            ],
+            "project_repo": "",
+            "attached_photo": "proj_monetize.jpg",
+            "problems_encountered": [
+                "Configuring the charts and tables in Chart.js took a bit of time.",
+                "The app development was fast-paced so I had to work really fast.",
+                "I also had to record sprint demos and talk to the clients every week. The setting up of test data and debugging took a bit of time every time, because I had to ensure that everything is working before I start recording the demos."
+            ],
+            "owned_features": [
+                "Implemented all the tables for displaying the data (contracts, assets, etc.) and graphs (for tracking insights, projects, resources and budget)",
+                "Frontend UIs and code",
+                "Integration of backend APIs to frontend code/logic",
+                "Manual testing and debugging",
+                "Bug fixes",
+                "Client feedback",
+                "Sprint demos"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
+        },
+        {
+            "title": "Baby Pegasus",
+            "desc": "A parenting app used for managing music playlists, parenting articles, and picture/content editing.",
+            "owner": "Apt Software",
+            "company_link": "https://www.linkedin.com/company/apt-software-us/home/",
+            "website": "https://www.monetiz3.com/",
+            "technologies": [
+                "React",
+                "Ionic Framework",
+                "REST API",
+                "HTML",
+                "CSS",
+                "Git",
+                "Agile and Scrum",
+                "TailwindCSS",
+                "Figma",
+                "Axios",
+                "Javascript",
+                "Notion",
+                "iOS",
+                "Android",
+                "Strapi CMS"
+            ],
+            "features": [
+                "Curate music playlists used for entertaining babies and helping babies sleep better",
+                "Edit pictures, collage, and content (especially useful for tracking baby pics progress and relevant childhood milestones)",
+                "Provide relevant parenting articles and tips (useful for new parents to gain more insights on how to take care of their babies and get answers to parenting questions)"
+            ],
+            "key_contributions": [
+                "Implemented everything (from the frontend to the backend feature)",
+                "Implemented the music player and playlist management",
+                "Implemented the curated parenting tips and articles (integrated Strapi in the backend so that the admin can add contents and articles to be displayed in the Baby Pegasus app)",
+                "Implemented the picture editing feature (add collage templates, picture manipulation features, and text editing)",
+                "Deployed it to iOS and Android",
+                "Do manual tests",
+                "Design Figma wireframes"
+            ],
+            "interesting_facts": [],
+            "domain": [
+                "SaaS",
+                "Mobile Application",
+                "Cross-Platform Application",
+                "Parenting Application"
+            ],
+            "contribution_type": [
+                "Principal Engineer",
+                "Individual Contributor",
+                "Lead Engineer"
+            ],
+            "project_repo": "",
+            "attached_photo": "proj_baby_pegasus_app.webp",
+            "problems_encountered": [
+                "Cross-platform compatibility issues (e.g. rotation functionality in a photo-editing feature works in Android but does not work in iPhone)",
+                "Handle in-app purchases in deployed applications"
+            ],
+            "owned_features": [
+                "Music player and playlist curator",
+                "Picture and content editing tool",
+                "Parenting articles and tips (setup via Strapi and integrated via Axios in the frontend)",
+                "Deployment to iOS and Android",
+                "Frontend UIs and code",
+                "Backend code via Strapi and Axios",
+                "Figma UI designs",
+                "Manual tests and debugging",
+                "Bug fixing",
+                "Client feedback and meetings",
+                "Sprint demos"
+            ],
+            "tags": [
+                "All",
+                "Mobile"
+            ],
+            "figma_designs": "https://www.figma.com/design/7Jty9FnF1RAiZlXFKD3tU6/BabyPegasus?node-id=212-47&t=Z3A2teRjSxnuK5Pt-1"
+        },
+        {
+            "title": "Do My Laundry",
+            "desc": "A web app ecosystem for a laundry business which involves multiple user types such as a driver, customer, manager, and laundry washboss.",
+            "owner": "Seikosoft",
+            "company_link": "https://www.seikosoft.com/",
+            "website": "",
+            "technologies": [
+                "Vue",
+                "REST API",
+                "HTML",
+                "CSS",
+                "Git",
+                "Agile",
+                "Slack",
+                "GCP",
+                "Firebase"
+            ],
+            "features": [
+                "Track laundry orders",
+                "Manage and setup accounts",
+                "Add orders",
+                "Search laundry orders",
+                "View laundry information and details"
+            ],
+            "key_contributions": [
+                "Implement APIs in the backend",
+                "Implement frontend logic and features",
+                "Code unit tests",
+                "Do code rehauls and refactors",
+                "Implement manual tests",
+                "Designed backend object models and schema",
+                "Send email notifications",
+                "Do bug fixing",
+                "Do code reviews",
+                "Employ Agile methodologies and Scrum",
+                "Implemented all features and led the development"
+            ],
+            "interesting_facts": [
+                "I was the sole engineer working on the project.",
+                "I had a senior engineer who reviewed my code."
+            ],
+            "domain": [
+                "SaaS",
+                "Logistics Platform"
+            ],
+            "contribution_type": [
+                "Principal Engineer",
+                "Individual Contributor"
+            ],
+            "project_repo": "",
+            "attached_photo": "proj_domylaundry.jpeg",
+            "problems_encountered": [
+                "Password encryptions and cybersecurity (e.g. task about updating a password every 90 days; had to choose between SHA-256, bcrypt, or argon2)",
+                "The project had multiple applications and folders (different for drivers, washboss, customers, etc.), so one change in the flow/feature means changing multiple files and folders.",
+                "The project existed before I worked on it, so I had to maintain it and read the entire codebase before I got familiar with the flows and project."
+            ],
+            "owned_features": [
+                "Backend APIs",
+                "Frontend UIs and code",
+                "Unit tests",
+                "Code rehauls and refactors",
+                "Manual testing",
+                "Backend data object models and schemas",
+                "Bug fixes",
+                "Code reviews",
+                "Led the development",
+                "Client feedback"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
+        },
+        {
+            "title": "Lumea BxLink",
+            "desc": "A digital product of Lumea which aims to streamline cancer and pathology diagnoses and improve overall pathology workflows and patient care.",
+            "owner": "Lumea",
+            "company_link": "https://lumeadigital.com/",
+            "website": "https://lumeadigital.com/",
+            "technologies": [
+                "Vue",
+                "Quasar",
+                "TailwindCSS",
+                "MirageJS",
+                "Pinia",
+                "Cypress",
+                "Composition API",
+                "HTML",
+                "CSS",
+                "JIRA",
+                "Git",
+                "Agile and Scrum",
+                "Confluence",
+                "Javascript",
+                "Zeplin.io"
+            ],
+            "features": [
+                "Track tissue culture",
+                "Annotate tissue samples",
+                "Track medical records",
+                "Manage and setup accounts",
+                "View profile information and account settings"
+            ],
+            "key_contributions": [
+                "Designed and developed front-end interfaces for the application",
+                "Helped implement and optimize medical technology processes for hospitals and patients",
+                "Implemented front-end logic and UI designs using VueJS, Quasar, and TailwindCSS",
+                "Utilized or used cutting-edge software technologies like VueJS, Quasar Framework, HTML/CSS; MirageJS for API mocking, Vuex 4 and Pinia for store management, and Cypress for end-to-end testing",
+                "Enhanced user experience and functionality for the front-end; Used Vue 3 concepts and practices such as the Composition API"
+            ],
+            "interesting_facts": [
+                "The manager (also the lead front-end developer) was one of the kindest and best engineers I worked with in the industry.",
+                "Overall, it's an enjoyable project to work on. The manager (also the lead front-end developer) was very kind and easy to work with, so I had no major problems in this project."
+            ],
+            "domain": [
+                "SaaS",
+                "Medical Technology Platform"
+            ],
+            "contribution_type": [
+                "Staff Engineer"
+            ],
+            "project_repo": "",
+            "attached_photo": "proj_lumea_bxlink_app.webp",
+            "problems_encountered": [
+                "Maybe one of the issues (though minor) was that we are expected to follow the Zeplin designs pixel-perfectly (the margins and fonts need to be coded in the frontend just right). What we see in the designs need to be followed strictly.",
+                "Writing unit tests and API mock tests in MirageJS was also an unfamiliar territory at first, but we got the hang of it eventually.",
+                "Revamping a tissue annotation tool (e.g. compatibility issues; handling syncing of SVG data points)"
+            ],
+            "owned_features": [
+                "Tissue annotation tool",
+                "Pathology data management (the cell tissues and boxes get passed on to different stages of the process)",
+                "Frontend UIs and code",
+                "API mocking and code",
+                "Unit tests",
+                "Manual testing and debugging",
+                "Bug fixes",
+                "Client feedback"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
+        },
+        {
             "title": "ApplyBPO.com",
-            "desc": "An online platform for hiring and managing applicants. It also allows managing of employees and tracking team productivity through time-tracking and other Human Resources Information System (HRIS) features",
+            "desc": "An online platform for hiring and managing applicants. It also allows managing of employees and tracking team productivity through time-tracking and other Human Resources Information System (HRIS) features.",
             "owner": "Channel Info Technology",
             "company_link": "https://bposeats.com/",
             "website": "https://applybpo.com",
             "technologies": [
-                "Vue.js", "Django", "Python", "REST API", "jQuery", "HTML", "CSS", "SQL", "PostgreSQL", "Confluence", "JIRA", "Git", "Scrum", "Agile", "AWS"
+                "Vue",
+                "Django",
+                "Python",
+                "REST API",
+                "jQuery",
+                "HTML",
+                "CSS",
+                "SQL",
+                "PostgreSQL",
+                "Confluence",
+                "JIRA",
+                "Git",
+                "Scrum",
+                "Agile",
+                "AWS"
             ],
             "features": [
                 "Manage and setup accounts",
@@ -33,18 +412,66 @@
                 "Do research-related tasks",
                 "Employ Agile methodologies and Scrum"
             ],
+            "interesting_facts": [
+                "Has been rebranded into HQZen",
+                "Used an in-house API builder called Sileo (built on top of Django)"
+            ],
+            "domain": [
+                "SaaS",
+                "HRIS (Human Resource Information Systems)"
+            ],
+            "contribution_type": [
+                "Squad Leader",
+                "Staff Engineer"
+            ],
             "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_applybpo.jpg"
+            "attached_photo": "proj_applybpo.jpg",
+            "problems_encountered": [
+                "The requirements had to change a lot since the client was still exploring the ideas and possibilities of the project.",
+                "Client feedback happens every week/every new sprint so prioritization is hectic.",
+                "Had to do a lot of research and development readings for new features and flows.",
+                "Celery tasks or background processes are time-sensitive and had to be tested deliberately."
+            ],
+            "owned_features": [
+                "Backend APIs",
+                "Frontend UIs and code",
+                "Unit tests",
+                "Code refactors",
+                "Data object models and schemas",
+                "Bug fixes",
+                "Background processes written in Celery",
+                "Email and SMS notifications",
+                "Client feedback",
+                "Feature release notes"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
         },
         {
             "title": "BPOSeats.com",
-            "desc": "An online platform which allows businesses to manage their teams and to set up offices and infrastructures (even from other countries)",
+            "desc": "An online platform which allows businesses to manage their teams and to set up offices and infrastructures (even from other countries/offshore)",
             "owner": "Channel Info Technology",
             "company_link": "https://bposeats.com/",
             "website": "https://bposeats.com/",
             "technologies": [
-                "Vue.js", "Django", "Python", "REST API", "jQuery", "HTML", "CSS", "SQL", "PostgreSQL", "Confluence", "JIRA", "Git", "Scrum", "Agile", "AWS"
+                "Vue",
+                "Django",
+                "Python",
+                "REST API",
+                "jQuery",
+                "HTML",
+                "CSS",
+                "SQL",
+                "PostgreSQL",
+                "Confluence",
+                "JIRA",
+                "Git",
+                "Scrum",
+                "Agile",
+                "AWS"
             ],
             "features": [
                 "Manage and setup business accounts",
@@ -70,18 +497,66 @@
                 "Do research-related tasks",
                 "Employ Agile methodologies and Scrum"
             ],
+            "interesting_facts": [
+                "Has been rebranded into HQZen",
+                "Used an in-house API builder called Sileo (built on top of Django)"
+            ],
+            "domain": [
+                "SaaS",
+                "HRIS (Human Resource Information Systems)"
+            ],
+            "contribution_type": [
+                "Squad Leader",
+                "Staff Engineer"
+            ],
             "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_bposeats.jpg"
+            "attached_photo": "proj_bposeats.jpg",
+            "problems_encountered": [
+                "The requirements had to change a lot since the client was still exploring the ideas and possibilities of the project.",
+                "Client feedback happens every week/every new sprint so prioritization is hectic.",
+                "Had to do a lot of research and development readings for new features and flows.",
+                "Celery tasks or background processes are time-sensitive and had to be tested deliberately."
+            ],
+            "owned_features": [
+                "Backend APIs",
+                "Frontend UIs and code",
+                "Unit tests",
+                "Code refactors",
+                "Data object models and schemas",
+                "Bug fixes",
+                "Background processes written in Celery",
+                "Email and SMS notifications",
+                "Client feedback",
+                "Feature release notes"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
         },
         {
             "title": "Booqista - Consumer Web App",
-            "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants",
+            "desc": "An online platform or marketplace that connects consumers to the best service providers or merchants.",
             "owner": "Nuvensis.ch",
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://market.booqista.com/",
             "technologies": [
-                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
+                "Vue",
+                "Quasar",
+                "TailwindCSS",
+                "Figma",
+                "JIRA",
+                "Confluence",
+                "Slack",
+                "Git",
+                "GCP",
+                "GraphQL",
+                "PostgreSQL",
+                "Node.js",
+                "Firebase",
+                "Testcafe.io",
+                "Sentry"
             ],
             "features": [
                 "Search and discover a wide range of services and offers from merchants",
@@ -96,18 +571,61 @@
                 "Implement E2E testing using Testcafe.io",
                 "Test app and add bug fixes"
             ],
+            "interesting_facts": [],
+            "domain": [
+                "SaaS",
+                "Logistics Platform",
+                "Financial Technology Platform",
+                "eCommerce Platform"
+            ],
+            "contribution_type": [
+                "Staff Engineer"
+            ],
             "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-web-app",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_consumerwebapp.jpg"
+            "attached_photo": "proj_consumerwebapp.jpg",
+            "problems_encountered": [
+                "No major problems. The development started from scratch and everyone had the same level of understanding with the product and technologies we were building.",
+                "The issue was the requirements had to change a lot since the client was still exploring the ideas and possibilities of the project.",
+                "The senior engineer (also the owner) was keen on code quality and standards."
+            ],
+            "owned_features": [
+                "Profile information and account settings feature",
+                "Managing of bookings and appointments",
+                "Authentication features (sign up, login, forgot password, etc.)",
+                "E2E tests via Testcafe.io",
+                "Frontend UIs and code",
+                "Testing and debugging",
+                "Bug fixes",
+                "Client feedback"
+            ],
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "figma_designs": ""
         },
         {
             "title": "Booqista - Merchant Web App",
-            "desc": "An online platform that allows merchants to post, manage, and sell their services to Booqista consumers",
+            "desc": "An online platform that allows merchants to post, manage, and sell their services to Booqista consumers.",
             "owner": "Nuvensis.ch",
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://seller.booqista.com/",
             "technologies": [
-                "Vue.js", "Quasar", "TailwindCSS", "Figma", "JIRA", "Confluence", "Slack", "Git", "GCP", "GraphQL", "PostgresSQL", "Node.js", "Firebase", "Testcafe.io"
+                "Vue",
+                "Quasar",
+                "TailwindCSS",
+                "Figma",
+                "JIRA",
+                "Confluence",
+                "Slack",
+                "Git",
+                "GCP",
+                "GraphQL",
+                "PostgreSQL",
+                "Node.js",
+                "Firebase",
+                "Testcafe.io",
+                "Sentry"
             ],
             "features": [
                 "Setup and manage business account",
@@ -116,68 +634,128 @@
                 "View reviews and ratings from consumers"
             ],
             "key_contributions": [
-                "Implement features", "Test app", "Review code changes", "Add bug fixes"
+                "Implement features",
+                "Test app",
+                "Review code changes",
+                "Add bug fixes"
+            ],
+            "interesting_facts": [],
+            "domain": [
+                "SaaS",
+                "Logistics Platform",
+                "Financial Technology Platform",
+                "eCommerce Platform"
+            ],
+            "contribution_type": [
+                "Staff Engineer"
             ],
             "project_repo": "https://gitlab.com/nuvensis/booqista/merchant-web-app",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_merchantwebapp.jpg"
-        },
-        {
-            "title": "Monetize",
-            "desc": "A financial service platform aiming to rewrite the narrative of SME operations by addressing the hard and boring parts: expense management, payroll, accounting, and tax compliance",
-            "owner": "Monetize",
-            "company_link": "https://www.linkedin.com/company/monetiz3/about/",
-            "website": "https://www.monetiz3.com/",
-            "technologies": [
-                "React", "Django", "Python", "REST API", "HTML", "CSS", "Notion", "Git", "Scrum", "Agile"
+            "attached_photo": "proj_merchantwebapp.jpg",
+            "problems_encountered": [
+                "No major problems. The development started from scratch and everyone had the same level of understanding with the product and technologies we were building.",
+                "The issue was the requirements had to change a lot since the client was still exploring the ideas and possibilities of the project.",
+                "The senior engineer (also the owner) was keen on code quality and standards."
             ],
-            "features": [
-                "Manage and setup accounts",
-                "Track contracts, companies, and assets",
-                "Manage insights and graphs",
-                "Track resources and assets"
+            "owned_features": [
+                "Implement Frontend UIs and code",
+                "Testing and debugging",
+                "Code reviews",
+                "Bug fixes",
+                "Client feedback"
             ],
-            "key_contributions": [
-                "Code and implement frontend logic and features",
-                "Implement code rehauls and refactors",
-                "Implement manual tests",
-                "Bug fixing",
-                "Do code reviews",
-                "Do research-related tasks",
-                "Employ Agile methodologies and Scrum"
+            "tags": [
+                "All",
+                "Web"
             ],
-            "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_monetize.jpg"
+            "figma_designs": ""
         },
         {
             "title": "Employee Hub",
-            "desc": "A time-tracking and resource management app used for managing employees and teams",
-            "owner": "Nuvensis.ch",
+            "desc": "A time-tracking and resource management app used for managing employees and teams.",
+            "owner": "Dewmaker Design",
             "company_link": "https://www.dewmaker.design/",
             "website": "",
             "technologies": [
-                "C Sharp", "ASP .Net", "Javascript", "jQuery", "MSSQL", "Azure DevOps", "Adaptive Cards", "Bot Framework SDK"
+                "C#",
+                "ASP .Net",
+                "Javascript",
+                "jQuery",
+                "MSSQL",
+                "Azure DevOps",
+                "Adaptive Cards",
+                "Bot Framework SDK"
+            ],
+            "features": [
+                "View and manage employees",
+                "View and manage clients",
+                "View and manage time sheets",
+                "Manage and setup accounts",
+                "View profile information and account settings",
+                "Track skills and certifications",
+                "Track employee documents",
+                "Track employee productivity through time-tracking and other HRIS features"
             ],
             "key_contributions": [
                 "Worked on the front-end (creating UI, applying logic) using Javascript",
                 "Worked on the back-end (implementing CRUD operations, stored procedures, controllers, etc.) using C# and MSSQL",
                 "Developed a mini bot complementary to Employee Hub using C# and the Bot Framework SDK (v4)",
-                "Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure"
+                "Developed the UI for the bot using Adaptive Cards (adaptivecards.io) and deployed the bot on Microsoft Azure",
+                "Worked on view and manage employees",
+                "Worked on view profile information and account settings"
+            ],
+            "interesting_facts": [
+                "After working on the LiveSwitch project, the client asked me if I can work comfortably with ASP .Net. Though it was my first time working on ASP .Net, I accepted the challenge."
+            ],
+            "domain": [
+                "SaaS",
+                "HRIS (Human Resource Information Systems)"
+            ],
+            "contribution_type": [
+                "Principal Engineer"
             ],
             "project_repo": "",
-            "tags": ["All", "Web", "Special Problems"],
-            "attached_photo": "proj_employeehub.jpg"
+            "attached_photo": "proj_employeehub.jpg",
+            "problems_encountered": [
+                "Working on ASP .Net for the first time was an unfamiliar territory (I had personal preferences on working with Python and other projects)",
+                "In 2-3 days I got familiar with how ASP .Net works and contributed steadily on the projects and features."
+            ],
+            "owned_features": [
+                "Frontend UIs and code",
+                "Backend services and controllers",
+                "CRUD operations, stored procedures",
+                "Mini bot which works in MS Teams (integrate the app notifs to MS teams)",
+                "UIs for MS bot",
+                "View and manage employees feature",
+                "Profile information and account settings"
+            ],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
+            "figma_designs": ""
         },
         {
             "title": "Booqista - Consumer Mobile App",
-            "desc": "A mobile platform that connects consumers to the best service providers or merchants",
+            "desc": "A mobile platform that connects consumers to the best service providers or merchants.",
             "owner": "Nuvensis.ch",
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://play.google.com/store/apps/details?id=com.booqista.consumer",
             "technologies": [
-                "Flutter", "flutter_bloc", "hive_flutter", "Figma", "Dribbble", "GraphQL", "PostgreSQL",
-                "Axios REST API", "Firebase", "JIRA", "Confluence", "Slack", "Git"
+                "Flutter",
+                "flutter_bloc",
+                "hive_flutter",
+                "Figma",
+                "Dribbble",
+                "GraphQL",
+                "PostgreSQL",
+                "Axios",
+                "REST API",
+                "Firebase",
+                "JIRA",
+                "Confluence",
+                "Slack",
+                "Git"
             ],
             "features": [
                 "Search and discover a wide range of services and offers from merchants",
@@ -196,19 +774,59 @@
                 "Test and find bugs",
                 "Fix bugs"
             ],
-            "figma_designs": "https://www.figma.com/file/j8ZTcX9yczm56kEBnEV2gi/?node-id=664%3A0",
+            "interesting_facts": [
+                "First time working on Flutter. Because of this project, I became comfortable working on Flutter and discovered its common usages and advantages as a framework (i.e. write once, run anywhere)."
+            ],
+            "domain": [
+                "SaaS",
+                "Logistics Platform",
+                "Financial Technology Platform",
+                "eCommerce Platform"
+            ],
+            "contribution_type": [
+                "Principal Engineer"
+            ],
             "project_repo": "https://gitlab.com/nuvensis/booqista/consumer-mobile-app",
-            "tags": ["All", "Mobile"],
-            "attached_photo": "proj_consumermobileapp.jpg"
+            "attached_photo": "proj_consumermobileapp.jpg",
+            "problems_encountered": [
+                "First time working on Flutter. To get acquainted with the technology, I had to study it first and do a sample project (I built a sample Time Management app).",
+                "The client had to stop the development of the mobile application first so we can focus on contributing to the Booqista Consumer Web app.",
+                "The requirements had to change a lot since the client was still exploring the ideas and possibilities of the project.",
+                "The senior engineer (also the owner) was keen on code quality and standards."
+            ],
+            "owned_features": [
+                "Figma designs",
+                "Listing and services page",
+                "Searching of listings and services",
+                "Manage appointments and bookings",
+                "Code reviews",
+                "Frontend UIs and code",
+                "Testing and debugging",
+                "Bug fixes",
+                "Client feedback"
+            ],
+            "tags": [
+                "All",
+                "Mobile"
+            ],
+            "figma_designs": "https://www.figma.com/file/j8ZTcX9yczm56kEBnEV2gi/?node-id=664%3A0"
         },
         {
             "title": "LiveSwitch",
-            "desc": "A video-conferencing app built using Flutter and the LiveSwitch SDK (a WebRTC-based library)",
-            "owner": "Nuvensis.ch",
-            "company_link": "",
-            "website": "",
+            "desc": "A video-conferencing app built using Flutter and the LiveSwitch SDK (a WebRTC-based library).",
+            "owner": "Dewmaker Design",
+            "company_link": "https://www.dewmaker.design/",
+            "website": "https://www.liveswitch.com/",
             "technologies": [
-                "Flutter", "Firebase", "flutter_bloc", "Azure DevOps", "Zeplin.io", "Android Jetpack Compose"
+                "Flutter",
+                "Firebase",
+                "flutter_bloc",
+                "Azure DevOps",
+                "Zeplin.io",
+                "Android Jetpack Compose"
+            ],
+            "features": [
+                "Works like Google Meet (has scheduled calls and can have instant calls)"
             ],
             "key_contributions": [
                 "Worked on the front-end, created templates, components, widgets, and applied user interactivity and frontend logic",
@@ -216,155 +834,58 @@
                 "Worked with WebRTC concepts to implement the video-conferencing and chat feature",
                 "Used Android Jetpack Compose for functionalities in the mobile app that are platform-specific (e.g. UI or screens that only work in Android and not in iOS)"
             ],
+            "interesting_facts": [
+                "I was the sole engineer working on the project.",
+                "The client hired me because I had experience in Flutter/Dart."
+            ],
+            "domain": [
+                "Video Conferencing",
+                "WebRTC Platform"
+            ],
+            "contribution_type": [
+                "Principal Engineer",
+                "Individual Contributor"
+            ],
             "project_repo": "",
             "zeplin_designs": "https://app.zeplin.io/project/6079c56b3bcc2591f118f8db",
-            "tags": ["All", "Mobile"],
-            "attached_photo": "proj_liveswitch.jpg"
-        },
-        {
-            "title": "Products Grid",
-            "desc": "A sample personal project showcasing the VueJS techstack with Vuex store/persistence management",
-            "website": "https://pama-arniel.github.io/products/",
-            "technologies": [
-                "VueJS", "Vuex", "GitHub pages"
+            "attached_photo": "proj_liveswitch.jpg",
+            "problems_encountered": [
+                "Configuring utility libraries that are not fully compatible with our current tech stack",
+                "Configurations had to be made to ensure that the LiveSwitch SDK (which was a requirement in the project) works well with Flutter.",
+                "Some screens/features work in Android but not in iOS and vice versa, so I had to do a lot of debugging and testing."
             ],
-            "key_contributions": [
-                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for products",
-                "Worked on implementing logic for searching a product",
-                "Worked on data persistence and store management using Vuex",
-                "Deployed the app on GitHub pages"
+            "owned_features": [
+                "Frontend UIs and code",
+                "Authentication and CRUD operations",
+                "Backend code and logic",
+                "Integration of LiveSwitch SDK with Flutter",
+                "Bug fixes",
+                "Code reviews",
+                "Sole engineer",
+                "Client feedback"
             ],
-            "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_products_grid.jpg"
-        },
-        {
-            "title": "Building a Sign Language Gesture Classifier Using LSTM",
-            "desc": "The general objective of this study is to develop a machine learning model based on the Long Short-Term Memory (LSTM) model",
-            "owner": "Thesis Paper for BS Computer Science",
-            "company_link": "https://www.upcebu.edu.ph/",
-            "website": "https://bit.ly/2Xr3kXv",
-            "technologies": [
-                "Kinect 360 (Model 1414)", "Kinect SDK 1.8", "KinectStreamSaver", "Python"," OpenCV", "Hyperas", "Apple 21.5 iMac for training"
+            "tags": [
+                "All",
+                "Mobile"
             ],
-            "features": [
-                "Generate a machine learning model based on the LSTM model to classify 100 sign language gesture videos which correspond to common action words used in grocery stores",
-                "Gather and extract dataset using Kinect sensor and a mobile camera",
-                "Preprocess the dataset and extract the important features (Skeleton data, Depth data, Hand Pose data)",
-                "Train the model",
-                "The goal is to focus only on the important aspects of building a machine learning model: data acquisition, preprocessing, feature extraction and training and does not provide an final app with a GUI"
-            ],
-            "key_contributions": [
-                "Generate a marchine learning model based on the LSTM to classify a gesture video with a corresonding meaning or text",
-                "Acquire dataset using Kinect sensor and a camera",
-                "Preprocess dataset (deletion or unimportant frames, cleaning of data)",
-                "Extract features (e.g. the shape of hands and body postures)",
-                "Consider the joint orientation, joint position, hand pose key points and skeleton, body pose key points and skeleton, and depth data",
-                "Use Hyperas to find the best combination of hyperparameters (batch size, number of epochs, and learning rate) for the LSTM model",
-                "Use OpenCV (computer vision library in python and supports model execution for ML)"
-            ],
-            "project_repo": "https://bit.ly/2Xr3kXv",
-            "tags": ["All", "Machine Learning", "Special Problems"],
-            "attached_photo": "proj_handskeleton.jpg"
-        },
-        {
-            "title": "BigFoot Island - A Children's Game in Javascript",
-            "desc": "People in BigFoot island are cursed with big feet as a punishment for making too much carbon footprint. Your goal is to maintain the size of your feet by reducing your carbon footprint. The game has 4 levels.",
-            "owner": "Thesis Paper for a friend in VSU, the goal is to teach kids the importance of the planet by reducing their carbon footprints. The goal is to find out if games and game design can have an effect in a child's awareness of climate issues.",
-            "company_link": "",
-            "website": "",
-            "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
-            ],
-            "features": [],
-            "key_contributions": [],
-            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnB5RGhobXRNeEJrQm14TW9YTXBJdDZXZTNLVnRhbkdYaWZOcHFsT3Zva1k?usp=sharing",
-            "tags": ["All", "Web", "Games"],
-            "attached_photo": "proj_bigfoot.jpg"
-        },
-        {
-            "title": "Personal Online Portfolio",
-            "desc": "An online resume built from scratch. It contains a compilation of my projects, skills, involvements, articles, and other important job details. It took me around 24+ hours to finish (spread throughout 2 weeks)",
-            "owner": "Personal",
-            "company_link": "",
-            "website": "https://pama-arniel.github.io/portfolio/",
-            "technologies": [
-                "Vue.js", "TailwindCSS", "Figma", "GitHub", "HTML", "CSS", "Javascript"
-            ],
-            "features": [
-                "Employ a 3D modern look",
-                "Make it mobile responsive",
-                "Display experiences, skills, projects, articles, and involvements",
-                "Add a carousel for displaying projects and articles",
-                "Provide the ability to search via tags or search key"
-            ],
-            "key_contributions": [
-                "Implement the website from scratch",
-                "Design the website components using Figma, HTML, TailwindCSS, and Vue JS",
-                "Use TailwindCSS for website responsiveness",
-                "Provide logic to searching and displaying of popups and lists",
-                "Deploy website to GitHub pages"
-            ],
-            "project_repo": "https://github.com/pama-arniel/portfolio",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_onlinecv.jpg"
-        },
-        {
-            "title": "Contacts List",
-            "desc": "A sample personal project showcasing the VueJS techstack with Firebase database and hosting",
-            "website": "https://contacts-list2.web.app/",
-            "technologies": [
-                "VueJS", "Firebase", "Vuefire", "Git"
-            ],
-            "key_contributions": [
-                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for the contacts list",
-                "Worked on implementing logic for searching a contact",
-                "Worked with Vuefire (the Firebase library specific to VueJS) for the backend requests",
-                "Deployed the app to Firebase"
-            ],
-            "project_repo": "",
-            "tags": ["All", "Web"],
-            "attached_photo": "proj_contacts_list.jpg"
-        },
-        {
-            "title": "Snate the Bookish Snake - Assembly x86",
-            "desc": "Snate is a unique snake that grows by eating the letters of the alphabet! To proceed to the next level, you  must help Snate in eating the right letters to complete the current level's goal: a word, a phrase, or sentence.",
-            "owner": "In partial fulfillment of CMSC 131 (Introduction to Computer Organization and Machine-Level Programming)",
-            "company_link": "",
-            "website": "",
-            "technologies": [
-                "Assembly x86", "DOSBox"
-            ],
-            "features": [
-            	"Implement a main screen",
-            	"Implement main game screen",
-            	"Make the snake move around the screen",
-            	"Eat the letters in the screen",
-            	"Randomize new letters in the screen",
-            	"Add a help screen",
-            	"Track the high score",
-            	"Display game score"
-            ],
-            "key_contributions": [
-            	"Read files in Assembly",
-            	"Write to files in Assembly",
-            	"Add, edit, delete data in array in Assembly",
-            	"Design and code the game logic",
-            	"Add sound in Assembly",
-            	"Randomize numbers in Assembly"
-            ],
-            "project_repo": "https://github.com/pama-arniel/SNATE/blob/master/SNATE.asm",
-            "tags": ["All", "Special Problems", "Games"],
-            "attached_photo": "proj_snate.jpg"
+            "figma_designs": ""
         },
         {
             "title": "GuessWhut!? (Play Charades)",
-            "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship",
-            "owner": "Channel Info Tech Internship",
+            "desc": "An online video platform for playing charades with friends. Awarded as top app among the 5 competitors in the internship.",
+            "owner": "Channel Info Tech - Internship",
             "company_link": "",
             "website": "https://drive.google.com/file/d/1LKbfMAUill8tPx6NXYY2iSjC3UDq2lb4/view?usp=sharing",
             "technologies": [
-                "Vue.js", "Django", "CSS", "HTML", "MongoDB", "OpenTok.js", "Python Anywhere", "Agile and Scrum", "Git"
+                "Vue",
+                "Django",
+                "CSS",
+                "HTML",
+                "MongoDB",
+                "OpenTok.js",
+                "Python Anywhere",
+                "Agile and Scrum",
+                "Git"
             ],
             "features": [
                 "Generate a game session online",
@@ -383,9 +904,256 @@
                 "Deploy using Python Anywhere",
                 "Do daily stand-ups"
             ],
+            "interesting_facts": [
+                "Won Top App Award"
+            ],
+            "domain": [
+                "SaaS",
+                "eGames Platform",
+                "WebRTC",
+                "WebRTC Platform",
+                "Video Conferencing"
+            ],
+            "contribution_type": [
+                "Squad Leader",
+                "Principal Engineer",
+                "Lead Engineer"
+            ],
             "project_repo": "https://gitlab.com/guesswhut/guesswhut",
-            "tags": ["All", "Web", "Games"],
-            "attached_photo": "proj_guesswhut.jpg"
+            "attached_photo": "proj_guesswhut.jpg",
+            "problems_encountered": [
+                "There was a big bug (the screens from different users weren't syncing, the timers weren't syncing, the draw-on-the-screen feature does not update in realtime)—fixed that major bug in the main game screen to ensure that the timer and all the data are in sync.",
+                "Had to spend an entire day/night debugging the main game screen and logic.",
+                "Sync data (i.e. timer, players, sketches) in a live-game video conferencing app"
+            ],
+            "owned_features": [
+                "Main game screen",
+                "Video communication feature via OpenTok",
+                "On-screen sketching/annotation feature",
+                "Frontend UIs and code",
+                "Backend (via OpenTok.js)",
+                "Testing, code reviews, and bug fixes",
+                "Deployment to Python Anywhere",
+                "Principal engineer and squad lead",
+                "Fixing a major bug: the syncing of data and timer between multiple screens"
+            ],
+            "tags": [
+                "All",
+                "Web",
+                "Games"
+            ],
+            "figma_designs": ""
+        },
+        {
+            "title": "BigFoot Island - A Children's Game in Javascript",
+            "desc": "People in BigFoot island are cursed with big feet as a punishment for making too much carbon footprint. Your goal is to maintain the size of your feet by reducing your carbon footprint. The game has 4 levels.",
+            "owner": "Thesis Paper for a friend in VSU, the goal is to teach kids the importance of the planet by reducing their carbon footprints. The goal is to find out if games and game design can have an effect in a child's awareness of climate issues.",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Vue",
+                "jQuery",
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "features": [
+                "The app has 4 main levels (this involves searching for items, clicking through items, classifying items, and answering quizzes)",
+                "Every level presents a different problem and use case (the child has to get past the previous level to go on to the next)"
+            ],
+            "key_contributions": [
+                "Implemented the four (4) main screens together with another developer (my classmate from UP Cebu)",
+                "Did manual testing and debugging",
+                "Implemented the frontend UIs and logic"
+            ],
+            "interesting_facts": [
+                "The game was used for a research paper regarding children's learning trajectories (whether using educational games would improve children's overall environmental awareness compared to basic lectures/word-of-mouth)",
+                "The app was used for a research paper which won as Best Research in a prestigious university (VSU)",
+                "My client was a friend and classmate from highschool (he's a senior creative director now)"
+            ],
+            "domain": [
+                "Learning Platform",
+                "eGames Platform"
+            ],
+            "contribution_type": [
+                "Squad Leader",
+                "Principal Engineer"
+            ],
+            "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnB5RGhobXRNeEJrQm14TW9YTXBJdDZXZTNLVnRhbkdYaWZOcHFsT3Zva1k?usp=sharing",
+            "attached_photo": "proj_bigfoot.jpg",
+            "problems_encountered": [
+                "No major problems. But working with sprites, we had to ensure that the collision detection algorithms were working properly. Also had to ensure that the app worked on different screen sizes (the collision algo encountered issues in calculations on differing screen sizes).",
+                "We also had to ensure that the sprites/assets were optimized (high-quality and not pixelated) and the sound effects were working properly (on-time, in-sync, and fully functional)."
+            ],
+            "owned_features": [
+                "Implementing the four major levels of the game",
+                "Started everything from scratch and sending a fully working app to the client",
+                "Manual testing and debugging",
+                "Frontend UIs and code",
+                "Main game screens logic and functionalities"
+            ],
+            "tags": [
+                "All",
+                "Web",
+                "Games"
+            ],
+            "figma_designs": ""
+        },
+        {
+            "title": "Products Grid",
+            "desc": "A sample personal project showcasing the VueJS techstack with Vuex store/persistence management",
+            "website": "https://pama-arniel.github.io/products/",
+            "technologies": [
+                "VueJS",
+                "Vuex",
+                "GitHub pages"
+            ],
+            "key_contributions": [
+                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for products",
+                "Worked on implementing logic for searching a product",
+                "Worked on data persistence and store management using Vuex",
+                "Deployed the app on GitHub pages"
+            ],
+            "project_repo": "",
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "attached_photo": "proj_products_grid.jpg"
+        },
+        {
+            "title": "Building a Sign Language Gesture Classifier Using LSTM",
+            "desc": "The general objective of this study is to develop a machine learning model based on the Long Short-Term Memory (LSTM) model",
+            "owner": "Thesis Paper for BS Computer Science",
+            "company_link": "https://www.upcebu.edu.ph/",
+            "website": "https://bit.ly/2Xr3kXv",
+            "technologies": [
+                "Kinect 360 (Model 1414)",
+                "Kinect SDK 1.8",
+                "KinectStreamSaver",
+                "Python",
+                " OpenCV",
+                "Hyperas",
+                "Apple 21.5 iMac for training"
+            ],
+            "features": [
+                "Generate a machine learning model based on the LSTM model to classify 100 sign language gesture videos which correspond to common action words used in grocery stores",
+                "Gather and extract dataset using Kinect sensor and a mobile camera",
+                "Preprocess the dataset and extract the important features (Skeleton data, Depth data, Hand Pose data)",
+                "Train the model",
+                "The goal is to focus only on the important aspects of building a machine learning model: data acquisition, preprocessing, feature extraction and training and does not provide an final app with a GUI"
+            ],
+            "key_contributions": [
+                "Generate a marchine learning model based on the LSTM to classify a gesture video with a corresonding meaning or text",
+                "Acquire dataset using Kinect sensor and a camera",
+                "Preprocess dataset (deletion or unimportant frames, cleaning of data)",
+                "Extract features (e.g. the shape of hands and body postures)",
+                "Consider the joint orientation, joint position, hand pose key points and skeleton, body pose key points and skeleton, and depth data",
+                "Use Hyperas to find the best combination of hyperparameters (batch size, number of epochs, and learning rate) for the LSTM model",
+                "Use OpenCV (computer vision library in python and supports model execution for ML)"
+            ],
+            "project_repo": "https://bit.ly/2Xr3kXv",
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
+            "attached_photo": "proj_handskeleton.jpg"
+        },
+        {
+            "title": "Personal Online Portfolio",
+            "desc": "An online resume built from scratch. It contains a compilation of my projects, skills, involvements, articles, and other important job details. It took me around 24+ hours to finish (spread throughout 2 weeks)",
+            "owner": "Personal",
+            "company_link": "",
+            "website": "https://pama-arniel.github.io/portfolio/",
+            "technologies": [
+                "Vue",
+                "TailwindCSS",
+                "Figma",
+                "GitHub",
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "features": [
+                "Employ a 3D modern look",
+                "Make it mobile responsive",
+                "Display experiences, skills, projects, articles, and involvements",
+                "Add a carousel for displaying projects and articles",
+                "Provide the ability to search via tags or search key"
+            ],
+            "key_contributions": [
+                "Implement the website from scratch",
+                "Design the website components using Figma, HTML, TailwindCSS, and Vue JS",
+                "Use TailwindCSS for website responsiveness",
+                "Provide logic to searching and displaying of popups and lists",
+                "Deploy website to GitHub pages"
+            ],
+            "project_repo": "https://github.com/pama-arniel/portfolio",
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "attached_photo": "proj_onlinecv.jpg"
+        },
+        {
+            "title": "Contacts List",
+            "desc": "A sample personal project showcasing the VueJS techstack with Firebase database and hosting",
+            "website": "https://contacts-list2.web.app/",
+            "technologies": [
+                "VueJS",
+                "Firebase",
+                "Vuefire",
+                "Git"
+            ],
+            "key_contributions": [
+                "Worked on implementing Create, Read, Update, and Delete (CRUD) logic for the contacts list",
+                "Worked on implementing logic for searching a contact",
+                "Worked with Vuefire (the Firebase library specific to VueJS) for the backend requests",
+                "Deployed the app to Firebase"
+            ],
+            "project_repo": "",
+            "tags": [
+                "All",
+                "Web"
+            ],
+            "attached_photo": "proj_contacts_list.jpg"
+        },
+        {
+            "title": "Snate the Bookish Snake - Assembly x86",
+            "desc": "Snate is a unique snake that grows by eating the letters of the alphabet! To proceed to the next level, you  must help Snate in eating the right letters to complete the current level's goal: a word, a phrase, or sentence.",
+            "owner": "In partial fulfillment of CMSC 131 (Introduction to Computer Organization and Machine-Level Programming)",
+            "company_link": "",
+            "website": "",
+            "technologies": [
+                "Assembly x86",
+                "DOSBox"
+            ],
+            "features": [
+                "Implement a main screen",
+                "Implement main game screen",
+                "Make the snake move around the screen",
+                "Eat the letters in the screen",
+                "Randomize new letters in the screen",
+                "Add a help screen",
+                "Track the high score",
+                "Display game score"
+            ],
+            "key_contributions": [
+                "Read files in Assembly",
+                "Write to files in Assembly",
+                "Add, edit, delete data in array in Assembly",
+                "Design and code the game logic",
+                "Add sound in Assembly",
+                "Randomize numbers in Assembly"
+            ],
+            "project_repo": "https://github.com/pama-arniel/SNATE/blob/master/SNATE.asm",
+            "tags": [
+                "All",
+                "Special Problems",
+                "Games"
+            ],
+            "attached_photo": "proj_snate.jpg"
         },
         {
             "title": "Up On Time (UOT)",
@@ -394,7 +1162,12 @@
             "company_link": "https://www.nuvensis.ch/",
             "website": "https://nuvensis.atlassian.net/secure/RapidBoard.jspa?rapidView=22&view=planning&selectedIssue=UOT-6&issueLimit=100",
             "technologies": [
-                "Flutter", "flutter_bloc", "hive_flutter", "Figma", "Slack", "Git"
+                "Flutter",
+                "flutter_bloc",
+                "hive_flutter",
+                "Figma",
+                "Slack",
+                "Git"
             ],
             "features": [
                 "Manage alarm settings (sync window, sync time, etc.)",
@@ -409,7 +1182,10 @@
                 "Code features and logic"
             ],
             "project_repo": "https://gitlab.com/nuvensis/up-on-time/mobile-app",
-            "tags": ["All", "Mobile"],
+            "tags": [
+                "All",
+                "Mobile"
+            ],
             "attached_photo": "proj_uot.jpg"
         },
         {
@@ -419,12 +1195,19 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
+                "Vue",
+                "jQuery",
+                "HTML",
+                "CSS"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkdhRjZ0emFQcUlqTnZBaUtNYTZDcE9WQVFKVTdzdTRWR1EzbkNQQWhqTVE?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_multiprogramming.jpg"
         },
         {
@@ -434,12 +1217,19 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "jQuery", "HTML", "CSS", "Vue.js"
+                "jQuery",
+                "HTML",
+                "CSS",
+                "Vue"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flpoRGxTZGZwZnFfam9yd3h5X01rQ25wU1E1Smd6OFdyRTRZaWNBRDZjN0k?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_memoryallocation.jpg"
         },
         {
@@ -449,12 +1239,20 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Vue.js", "vue-cli", "HTML", "CSS", "Node.js"
+                "Vue",
+                "vue-cli",
+                "HTML",
+                "CSS",
+                "Node.js"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://gitlab.com/arnielpama/bposeats-typing-test",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_typingtest.jpg"
         },
         {
@@ -464,7 +1262,10 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Django", "CSS", "HTML", "Javascript"
+                "Django",
+                "CSS",
+                "HTML",
+                "Javascript"
             ],
             "features": [
                 "User can view polls and vote in them",
@@ -475,7 +1276,10 @@
                 "Integrate Django with CSS, HTML, and Javascript"
             ],
             "project_repo": "https://gitlab.com/arnielpama/djangopollapp2",
-            "tags": ["All", "Web"],
+            "tags": [
+                "All",
+                "Web"
+            ],
             "attached_photo": "proj_pollsapp.jpg"
         },
         {
@@ -485,12 +1289,18 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Python", "numpy", "matplotlib"
+                "Python",
+                "numpy",
+                "matplotlib"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fmpuUU9VVE94Yl93SC1tdmNJMmplOHFuWkVLUHNRblFzZGtFZkhLQ1RKWEk?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_fourier.jpg"
         },
         {
@@ -500,12 +1310,19 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
+                "Vue",
+                "jQuery",
+                "HTML",
+                "CSS"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkM1elkzamt3NmFob3BzWXo1aXdzajNzVzd6TGFvMzJJUUg1QVlHNnV3eE0?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_squarewave.jpg"
         },
         {
@@ -515,12 +1332,21 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Python", "scipy", "Vue.js", "jQuery", "HTML", "CSS"
+                "Python",
+                "scipy",
+                "Vue",
+                "jQuery",
+                "HTML",
+                "CSS"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flZkMHVPTm00Q2hBSkF1czRiRnBzOFlONXRlTjNuLTBOUTEzXzE2SkJuWFk?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_modulation.jpg"
         },
         {
@@ -530,12 +1356,19 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Vue.js", "jQuery", "HTML", "CSS"
+                "Vue",
+                "jQuery",
+                "HTML",
+                "CSS"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fnBLZlBmOVFOOHk0VVpTNVpQT3dobWJVcFRGYlNvbURVT3lCY1NSZlRMdzg?usp=sharing",
-            "tags": ["All", "Web", "Special Problems"],
+            "tags": [
+                "All",
+                "Web",
+                "Special Problems"
+            ],
             "attached_photo": "proj_hammingcode.jpg"
         },
         {
@@ -545,16 +1378,20 @@
             "company_link": "",
             "website": "",
             "technologies": [
-                "Java", "Java Swing UI"
+                "Java",
+                "Java Swing UI"
             ],
             "features": [
-            	"Implement sampling methods - Simple random sampling, systematic samplic, stratified sampling",
-            	"Present data thru graphs (histogram vs pie charts) and statistical table (percentages, midpoints, etc) - categorical data, numerical data",
-            	"Compute measures of central tendency (mean, median, mode) - ungrouped and grouped data"
+                "Implement sampling methods - Simple random sampling, systematic samplic, stratified sampling",
+                "Present data thru graphs (histogram vs pie charts) and statistical table (percentages, midpoints, etc) - categorical data, numerical data",
+                "Compute measures of central tendency (mean, median, mode) - ungrouped and grouped data"
             ],
             "key_contributions": [],
             "project_repo": "https://github.com/pama-arniel/Mini-stat-Package",
-            "tags": ["All", "Special Problems"],
+            "tags": [
+                "All",
+                "Special Problems"
+            ],
             "attached_photo": "proj_statpackage.jpg"
         },
         {
@@ -567,14 +1404,18 @@
                 "PERL"
             ],
             "features": [
-            	"Tokenize the texts in the document",
+                "Tokenize the texts in the document",
                 "Count the number of tokens and types",
                 "Keep track of the number and types of punctuations used",
                 "Search words based on user input. The user can use the wildcards * which represents one or more characters and ? which represents a single character. For example, a user search of ba* will display bag, bath, bathing, bask, etc or ?at will display cat, fat, rat, etc. or combinations of the wildcards such as ?at* to display cat, bat, bath, bathe, rat, rate, rates, etc"
             ],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/1B74w4rasWL87HABsvdB6H32kMw7RpiDx?usp=sharing",
-            "tags": ["All", "Machine Learning", "Special Problems"],
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
             "attached_photo": "proj_tokenization.jpg"
         },
         {
@@ -584,15 +1425,20 @@
             "company_link": "",
             "website": "https://github.com/pama-arniel/Maze-Search-Hooray/blob/master/maze%20python%20version/python%20documentation.pdf",
             "technologies": [
-                "Java", "Python"
+                "Java",
+                "Python"
             ],
             "features": [
-            	"Part 1: Basic Pathfinding (Implement A* Search, use Manhattan Distance and Straight-Line Distance as heuristics) - start goal to end goal",
+                "Part 1: Basic Pathfinding (Implement A* Search, use Manhattan Distance and Straight-Line Distance as heuristics) - start goal to end goal",
                 "Part 2: Search With Multiple Goals - finding the shortest path through a maze while hitting multiple goals (make Pacman eat all the dots)"
             ],
             "key_contributions": [],
             "project_repo": "https://github.com/pama-arniel/Maze-Search-Hooray",
-            "tags": ["All", "Machine Learning", "Special Problems"],
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
             "attached_photo": "proj_maze.jpg"
         },
         {
@@ -602,12 +1448,17 @@
             "company_link": "",
             "website": "https://github.com/pama-arniel/K-Means-Clustering/blob/master/pama-bonganay%20documentation.pdf",
             "technologies": [
-                "Java", "Python"
+                "Java",
+                "Python"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://github.com/pama-arniel/K-Means-Clustering",
-            "tags": ["All", "Machine Learning", "Special Problems"],
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
             "attached_photo": "proj_kmeans.jpg"
         },
         {
@@ -617,12 +1468,16 @@
             "company_link": "",
             "website": "https://github.com/pama-arniel/Hitori-Solver/blob/master/hitori%20solver%20final%20presentation.pdf",
             "technologies": [
-                "C", "C++"
+                "C",
+                "C++"
             ],
             "features": [],
             "key_contributions": [],
             "project_repo": "https://github.com/pama-arniel/Hitori-Solver",
-            "tags": ["All", "Special Problems"],
+            "tags": [
+                "All",
+                "Special Problems"
+            ],
             "attached_photo": "proj_hitori.jpg"
         },
         {
@@ -635,13 +1490,17 @@
                 "Java"
             ],
             "features": [
-            	"Write a Backus-Naur Form to describe simple expressions",
-            	"Limited to the variable identifiers x, y, or z",
-            	"Contain operations of addition (+), subtraction (-), and unary negation (~) together with parentheses"
+                "Write a Backus-Naur Form to describe simple expressions",
+                "Limited to the variable identifiers x, y, or z",
+                "Contain operations of addition (+), subtraction (-), and unary negation (~) together with parentheses"
             ],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fkNlTWpldmZrUFVnT0xNNWlIWVVRMWFSNmF1UngwMWctVTR3VHJyT3NSeUk?usp=sharing",
-            "tags": ["All", "Machine Learning", "Special Problems"],
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
             "attached_photo": "proj_bnf.jpg"
         },
         {
@@ -654,12 +1513,15 @@
                 "Java"
             ],
             "features": [
-            	"Determine whether an arithmetic expression is valid or not",
-            	"Determine whether a given number or decimal is valid or not"
+                "Determine whether an arithmetic expression is valid or not",
+                "Determine whether a given number or decimal is valid or not"
             ],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_fjlEdko2UFREanl0WGNidV9RZlZDV1dvcjl0c3QxYXE1SGlVTG4xaloxcGc?usp=sharing",
-            "tags": ["All", "Special Problems"],
+            "tags": [
+                "All",
+                "Special Problems"
+            ],
             "attached_photo": "proj_rdp.jpg"
         },
         {
@@ -672,14 +1534,17 @@
                 "Java"
             ],
             "features": [
-            	"Infix → Prefix and postfix equivalent",
-            	"Prefix → Infix and postfix equivalent",
+                "Infix → Prefix and postfix equivalent",
+                "Prefix → Infix and postfix equivalent",
                 "Postfix → Infix and prefix equivalent",
                 "Use the same algorithms above to accept an expression (this time variables are actual numbers) and evaluate them to give the final answer."
             ],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/0B1NwHpCRstL_flVsQnhUSzd0QVZPNGhDU0ZZMUQ0NnpVRU4ydkVSeXNBb0ZjLWpzdERaMzA?usp=sharing",
-            "tags": ["All", "Special Problems"],
+            "tags": [
+                "All",
+                "Special Problems"
+            ],
             "attached_photo": "proj_expressions.jpg"
         },
         {
@@ -692,8 +1557,8 @@
                 "Python"
             ],
             "features": [
-            	"To run the script, type 'python scraper.py'",
-            	"Run script with optional arguments",
+                "To run the script, type 'python scraper.py'",
+                "Run script with optional arguments",
                 "Example: 'python scraper.py -i 'orig-celebs.txt' --users=20 --followers=200 --post=100 --has_email=True --is_private=True'",
                 "Using all filter tags is unnecessary. You can do: 'python scraper.py -i 'orig-celebs.txt' --users 20 --followers 200'",
                 "Default number of max users to scrape is 100 if no --users argument is supplied",
@@ -701,7 +1566,10 @@
             ],
             "key_contributions": [],
             "project_repo": "https://gitlab.com/arnielpama/ig-scraper",
-            "tags": ["All", "Special Problems"],
+            "tags": [
+                "All",
+                "Special Problems"
+            ],
             "attached_photo": "proj_igcrawler.jpg"
         },
         {
@@ -716,7 +1584,11 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/183JjUozyvhiiTMPVLB-rhBkZW2G076UT?usp=sharing",
-            "tags": ["All", "Machine Learning", "Special Problems"],
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
             "attached_photo": "proj_dfa.jpg"
         },
         {
@@ -731,7 +1603,11 @@
             "features": [],
             "key_contributions": [],
             "project_repo": "https://drive.google.com/drive/folders/1aHY0vjaFYl2JA9ZC-1COUN96AW161KUz?usp=sharing",
-            "tags": ["All", "Machine Learning", "Special Problems"],
+            "tags": [
+                "All",
+                "Machine Learning",
+                "Special Problems"
+            ],
             "attached_photo": "proj_languageacceptor.jpg"
         }
     ]
