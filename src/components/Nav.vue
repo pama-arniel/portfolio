@@ -105,7 +105,27 @@ export default {
       },
       getMobileNavbarClass(){
           return this.hamburgerOpen ? "md:hidden" : "md:hidden hidden";
+      },
+      updateSelectedSection() {
+          const viewportMidpoint = window.innerHeight / 2;
+          let activeLabel = this.labels[0].name;
+
+          this.labels.forEach((label) => {
+              const section = document.getElementById(label.scroll_to);
+              if (section && section.getBoundingClientRect().top <= viewportMidpoint) {
+                  activeLabel = label.name;
+              }
+          });
+
+          this.selectedSection = activeLabel;
       }
+    },
+  mounted() {
+      window.addEventListener('scroll', this.updateSelectedSection, { passive: true });
+      this.updateSelectedSection();
+  },
+  beforeDestroy() {
+      window.removeEventListener('scroll', this.updateSelectedSection);
   }
 }
 </script>
