@@ -60,7 +60,7 @@
                                        v-for="(pillValue, pillIndex) in value"
                                        :key="'pill-' + pillIndex"
                                        class="text-xs inline-block my-0.5 mr-0.5 py-1.5 px-4 text-gray-600 bg-purple-300 rounded-2xl">
-                                          #{{ pillValue }}
+                                          {{ pillValue }}
                                     </span>
                                  </div>
                                  <div v-else-if="Array.isArray(value)" class="ml-6">
@@ -111,7 +111,7 @@ export default {
     return {
        keysToHide: ['title', 'desc', 'owner', 'attached_photo'],
        keysToDisplayAsLink: ['company_link', 'website', 'project_repo', 'figma_designs', 'zeplin_designs'],
-       keysToDisplayAsPills: ['technologies', 'tags']
+       keysToDisplayAsPills: ['technologies', 'tags', 'domain', 'contribution_type'],
     };
   },
   methods: {
@@ -138,6 +138,16 @@ export default {
           return '👨‍🎨 Figma Designs:';
        } else if(keyName == 'zeplin_designs'){
           return '👨‍🎨 Zeplin Designs:';
+       } else if(keyName == 'interesting_facts'){
+          return '☝️ Interesting Facts:';
+       } else if(keyName == 'domain'){
+          return '📊 Domain:';
+       } else if(keyName == 'problems_encountered'){
+          return '🧩 Problems Encountered:';
+       } else if(keyName == 'owned_features'){
+          return '📈 Owned Features:';
+       } else if(keyName == 'contribution_type'){
+          return '🤓 Contribution Type:';
        }
 
        return keyName;
@@ -145,7 +155,7 @@ export default {
 
     getPic(fileName) {
       let file = fileName ? fileName : 'proj_uplogo.jpg';
-      let images = require.context('../assets/projects/', false, /\.(png|jpe?g|svg)$/);
+      let images = require.context('../assets/projects/', false, /\.(png|jpe?g|svg|webp)$/);
       return images('./' + file);
     },
   }
