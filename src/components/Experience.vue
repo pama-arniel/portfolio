@@ -3,13 +3,15 @@
     class="container text-white font-inter px-10 pt-10 pb-24 mx-auto"
     v-scroll-animation
   >
-    <div class="flex flex-wrap -mx-4 -my-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
       <div
         v-for="(experience, index) in experiences"
         :key="'experience-' + index"
-        class="py-8 px-4 lg:w-1/2 scale-on-hover"
+        class="py-4 scale-on-hover"
       >
-        <div class="h-full flex items-start section-background">
+        <div
+          class="experience-card h-full flex flex-col md:flex-row justify-between items-start section-background"
+        >
           <div
             class="w-15 md:flex-shrink-0 md:flex md:flex-col text-left leading-none hidden"
           >
@@ -24,26 +26,22 @@
             <p class="leading-relaxed text-gray-600 md:hidden block">
               {{ experience.startDate }} - {{ experience.endDate }}
             </p>
-            <h1 class="title-font text-3xl mb-2 purple-header align-top">
+            <h1
+              class="experience-position title-font text-3xl mb-2 purple-header align-top"
+            >
               {{ experience.position }}
             </h1>
             <h2 class="tracking-widest font-bold">{{ experience.company }}</h2>
-            <p class="leading-relaxed mb-5 text-gray-500">
+            <p class="experience-meta leading-relaxed mb-5 text-gray-500">
               {{ experience.description }}
             </p>
             <div
               v-for="(task, index) in experience.tasks"
               :key="'task-' + index"
-              class="leading-relaxed mb-6"
+              class="experience-task flex items-start gap-3 leading-relaxed mb-6"
             >
-              <div class="float-left">
-                <span class="sm:text-2xl text-sm">⚙️</span>
-              </div>
-              <div>
-                <span class="text-white my-6 pl-2 align-middle flex">
-                  {{ task }}
-                </span>
-              </div>
+              <span class="sm:text-2xl text-sm flex-shrink-0">⚙️</span>
+              <span class="text-white align-middle flex">{{ task }}</span>
             </div>
             <a
               :href="experience.website"
@@ -56,9 +54,7 @@
                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center company-logo"
               />
               <span class="flex-grow flex flex-col pl-3">
-                <span class="title-font text-indigo-500">{{
-                  experience.website
-                }}</span>
+                <span class="experience-link title-font">Visit Website &#8599;</span>
               </span>
             </a>
           </div>
@@ -181,5 +177,38 @@ export default {
 .company-logo {
   box-shadow: 0px 0px 5px #ffffff;
   padding: 7px;
+}
+
+.experience-card {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.experience-position {
+  color: #e3d5ff;
+}
+
+.experience-meta {
+  color: #e5e7eb;
+}
+
+.experience-link {
+  color: #e3d5ff;
+  transition: color 0.2s ease;
+}
+
+.experience-link:hover {
+  color: #ffffff;
 }
 </style>
