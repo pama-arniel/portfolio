@@ -62,6 +62,8 @@
       v-else-if="currNumOfGroups > 0"
       :id="slideShowContainerId"
       class="slideshow-container"
+      @touchstart="handleTouchStart"
+      @touchend="handleTouchEnd"
     >
       <div v-if="refString == 'projects'">
         <div
@@ -191,6 +193,8 @@ export default {
       filteredProjectsList: projectsJSON.list,
 
       myInterval: null,
+      touchStartX: 0,
+      touchStartY: 0,
     };
   },
   watch: {
@@ -389,6 +393,28 @@ export default {
       this.slideIndex = n;
       this.showSlides(this.slideIndex);
       clearInterval(this.myInterval);
+    },
+
+    handleTouchStart(event) {
+      const touch = event.changedTouches[0];
+      this.touchStartX = touch.clientX;
+      this.touchStartY = touch.clientY;
+    },
+
+    handleTouchEnd(event) {
+      const touch = event.changedTouches[0];
+      const horizontalDistance = touch.clientX - this.touchStartX;
+      const verticalDistance = touch.clientY - this.touchStartY;
+      const swipeThreshold = 50;
+
+      if (
+        Math.abs(horizontalDistance) < swipeThreshold ||
+        Math.abs(horizontalDistance) <= Math.abs(verticalDistance)
+      ) {
+        return;
+      }
+
+      this.plusSlides(horizontalDistance < 0 ? 1 : -1, "touch-swipe");
     },
 
     scrollSearchBarIntoView() {
