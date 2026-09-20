@@ -20,7 +20,7 @@
           class="title-font sm:text-5xl text-3xl mb-8 leading-relaxed description"
         >
           I am a Software Engineer who specializes in Web Development. I can
-          also do mobile, UI/UX, or AI.
+          also do mobile, UI/UX, or AI development.
         </h1>
 
         <span
