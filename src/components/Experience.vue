@@ -3,17 +3,17 @@
     class="container text-white font-inter px-10 pt-10 pb-24 mx-auto"
     v-scroll-animation
   >
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
       <div
         v-for="(experience, index) in experiences"
         :key="'experience-' + index"
         class="py-4 scale-on-hover"
       >
         <div
-          class="experience-card h-full flex flex-col md:flex-row justify-between items-start section-background"
+          class="experience-card h-full flex flex-col lg:flex-row justify-between items-start section-background"
         >
           <div
-            class="w-15 md:flex-shrink-0 md:flex md:flex-col text-left leading-none hidden"
+            class="w-15 lg:flex-shrink-0 lg:flex lg:flex-col text-left leading-none hidden"
           >
             <span class="pb-2 mb-2 border-b-2 border-gray-500">{{
               experience.startDate
@@ -22,8 +22,8 @@
               experience.endDate
             }}</span>
           </div>
-          <div class="flex-grow md:pl-6">
-            <p class="leading-relaxed text-gray-600 md:hidden block">
+          <div class="flex-grow lg:pl-6">
+            <p class="leading-relaxed text-gray-600 lg:hidden block">
               {{ experience.startDate }} - {{ experience.endDate }}
             </p>
             <h1
