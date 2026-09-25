@@ -31,9 +31,12 @@
             >
               {{ experience.position }}
             </h1>
-            <h2 class="tracking-widest font-bold">{{ experience.company }}</h2>
+            <h2 class="tracking-widest font-bold mb-5">{{ experience.company }}</h2>
             <p class="experience-meta leading-relaxed mb-5 text-gray-500">
-              {{ experience.description }}
+              🚀 {{ experience.description }}
+            </p>
+            <p v-if="experience.clients" class="experience-meta leading-relaxed mb-5 text-gray-500">
+              💼 {{ experience.clients }}
             </p>
             <div
               v-for="(task, index) in experience.tasks"
@@ -73,11 +76,11 @@ export default {
         {
           startDate: "Jun 2021",
           endDate: "Jul 2026",
-          position: "Senior Full Stack Software Engineer",
+          position: "Full Stack Software Engineer",
           company: "CoDev",
-          clients: "Dewmaker Design, Lumea, Seikosoft",
           description:
              "Technologies: React, Vue, C#, ASP .NET, Javascript, Copilot, Claude, REST API, HTML, CSS, SQL, PostgreSQL, JIRA, Git, Agile, Scrum, AWS, Tailwind CSS, Slack, GCP, Firebase, Quasar, MirageJS, Pinia, Cypress, Composition API, Confluence, Zeplin.io",
+          clients: "Clients: Dewmaker Design, Lumea, Seikosoft",
           tasks: [
             "Delivered enterprise web applications for government, healthcare, logistics, and SaaS clients using React, TypeScript, Vue.js, .NET Core, Python, PostgreSQL, and AWS.",
             "Built and maintained full-stack features across modern React and Vue frontends, RESTful APIs, relational databases, and cloud-hosted services, collaborating directly with international clients and cross-functional engineering teams.",
@@ -111,7 +114,7 @@ export default {
         {
           startDate: "July 2019",
           endDate: "Aug 2020",
-          position: "Full Stack Software Engineer | Squad Lead",
+          position: "Full Stack Developer | Squad Lead",
           company: "Channel Info Tech",
           description:
             "Technologies: Vue, Python/Django, REST API, jQuery, HTML, CSS, SQL, PostgreSQL, Confluence, JIRA, Git, Scrum, Agile, AWS",
